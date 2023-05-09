@@ -1,0 +1,1126 @@
+<!doctype html>
+
+<!--[if lt IE 7]>
+<html class="nojs ms lt_ie7" lang="en"><![endif]-->
+<!--[if IE 7]>
+<html class="nojs ms ie7" lang="en"><![endif]-->
+<!--[if IE 8]>
+<html class="nojs ms ie8" lang="en"><![endif]-->
+<!--[if gt IE 8]>
+<html class="nojs ms" lang="en"><![endif]-->
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- Locale -->
+<meta http-equiv="Content-Language" content="en">
+
+<!-- Meta Tags -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="generator" content="PyroCMS"/>
+<meta name="description" content=""/>
+
+
+
+<title>
+    Acme World
+    &#8250;
+    
+        Electronics Manufacturer</title>
+
+<style>
+  * {
+      font-variant-ligatures: none;
+    }
+</style>
+
+<script type="text/javascript">
+
+    const APPLICATION_URL = "https://acme.creoweb.tech/industries/manufacturing-electronics-4";
+    const APPLICATION_REFERENCE = "default";
+    const APPLICATION_DOMAIN = "acme.creoweb.tech";
+
+    const CSRF_TOKEN = "0Q6WqwZgiRxYzyXx8wHHmEYyQ0bKAep4GaJpsPl3";
+    const APP_DEBUG = "";
+    const APP_URL = "https://acme.creoweb.tech";
+    const REQUEST_ROOT = "https://acme.creoweb.tech";
+    const REQUEST_ROOT_PATH = "";
+    const TIMEZONE = "UTC";
+    const LOCALE = "en";
+    
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+<link media="all" type="text/css" rel="stylesheet" href="/app/default/assets/public/themes.css?v=1682363206">
+
+
+    
+
+</head>
+
+<body>
+
+<header>
+   <div class="header-top-line-blue"></div>
+   <div class="row">
+             <div class="small-6 large-1 columns nopadleft header-logo">
+           <a href="/">
+               <img  alt="Acme logo" src="/app/default/assets/addons/default/np/site-theme/resources/img/icon-main-logo.svg?v=1682072157">
+           </a>
+       </div>
+      
+           <div class="small-5 columns nopadleft breadcrumbs-pc-hold">
+                             <div class="small-12 columns nopad breadcrumbs-pc">
+                   <a href="/#industries-section">
+                       Industries
+                   </a>
+                   /
+                   Electronics Manufacturer
+               </div>
+                           </div>
+           
+       <div class="small-6 columns nopad header-nav-hold">
+           <div class="header-nav">
+               <ul>
+    <li class="has-children">
+        <span>
+            Industries
+        </span> 
+        <div class="menu-nav-subnav">
+            
+            <div class="menu-nav-subnav-item">
+                <span>Distributor:</span>
+                <ul>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-construction-material-2">Construction Material</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-consumer-goods-3">Consumer Goods</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-electronics-4">E-Commerce</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-food-beverage-5">Food &amp; Beverage</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-chemicals-1">Oil &amp; Gas</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-pharmaceuticals-6">Pharmaceuticals</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-printing-packaging-7">Retail</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-tires-9">Spare Parts</a>
+                        </li>
+                                             
+                </ul>
+            </div>
+            <div class="menu-nav-subnav-item">
+                <span>Manufacturer:</span>
+                <ul>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-chemicals-1">Chemicals</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-construction-material-2">Construction Material</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-consumer-goods-3">Consumer Goods</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-electronics-4">Electronics</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-food-beverage-5">Food &amp; Beverage</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-pharmaceuticals-6">Pharmaceuticals</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-printing-packaging-7">Printing &amp; Packaging</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-tires-9">Tires</a>
+                        </li>
+                                              
+                </ul>
+            </div>
+            <div class="menu-nav-subnav-item">
+                <span>Service provider:</span>
+                <ul>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/service-provider-material-handling-airports-10">Material Handling &amp; Airports</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/service-provider-third-party-logistics-11">Third-Party Logistics</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/service-provider-utilities-12">Utilities</a>
+                        </li>
+                                             
+                </ul>
+            </div>
+            
+        </div>
+    </li>
+    <li class="has-children">
+        <span>
+            Products & Services
+        </span>
+        <div class="menu-nav-subnav">
+            <div class="menu-nav-subnav-item">
+                <span>
+                   Solutions:
+                </span>
+                <ul>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/solutions">All solutions (06)</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/solutions/pallet-handling-1">Pallet Handling</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/solutions/case-and-tote-handling-2">Case &amp; Tote Handling</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/solutions/picking-and-sortation-3">Picking &amp; Sortation</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/solutions/robotics-4">Robotics</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/solutions/software-and-controls-5">Software &amp; Controls</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/solutions/shelving-and-racking-6">Shelving &amp; Racking</a>
+                        </li>
+                                                              
+                </ul>
+            </div>
+            <div class="menu-nav-subnav-item">
+                <span>
+                    Components:
+                </span>
+                <ul>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/components">All components (36)</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/components/belting-24">Belting</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/components/case-asrs-13">Case AS/RS</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/components/pallet-asrs-6">Pallet AS/RS</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/components/racking-7">Racking</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/components/robotics-8">Robotics</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/components/sensors-27">Sensors</a>
+                        </li>
+                        
+                </ul>
+            </div>
+            <div class="menu-nav-subnav-item">
+                <ul>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/services">Services</a>
+                        </li>
+                      
+                </ul>
+            </div>
+        </div>
+    </li>
+    <li class="has-children">
+        <span>
+            World of Acme
+        </span>
+        <div class="menu-nav-subnav">
+               <div class="menu-nav-subnav-item">
+               <ul>
+                                    <li>
+                        <a href="https://acme.creoweb.tech/about-us">About us</a>
+                   </li>
+                                   <li>
+                        <a href="https://acme.creoweb.tech/knowledge">Knowledge centre</a>
+                   </li>
+                                   <li>
+                        <a href="https://acme.creoweb.tech/news">News</a>
+                   </li>
+                                   <li>
+                        <a href="https://acme.creoweb.tech/contact">Contact</a>
+                   </li>
+                                   <li>
+                        <a href="https://acme.creoweb.tech/careers">Careers</a>
+                   </li>
+                              </ul>
+            </div>
+        </div>
+    </li>
+</ul>
+           </div>
+           <div class="header-right">
+               <div class="header-search">
+                   <a href="https://acme.creoweb.tech/search"></a>
+               </div>
+               <div class="header-lang">
+                       <span>
+        EN
+    </span>
+    <ul>
+                                                    <li>
+                <a href="/de">DE</a>
+            </li>
+                                            <li>
+                <a href="/es">ES</a>
+            </li>
+                                            <li>
+                <a href="/ar">AR</a>
+            </li>
+                        </ul>
+
+               </div>
+               <div class="hamburger"></div>
+           </div>
+       </div>
+   </div>
+
+   <div class="mobile-menu-hold">
+      <div class="mobile-menu-hold-box">
+         <div class="mobile-menu-nav">
+            <ul>
+    <li class="has-children">
+        <span>
+            Industries
+        </span> 
+        <div class="menu-nav-subnav">
+            
+            <div class="menu-nav-subnav-item">
+                <span>Distributor:</span>
+                <ul>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-construction-material-2">Construction Material</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-consumer-goods-3">Consumer Goods</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-electronics-4">E-Commerce</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-food-beverage-5">Food &amp; Beverage</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-chemicals-1">Oil &amp; Gas</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-pharmaceuticals-6">Pharmaceuticals</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-printing-packaging-7">Retail</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-tires-9">Spare Parts</a>
+                        </li>
+                                             
+                </ul>
+            </div>
+            <div class="menu-nav-subnav-item">
+                <span>Manufacturer:</span>
+                <ul>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-chemicals-1">Chemicals</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-construction-material-2">Construction Material</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-consumer-goods-3">Consumer Goods</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-electronics-4">Electronics</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-food-beverage-5">Food &amp; Beverage</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-pharmaceuticals-6">Pharmaceuticals</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-printing-packaging-7">Printing &amp; Packaging</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-tires-9">Tires</a>
+                        </li>
+                                              
+                </ul>
+            </div>
+            <div class="menu-nav-subnav-item">
+                <span>Service provider:</span>
+                <ul>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/service-provider-material-handling-airports-10">Material Handling &amp; Airports</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/service-provider-third-party-logistics-11">Third-Party Logistics</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/service-provider-utilities-12">Utilities</a>
+                        </li>
+                                             
+                </ul>
+            </div>
+            
+        </div>
+    </li>
+    <li class="has-children">
+        <span>
+            Products & Services
+        </span>
+        <div class="menu-nav-subnav">
+            <div class="menu-nav-subnav-item">
+                <span>
+                   Solutions:
+                </span>
+                <ul>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/solutions">All solutions (06)</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/solutions/pallet-handling-1">Pallet Handling</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/solutions/case-and-tote-handling-2">Case &amp; Tote Handling</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/solutions/picking-and-sortation-3">Picking &amp; Sortation</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/solutions/robotics-4">Robotics</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/solutions/software-and-controls-5">Software &amp; Controls</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/solutions/shelving-and-racking-6">Shelving &amp; Racking</a>
+                        </li>
+                                                              
+                </ul>
+            </div>
+            <div class="menu-nav-subnav-item">
+                <span>
+                    Components:
+                </span>
+                <ul>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/components">All components (36)</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/components/belting-24">Belting</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/components/case-asrs-13">Case AS/RS</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/components/pallet-asrs-6">Pallet AS/RS</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/components/racking-7">Racking</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/components/robotics-8">Robotics</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/components/sensors-27">Sensors</a>
+                        </li>
+                        
+                </ul>
+            </div>
+            <div class="menu-nav-subnav-item">
+                <ul>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/services">Services</a>
+                        </li>
+                      
+                </ul>
+            </div>
+        </div>
+    </li>
+    <li class="has-children">
+        <span>
+            World of Acme
+        </span>
+        <div class="menu-nav-subnav">
+               <div class="menu-nav-subnav-item">
+               <ul>
+                                    <li>
+                        <a href="https://acme.creoweb.tech/about-us">About us</a>
+                   </li>
+                                   <li>
+                        <a href="https://acme.creoweb.tech/knowledge">Knowledge centre</a>
+                   </li>
+                                   <li>
+                        <a href="https://acme.creoweb.tech/news">News</a>
+                   </li>
+                                   <li>
+                        <a href="https://acme.creoweb.tech/contact">Contact</a>
+                   </li>
+                                   <li>
+                        <a href="https://acme.creoweb.tech/careers">Careers</a>
+                   </li>
+                              </ul>
+            </div>
+        </div>
+    </li>
+</ul>
+         </div>
+         <div class="mobile-menu-lang">
+            <div class="header-lang header-lang-mobile">
+                   <span>
+        EN
+    </span>
+    <ul>
+                                                    <li>
+                <a href="/de">DE</a>
+            </li>
+                                            <li>
+                <a href="/es">ES</a>
+            </li>
+                                            <li>
+                <a href="/ar">AR</a>
+            </li>
+                        </ul>
+
+            </div>
+         </div>
+      </div>
+   </div>
+</header>
+<main>
+    <section id="messages">
+
+    <!-- Success Messages -->
+    
+    <!-- Informational Messages -->
+    
+
+    <!-- Warning Messages -->
+    
+
+    <!-- Error Messages -->
+    
+</section>
+                <div class="breadcrumbs-media-hold">
+                <div class="row">
+                    <div class="small-12 columns nopad breadcrumbs-media">
+                                                   <a href="/#industries-section">
+                                Industries
+                            </a>
+                            /
+                            Electronics Manufacturer
+                                            </div>
+                </div>
+            </div>
+            <section class="industry-inner-intro-section animation-element in-view">
+                <div class="row">
+                    <div class="small-12 medium-10 large-8 columns nopad section-title-84 animation-element fade-in-up in-view">
+                        <h1>
+                            Electronics Manufacturer
+                        </h1>
+                    </div>
+                                           <div class="small-12 columns nopad text-center animation-element fade-in-up fade-in-up-later in-view">
+                           <img src="https://acme.creoweb.tech/app/default/assets/images/41c3a62f209d9bec9d5961d73e1b03eb.png?v=1682072157" alt="">
+                       </div>
+                                    </div>
+            </section>
+            
+
+            
+                        <section class="section-30-150">
+                <div class="row">
+                    <div class="small-12 columns nopad section-title-60 animation-element">
+                        <span>Solutions</span>
+                        <h2>
+                            Electronics Manufacturer /  Specific solutions
+                        </h2>
+                    </div>
+                    <div class="small-12 columns nopad industry-page-list animation-list-js animation-element">
+                        <ul>
+                                                        <li class="animation-element fade-in-up">
+                                <div class="small-12 columns nopad industry-page-list-box">
+                                    <span>01</span>
+                                    <div class="small-12 large-6 columns nopad industry-page-list-imgbox">
+                                        <div class="industry-page-list-imgbox-imghold industry-page-list-imgbox-img-1">
+                                            <img src="https://acme.creoweb.tech/app/default/assets/images/Name-Pallet+handling-+Style-Outline.png?v=1682363747"/>
+                                        </div>
+                                        <div class="industry-page-list-imgbox-imghold industry-page-list-imgbox-img-2">
+                                            <img src="https://acme.creoweb.tech/app/default/assets/images/e5140b2d3cd457677a0872df27181cbe.png?v=1682072157"/>
+                                        </div>
+                                    </div>
+                                    <div class="small-12 large-6 columns nopad industry-page-list-textbox">
+                                        <div class="small-12 columns nopad">
+                                            <div class="small-12 columns nopad industry-page-list-title">
+                                                Pallet handling
+                                            </div>
+                                            <div class="small-12 columns nopad industry-page-list-text">
+                                                <p>Pallets play a vital role in material handling. Automated pallet handling solutions throughout the different stages of your operational process will help you realise significant business advantages. <br></p>
+<p>Our tailor-made solutions to your specific needs can integrate with your existing systems for a seamless material flow.<br> </p>
+                                            </div>
+                                        </div>
+                                        <div class="small-12 columns nopad industry-page-list-btn">
+                                            <ul>
+                                                <li>
+                                                    <span class="btn-border-dashed-toblack btn-w-120" data-open="enquire-reveal">
+                                                       Enquire
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <a href="https://acme.creoweb.tech/solutions/pallet-handling-1" class="link-underline">
+                                                        View
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                                                        <li class="animation-element fade-in-up">
+                                <div class="small-12 columns nopad industry-page-list-box">
+                                    <span>02</span>
+                                    <div class="small-12 large-6 columns nopad industry-page-list-imgbox">
+                                        <div class="industry-page-list-imgbox-imghold industry-page-list-imgbox-img-1">
+                                            <img src="https://acme.creoweb.tech/app/default/assets/images/Name-Case+-+tote+handling-+Style-Outline.png?v=1682363747"/>
+                                        </div>
+                                        <div class="industry-page-list-imgbox-imghold industry-page-list-imgbox-img-2">
+                                            <img src="https://acme.creoweb.tech/app/default/assets/images/c6e3e05a2c6b2bd617bd3eb620be7b7b.png?v=1682072157"/>
+                                        </div>
+                                    </div>
+                                    <div class="small-12 large-6 columns nopad industry-page-list-textbox">
+                                        <div class="small-12 columns nopad">
+                                            <div class="small-12 columns nopad industry-page-list-title">
+                                                Case &amp; tote handling
+                                            </div>
+                                            <div class="small-12 columns nopad industry-page-list-text">
+                                                <p>Achieve remarkable business benefits through automating your order picking and dispatch processes for cases and totes. <br></p>
+<p>From safe transport to efficient storage of your goods, we provide custom solutions for every step of your operational process that will enhance your productivity and profitability.</p>
+                                            </div>
+                                        </div>
+                                        <div class="small-12 columns nopad industry-page-list-btn">
+                                            <ul>
+                                                <li>
+                                                    <span class="btn-border-dashed-toblack btn-w-120" data-open="enquire-reveal">
+                                                       Enquire
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <a href="https://acme.creoweb.tech/solutions/case-and-tote-handling-2" class="link-underline">
+                                                        View
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                                                        <li class="animation-element fade-in-up">
+                                <div class="small-12 columns nopad industry-page-list-box">
+                                    <span>03</span>
+                                    <div class="small-12 large-6 columns nopad industry-page-list-imgbox">
+                                        <div class="industry-page-list-imgbox-imghold industry-page-list-imgbox-img-1">
+                                            <img src="https://acme.creoweb.tech/app/default/assets/images/Name-Robotics-+Style-Outline.png?v=1682363747"/>
+                                        </div>
+                                        <div class="industry-page-list-imgbox-imghold industry-page-list-imgbox-img-2">
+                                            <img src="https://acme.creoweb.tech/app/default/assets/images/a86ee41a56b5631eeefc052dd6bfd695.png?v=1682072157"/>
+                                        </div>
+                                    </div>
+                                    <div class="small-12 large-6 columns nopad industry-page-list-textbox">
+                                        <div class="small-12 columns nopad">
+                                            <div class="small-12 columns nopad industry-page-list-title">
+                                                Robotics
+                                            </div>
+                                            <div class="small-12 columns nopad industry-page-list-text">
+                                                <p>Reallocate your staff's time on higher-value work, while robots take care of repetitive or dangerous tasks, increasing your throughput, reducing accidents or leakage, and cutting operational cost.</p>
+                                            </div>
+                                        </div>
+                                        <div class="small-12 columns nopad industry-page-list-btn">
+                                            <ul>
+                                                <li>
+                                                    <span class="btn-border-dashed-toblack btn-w-120" data-open="enquire-reveal">
+                                                       Enquire
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <a href="https://acme.creoweb.tech/solutions/robotics-4" class="link-underline">
+                                                        View
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                                                        <li class="animation-element fade-in-up">
+                                <div class="small-12 columns nopad industry-page-list-box">
+                                    <span>04</span>
+                                    <div class="small-12 large-6 columns nopad industry-page-list-imgbox">
+                                        <div class="industry-page-list-imgbox-imghold industry-page-list-imgbox-img-1">
+                                            <img src="https://acme.creoweb.tech/app/default/assets/images/Name-Software+-+Controls-+Style-Outline.png?v=1682363747"/>
+                                        </div>
+                                        <div class="industry-page-list-imgbox-imghold industry-page-list-imgbox-img-2">
+                                            <img src="https://acme.creoweb.tech/app/default/assets/images/7062b2c5dcdbe2ccb04861ec158b2d10.png?v=1682072157"/>
+                                        </div>
+                                    </div>
+                                    <div class="small-12 large-6 columns nopad industry-page-list-textbox">
+                                        <div class="small-12 columns nopad">
+                                            <div class="small-12 columns nopad industry-page-list-title">
+                                                Software &amp; Controls
+                                            </div>
+                                            <div class="small-12 columns nopad industry-page-list-text">
+                                                <p>Experience improved accuracy, refined management, operational transparency and higher product quality through software and control solutions that manage and monitor your processes reliably.</p>
+                                            </div>
+                                        </div>
+                                        <div class="small-12 columns nopad industry-page-list-btn">
+                                            <ul>
+                                                <li>
+                                                    <span class="btn-border-dashed-toblack btn-w-120" data-open="enquire-reveal">
+                                                       Enquire
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <a href="https://acme.creoweb.tech/solutions/software-and-controls-5" class="link-underline">
+                                                        View
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                                                        <li class="animation-element fade-in-up">
+                                <div class="small-12 columns nopad industry-page-list-box">
+                                    <span>05</span>
+                                    <div class="small-12 large-6 columns nopad industry-page-list-imgbox">
+                                        <div class="industry-page-list-imgbox-imghold industry-page-list-imgbox-img-1">
+                                            <img src="https://acme.creoweb.tech/app/default/assets/images/Name-Shelving+-+Racking-+Style-Outline.png?v=1682363747"/>
+                                        </div>
+                                        <div class="industry-page-list-imgbox-imghold industry-page-list-imgbox-img-2">
+                                            <img src="https://acme.creoweb.tech/app/default/assets/images/60ea99201573d022adcec021b0615fc2.png?v=1682072157"/>
+                                        </div>
+                                    </div>
+                                    <div class="small-12 large-6 columns nopad industry-page-list-textbox">
+                                        <div class="small-12 columns nopad">
+                                            <div class="small-12 columns nopad industry-page-list-title">
+                                                Shelving &amp; Racking
+                                            </div>
+                                            <div class="small-12 columns nopad industry-page-list-text">
+                                                <p>Shelving and racking systems let you make the most of your warehouse's storage space.&nbsp;</p>
+<p>Explore dependable and operationally effective solutions that can be tailored to your requirements.</p>
+                                            </div>
+                                        </div>
+                                        <div class="small-12 columns nopad industry-page-list-btn">
+                                            <ul>
+                                                <li>
+                                                    <span class="btn-border-dashed-toblack btn-w-120" data-open="enquire-reveal">
+                                                       Enquire
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <a href="https://acme.creoweb.tech/solutions/shelving-and-racking-6" class="link-underline">
+                                                        View
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                                                    </ul>
+                    </div>
+                </div>
+            </section>
+             <div class="reveal" id="enquire-reveal" data-reveal data-animation-in="fadeIn">
+	<button class="product-page-sticky-content-close" data-close aria-label="Close modal" type="button"></button>
+	<div class="product-page-sticky-title text-center">
+		For more info
+	</div>
+	
+	
+<div id="contact-form" data-ajax="https://acme.creoweb.tech/ajax/enquire/submit"  class="small-12 columns nopad form-style">
+	<input type="hidden" name="subject" value="::form::subject.enquire_form">
+	  <div class="small-12 columns nopad form-element">
+			<input required="true" type="text" name="name" data-validation="Name is required for this form">
+			<label for="name">Full name</label>
+	  </div>
+	  <div class="small-12 columns nopad form-element">
+			<input required="true" type="text" name="company" data-validation="::form::validate.company">
+			<label for="company">Company</label>
+	  </div>
+	  <div class="small-12 columns nopad form-element">
+			<input required="true" type="text" name="email" data-validation="Wrong email address format">
+			<label for="email">Email</label>
+	  </div>
+	  <div class="small-12 columns nopad form-element">
+			<textarea required="true" type="text" name="message" data-validation="Message is required for this form"></textarea>
+			<label for="message">Message</label>
+	  </div>
+	<div class="small-12 columns nopad text-center">
+		<button type="submit" class="btn-black">
+			 Contact us
+		</button>
+	</div>
+	 
+	 <div style="display:none;" class="form-element-success-text">
+		 ::form::message.success
+	 </div>
+</div>	
+</div>                   
+            <section class="section-30-150">
+	<div class="row">
+		<div class="small-12 large-8 columns nopad section-title-60 animation-element">
+			<span>Learn more</span>
+			<h2>
+				Explore how our solutions improve operations
+			</h2>
+		</div>
+		<div class="small-12 columns nopad about-us-page-section-list animation-list-js">
+			<ul>
+				<li class="animation-element fade-in-up" >
+										<div class="about-us-page-section-list-item">
+	<div class="solutions-inner-explore-subtitle">
+		Brochures 
+	</div>
+	<div class="solutions-inner-explore-links">
+									 <div class="solutions-inner-explore-link">
+				  <a href="https://acme.creoweb.tech/knowledge/brochures-5/acme_automation_solutions_brochure-2">
+										Acme Automation Solutions
+				  </a>
+			</div>
+					 <div class="solutions-inner-explore-link">
+				  <a href="https://acme.creoweb.tech/knowledge/brochures-5/acme_automation_solutions_retail_and_e_commerce-8">
+										Acme automation solutions for Retail &amp; E-commerce
+				  </a>
+			</div>
+					 <div class="solutions-inner-explore-link">
+				  <a href="https://acme.creoweb.tech/knowledge/brochures-5/acme_automation_solutions_food_and_beverage-7">
+										Acme Automation Solutions for the Food &amp; Beverage Industry
+				  </a>
+			</div>
+			</div>
+</div>					
+										<div class="about-us-page-section-list-item">
+	<div class="solutions-inner-explore-subtitle">
+		Whitepapers
+	</div>
+	<div class="solutions-inner-explore-links">
+							</div>
+</div>				</li>
+				<li class="animation-element fade-in-up" >
+										<div class="solutions-inner-explore-subtitle">
+	Buyer’s guide
+</div>
+<div class="solutions-inner-explore-links">
+			</div>				</li>
+				 <li class="animation-element fade-in-up" >
+					 					 <div class="solutions-inner-explore-subtitle">
+	Case studies
+</div>
+<div class="solutions-inner-explore-links">
+			</div>				 </li>
+				<li class="animation-element fade-in-up">
+										<div class="solutions-inner-explore-subtitle">
+	::psi::industries.footer.videos
+</div>
+<div class="solutions-inner-explore-links">
+			
+			<div class="solutions-inner-explore-link">
+			<a data-fancybox="" href="https://www.youtube.com/watch?v=oW5kmF60K1Q">
+				<span class="link-watch">Acme Box Handling Solutions</span>
+			</a>
+		</div>
+			<div class="solutions-inner-explore-link">
+			<a data-fancybox="" href="https://www.youtube.com/watch?v=oCVFo20VEks">
+				<span class="link-watch">Acme Cobot in action</span>
+			</a>
+		</div>
+			<div class="solutions-inner-explore-link">
+			<a data-fancybox="" href="https://www.youtube.com/watch?v=sab0WyprJXI">
+				<span class="link-watch">Acme Corporate Video: The Power To Amaze</span>
+			</a>
+		</div>
+	</div>
+<div class="about-us-page-section-list--btn animation-element fade-in-up anim-delay-300ms in-view">
+	<a class="btn-contact-white btn-contact-white-dark" href="https://acme.creoweb.tech/knowledge">
+		<span></span>
+		View all
+	</a>
+</div>				</li>
+			</ul>
+		</div>
+	</div>
+</section>       
+</main>
+
+<footer>
+   <div class="row">
+      
+      
+	<div class="small-12 columns nopad footer-top">
+		  <div class="small-12 medium-3 large-2 columns nopadleft footer-subtitle">
+			Contact
+		  </div>
+		  <div class="small-12 medium-8 large-9 columns nopad">
+				<div class="small-12 columns nopad footer-title">
+					 <h2>
+					 	How to reach us
+					 </h2>
+				</div>
+				<div class="small-12 columns nopad footer-email-social">
+					 <div class="footer-email-social-left">
+						  <div class="footer-email-social-email">
+								<a href="mailto:info@acme-world.com">
+									 Email: info@acme-world.com
+								</a>
+						  </div>
+						  <div class="footer-email-social-social">
+								<ul>
+									 <li>
+										  <a href="https://www.linkedin.com/company/acme-world/" target="_blank" rel="noreferrer noopener">
+												<img src="https://acme.creoweb.tech/app/default/assets/addons/default/np/site-theme/resources/img/footer-linkedin.svg?v=1682072157">
+										  </a>
+									 </li>
+									 <li>
+										  <a href="https://www.youtube.com/@acmegroup2810" target="_blank" rel="noreferrer noopener">
+												<img src="https://acme.creoweb.tech/app/default/assets/addons/default/np/site-theme/resources/img/footer-youtube.svg?v=1682072157">
+										  </a>
+									 </li>
+									 <li>
+										  <a href="https://vimeo.com/user110163978" target="_blank" rel="noreferrer noopener">
+												<img src="https://acme.creoweb.tech/app/default/assets/addons/default/np/site-theme/resources/img/footer-vimeo.svg?v=1682072157">
+										  </a>
+									 </li>
+								</ul>
+						  </div>
+					 </div>
+					 
+ <div id="newsletter-form" data-ajax="https://acme.creoweb.tech/ajax/newsletter/submit"  class="footer-email-social-right">
+	  <div class="footer-email-social-form">
+		  <input type="hidden" name="subject" value="::form::subject.newsletter_form">
+			<label for="footer-subscribe">Subscribe to our newsletter</label>
+			<div class="footer-email-social-form-element">
+				 <input required="true" name="email" id="footer-subscribe" type="text" placeholder="E-mail" data-validation="Wrong email address format">
+				 <button type="submit"></button>
+			</div>
+			
+			 <div style="display:none;" class="form-element-success-text">
+				 ::form::message.success
+			 </div>
+	  </div>
+ </div>				</div>
+		  </div>
+	 </div>      
+      <div class="small-12 medium-3 large-1 columns nopad footer-empty"></div>
+      
+                      <div class="small-12 columns nopad footer-mid">
+                    <div class="small-12 large-2 columns nopadleft footer-nav-title">
+                        <span>Products & Services</span>
+                    </div>
+                    <div class="small-12 medium-4 large-3 columns nopadleft footer-nav">
+                        <div class="footer-nav-title-media">Products & Services</div>
+                        <span>Solutions:</span>
+                        <ul>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/solutions">All solutions</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/solutions/pallet-handling-1">Pallet Handling</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/solutions/case-and-tote-handling-2">Case &amp; Tote Handling</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/solutions/picking-and-sortation-3">Picking &amp; Sortation</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/solutions/robotics-4">Robotics</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/solutions/software-and-controls-5">Software &amp; Controls</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/solutions/shelving-and-racking-6">Shelving &amp; Racking</a>
+                                </li>
+                                                    </ul>
+
+                        <span>Components:</span>
+                        <ul>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/components">All components</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/components/belting-24">Belting</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/components/case-asrs-13">Case AS/RS</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/components/pallet-asrs-6">Pallet AS/RS</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/components/racking-7">Racking</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/components/robotics-8">Robotics</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/components/sensors-27">Sensors</a>
+                                </li>
+                                                    </ul>
+                        
+                        <span>Services:</span>
+                        <ul>
+                            
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/services">Services</a>
+                                </li>
+                                                    </ul>
+                    </div>
+
+                    <div class="small-12 large-1 columns nopadleft footer-nav-title">
+                        <span>Industries</span>
+                    </div>
+                    <div class="small-12 medium-4 large-3 columns nopadleft footer-nav">
+                        <div class="footer-nav-title-media">Industries</div>
+                        <span>Distributor:</span>
+                        <ul>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/industries/manufacturing-construction-material-2">Construction Material</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/industries/manufacturing-consumer-goods-3">Consumer Goods</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/industries/manufacturing-electronics-4">E-Commerce</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/industries/manufacturing-food-beverage-5">Food &amp; Beverage</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/industries/manufacturing-chemicals-1">Oil &amp; Gas</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/industries/manufacturing-pharmaceuticals-6">Pharmaceuticals</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/industries/manufacturing-printing-packaging-7">Retail</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/industries/manufacturing-tires-9">Spare Parts</a>
+                                </li>
+                                                     
+                        </ul>
+                        <span>Manufacturer:</span>
+                        <ul>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/industries/manufacturing-chemicals-1">Chemicals</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/industries/manufacturing-construction-material-2">Construction Material</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/industries/manufacturing-consumer-goods-3">Consumer Goods</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/industries/manufacturing-electronics-4">Electronics</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/industries/manufacturing-food-beverage-5">Food &amp; Beverage</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/industries/manufacturing-pharmaceuticals-6">Pharmaceuticals</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/industries/manufacturing-printing-packaging-7">Printing &amp; Packaging</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/industries/manufacturing-tires-9">Tires</a>
+                                </li>
+                                                      
+                        </ul>
+                        <span>Service provider:</span>
+                        <ul>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/industries/service-provider-material-handling-airports-10">Material Handling &amp; Airports</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/industries/service-provider-third-party-logistics-11">Third-Party Logistics</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/industries/service-provider-utilities-12">Utilities</a>
+                                </li>
+                                                     
+                        </ul>
+                    </div>
+
+                    <div class="small-12 large-1 columns nopadleft footer-nav-title footer-empty"></div>
+                    <div class="small-12 medium-4 large-2 columns nopad footer-nav">
+                        <ul>
+                                                  </ul>
+                    </div>
+                </div>
+      
+      
+	<div class="small-12 columns nopad footer-bottom">
+		  <div class="small-12 medium-4 medium-offset-8 large-2 large-offset-10 columns nopadleft footer-copyright">
+				ACME©2023
+		  </div>
+	 
+		  <div class="footer-bottom-whatsapp">
+				<a href="#">
+					  <img src="https://acme.creoweb.tech/app/default/assets/addons/default/np/site-theme/resources/img/icon-whatsapp.svg?v=1682072157">
+				</a>
+		  </div>
+	 </div>
+
+      
+   </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/app/default/assets/public/app.js?v=1682363206"></script>
+
+</body>
+</html>

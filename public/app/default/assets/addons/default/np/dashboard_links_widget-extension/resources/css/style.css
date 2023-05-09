@@ -1,0 +1,37 @@
+.dashboard-links-wrap {
+    display:flex;
+    flex-wrap: wrap;
+
+}
+
+.btn.dashboard-link-widget {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.dashboard-link-widget {
+    background-color: #565656;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.dashboard-link-widget:hover {
+    background-color: #333;
+}
+
+.dashboard-link-widget .icon {
+    color: #ffffff;
+}
+
+.dashboard-link-widget__title {
+    display: block;
+    color: #ffffff;
+    padding-top: 5px;
+}

@@ -1,0 +1,1304 @@
+<!doctype html>
+
+<!--[if lt IE 7]>
+<html class="nojs ms lt_ie7" lang="en"><![endif]-->
+<!--[if IE 7]>
+<html class="nojs ms ie7" lang="en"><![endif]-->
+<!--[if IE 8]>
+<html class="nojs ms ie8" lang="en"><![endif]-->
+<!--[if gt IE 8]>
+<html class="nojs ms" lang="en"><![endif]-->
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- Locale -->
+<meta http-equiv="Content-Language" content="en">
+
+<!-- Meta Tags -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="generator" content="PyroCMS"/>
+<meta name="description" content=""/>
+
+
+
+<title>
+    Acme World
+    &#8250;
+    
+        Robotics</title>
+
+<style>
+  * {
+      font-variant-ligatures: none;
+    }
+</style>
+
+<script type="text/javascript">
+
+    const APPLICATION_URL = "https://acme.creoweb.tech/solutions/robotics-4";
+    const APPLICATION_REFERENCE = "default";
+    const APPLICATION_DOMAIN = "acme.creoweb.tech";
+
+    const CSRF_TOKEN = "ep9e5g4WrUo4DuL1RoaMPCPB8GypIRB29tteDPQc";
+    const APP_DEBUG = "";
+    const APP_URL = "https://acme.creoweb.tech";
+    const REQUEST_ROOT = "https://acme.creoweb.tech";
+    const REQUEST_ROOT_PATH = "";
+    const TIMEZONE = "UTC";
+    const LOCALE = "en";
+    
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+<link media="all" type="text/css" rel="stylesheet" href="/app/default/assets/public/themes.css?v=1682363206">
+
+
+    
+
+</head>
+
+<body>
+
+<header>
+   <div class="header-top-line-blue"></div>
+   <div class="row">
+             <div class="small-6 large-1 columns nopadleft header-logo">
+           <a href="/">
+               <img  alt="Acme logo" src="/app/default/assets/addons/default/np/site-theme/resources/img/icon-main-logo.svg?v=1682072157">
+           </a>
+       </div>
+      
+           <div class="small-5 columns nopadleft breadcrumbs-pc-hold">
+                             <div class="small-12 columns nopad breadcrumbs-pc">
+                   <a href="https://acme.creoweb.tech/solutions">
+                       Products & Services
+                   </a>
+                   /
+                   Robotics
+               </div>
+                           </div>
+           
+       <div class="small-6 columns nopad header-nav-hold">
+           <div class="header-nav">
+               <ul>
+    <li class="has-children">
+        <span>
+            Industries
+        </span> 
+        <div class="menu-nav-subnav">
+            
+            <div class="menu-nav-subnav-item">
+                <span>Distributor:</span>
+                <ul>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-construction-material-2">Construction Material</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-consumer-goods-3">Consumer Goods</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-electronics-4">E-Commerce</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-food-beverage-5">Food &amp; Beverage</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-chemicals-1">Oil &amp; Gas</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-pharmaceuticals-6">Pharmaceuticals</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-printing-packaging-7">Retail</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-tires-9">Spare Parts</a>
+                        </li>
+                                             
+                </ul>
+            </div>
+            <div class="menu-nav-subnav-item">
+                <span>Manufacturer:</span>
+                <ul>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-chemicals-1">Chemicals</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-construction-material-2">Construction Material</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-consumer-goods-3">Consumer Goods</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-electronics-4">Electronics</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-food-beverage-5">Food &amp; Beverage</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-pharmaceuticals-6">Pharmaceuticals</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-printing-packaging-7">Printing &amp; Packaging</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-tires-9">Tires</a>
+                        </li>
+                                              
+                </ul>
+            </div>
+            <div class="menu-nav-subnav-item">
+                <span>Service provider:</span>
+                <ul>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/service-provider-material-handling-airports-10">Material Handling &amp; Airports</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/service-provider-third-party-logistics-11">Third-Party Logistics</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/service-provider-utilities-12">Utilities</a>
+                        </li>
+                                             
+                </ul>
+            </div>
+            
+        </div>
+    </li>
+    <li class="has-children">
+        <span>
+            Products & Services
+        </span>
+        <div class="menu-nav-subnav">
+            <div class="menu-nav-subnav-item">
+                <span>
+                   Solutions:
+                </span>
+                <ul>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/solutions">All solutions (06)</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/solutions/pallet-handling-1">Pallet Handling</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/solutions/case-and-tote-handling-2">Case &amp; Tote Handling</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/solutions/picking-and-sortation-3">Picking &amp; Sortation</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/solutions/robotics-4">Robotics</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/solutions/software-and-controls-5">Software &amp; Controls</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/solutions/shelving-and-racking-6">Shelving &amp; Racking</a>
+                        </li>
+                                                              
+                </ul>
+            </div>
+            <div class="menu-nav-subnav-item">
+                <span>
+                    Components:
+                </span>
+                <ul>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/components">All components (36)</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/components/belting-24">Belting</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/components/case-asrs-13">Case AS/RS</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/components/pallet-asrs-6">Pallet AS/RS</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/components/racking-7">Racking</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/components/robotics-8">Robotics</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/components/sensors-27">Sensors</a>
+                        </li>
+                        
+                </ul>
+            </div>
+            <div class="menu-nav-subnav-item">
+                <ul>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/services">Services</a>
+                        </li>
+                      
+                </ul>
+            </div>
+        </div>
+    </li>
+    <li class="has-children">
+        <span>
+            World of Acme
+        </span>
+        <div class="menu-nav-subnav">
+               <div class="menu-nav-subnav-item">
+               <ul>
+                                    <li>
+                        <a href="https://acme.creoweb.tech/about-us">About us</a>
+                   </li>
+                                   <li>
+                        <a href="https://acme.creoweb.tech/knowledge">Knowledge centre</a>
+                   </li>
+                                   <li>
+                        <a href="https://acme.creoweb.tech/news">News</a>
+                   </li>
+                                   <li>
+                        <a href="https://acme.creoweb.tech/contact">Contact</a>
+                   </li>
+                                   <li>
+                        <a href="https://acme.creoweb.tech/careers">Careers</a>
+                   </li>
+                              </ul>
+            </div>
+        </div>
+    </li>
+</ul>
+           </div>
+           <div class="header-right">
+               <div class="header-search">
+                   <a href="https://acme.creoweb.tech/search"></a>
+               </div>
+               <div class="header-lang">
+                       <span>
+        EN
+    </span>
+    <ul>
+                                                    <li>
+                <a href="/de">DE</a>
+            </li>
+                                            <li>
+                <a href="/es">ES</a>
+            </li>
+                                            <li>
+                <a href="/ar">AR</a>
+            </li>
+                        </ul>
+
+               </div>
+               <div class="hamburger"></div>
+           </div>
+       </div>
+   </div>
+
+   <div class="mobile-menu-hold">
+      <div class="mobile-menu-hold-box">
+         <div class="mobile-menu-nav">
+            <ul>
+    <li class="has-children">
+        <span>
+            Industries
+        </span> 
+        <div class="menu-nav-subnav">
+            
+            <div class="menu-nav-subnav-item">
+                <span>Distributor:</span>
+                <ul>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-construction-material-2">Construction Material</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-consumer-goods-3">Consumer Goods</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-electronics-4">E-Commerce</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-food-beverage-5">Food &amp; Beverage</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-chemicals-1">Oil &amp; Gas</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-pharmaceuticals-6">Pharmaceuticals</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-printing-packaging-7">Retail</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-tires-9">Spare Parts</a>
+                        </li>
+                                             
+                </ul>
+            </div>
+            <div class="menu-nav-subnav-item">
+                <span>Manufacturer:</span>
+                <ul>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-chemicals-1">Chemicals</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-construction-material-2">Construction Material</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-consumer-goods-3">Consumer Goods</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-electronics-4">Electronics</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-food-beverage-5">Food &amp; Beverage</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-pharmaceuticals-6">Pharmaceuticals</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-printing-packaging-7">Printing &amp; Packaging</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/manufacturing-tires-9">Tires</a>
+                        </li>
+                                              
+                </ul>
+            </div>
+            <div class="menu-nav-subnav-item">
+                <span>Service provider:</span>
+                <ul>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/service-provider-material-handling-airports-10">Material Handling &amp; Airports</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/service-provider-third-party-logistics-11">Third-Party Logistics</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/industries/service-provider-utilities-12">Utilities</a>
+                        </li>
+                                             
+                </ul>
+            </div>
+            
+        </div>
+    </li>
+    <li class="has-children">
+        <span>
+            Products & Services
+        </span>
+        <div class="menu-nav-subnav">
+            <div class="menu-nav-subnav-item">
+                <span>
+                   Solutions:
+                </span>
+                <ul>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/solutions">All solutions (06)</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/solutions/pallet-handling-1">Pallet Handling</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/solutions/case-and-tote-handling-2">Case &amp; Tote Handling</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/solutions/picking-and-sortation-3">Picking &amp; Sortation</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/solutions/robotics-4">Robotics</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/solutions/software-and-controls-5">Software &amp; Controls</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/solutions/shelving-and-racking-6">Shelving &amp; Racking</a>
+                        </li>
+                                                              
+                </ul>
+            </div>
+            <div class="menu-nav-subnav-item">
+                <span>
+                    Components:
+                </span>
+                <ul>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/components">All components (36)</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/components/belting-24">Belting</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/components/case-asrs-13">Case AS/RS</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/components/pallet-asrs-6">Pallet AS/RS</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/components/racking-7">Racking</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/components/robotics-8">Robotics</a>
+                        </li>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/components/sensors-27">Sensors</a>
+                        </li>
+                        
+                </ul>
+            </div>
+            <div class="menu-nav-subnav-item">
+                <ul>
+                                            <li>
+                            <a href="https://acme.creoweb.tech/services">Services</a>
+                        </li>
+                      
+                </ul>
+            </div>
+        </div>
+    </li>
+    <li class="has-children">
+        <span>
+            World of Acme
+        </span>
+        <div class="menu-nav-subnav">
+               <div class="menu-nav-subnav-item">
+               <ul>
+                                    <li>
+                        <a href="https://acme.creoweb.tech/about-us">About us</a>
+                   </li>
+                                   <li>
+                        <a href="https://acme.creoweb.tech/knowledge">Knowledge centre</a>
+                   </li>
+                                   <li>
+                        <a href="https://acme.creoweb.tech/news">News</a>
+                   </li>
+                                   <li>
+                        <a href="https://acme.creoweb.tech/contact">Contact</a>
+                   </li>
+                                   <li>
+                        <a href="https://acme.creoweb.tech/careers">Careers</a>
+                   </li>
+                              </ul>
+            </div>
+        </div>
+    </li>
+</ul>
+         </div>
+         <div class="mobile-menu-lang">
+            <div class="header-lang header-lang-mobile">
+                   <span>
+        EN
+    </span>
+    <ul>
+                                                    <li>
+                <a href="/de">DE</a>
+            </li>
+                                            <li>
+                <a href="/es">ES</a>
+            </li>
+                                            <li>
+                <a href="/ar">AR</a>
+            </li>
+                        </ul>
+
+            </div>
+         </div>
+      </div>
+   </div>
+</header>
+<main>
+    <section id="messages">
+
+    <!-- Success Messages -->
+    
+    <!-- Informational Messages -->
+    
+
+    <!-- Warning Messages -->
+    
+
+    <!-- Error Messages -->
+    
+</section>
+                <div class="breadcrumbs-media-hold">
+                <div class="row">
+                    <div class="small-12 columns nopad breadcrumbs-media">
+                                                   <a href="https://acme.creoweb.tech/solutions">
+                                Products & Services
+                            </a>
+                            /
+                            Robotics
+                                            </div>
+                </div>
+            </div>
+            
+                        <section class="solutions-inner-intro-section animation-element in-view">
+		 <div class="row">
+			  <div class="small-12 medium-6 large-5 columns nopad section-title-84 animation-element fade-in-up in-view">
+					<h1>
+						 Robotics
+					</h1>
+			  </div>
+			  <div class="small-12 columns nopad"></div>
+			  <div class="small-12 columns nopad solutions-inner-intro-section-img text-center">
+					<div class="solutions-inner-intro-section-img-box">
+						 <img class="solutions-inner-intro-section-img-hover" src="https://acme.creoweb.tech/app/default/assets/images/851c12839303c6501cb2a0ab0d260001.png?v=1682072157" alt="">
+						 <img class="solutions-inner-intro-section-img-static" src="https://acme.creoweb.tech/app/default/assets/images/6badae67e43a4436477fba0b7ff5bf63.png?v=1682072157" alt="">
+					</div>
+			  
+<script src="/app/default/assets/addons/default/np/site-theme/resources/js/animations.js?v=1682072157"></script>
+
+	<div class="small-12 columns nopad components-page-list animation-element">
+		<ul>
+									<li>
+										<div class="text-center">
+						<div class="animation-element fade-in-up">
+							<div id="anim-Higher_Accuracy" class="lottie-anim-svg"></div>
+						</div>
+						<div class="animation-element fade-in-up anim-delay-100ms">
+							Higher Accuracy
+						</div>
+					</div>
+				</li>
+				
+				<script>
+						var Higher_Accuracy = {"v":"4.8.0","meta":{"g":"LottieFiles AE 3.1.1","a":"","k":"","d":"","tc":""},"fr":60,"ip":0,"op":121,"w":200,"h":122,"nm":"Higher Accuracy","ddd":0,"assets":[],"layers":[{"ddd":0,"ind":1,"ty":4,"nm":"Rectangle 168","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":180,"ix":10},"p":{"a":0,"k":[95.3,61.25,0],"ix":2},"a":{"a":0,"k":[0,0,0],"ix":1},"s":{"a":0,"k":[99,99,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ty":"rc","d":1,"s":{"a":0,"k":[40,40],"ix":2},"p":{"a":0,"k":[0,0],"ix":3},"r":{"a":0,"k":55,"ix":4},"nm":"Rectangle Path 1","mn":"ADBE Vector Shape - Rect","hd":false},{"ty":"st","c":{"a":0,"k":[0,0,0,1],"ix":3},"o":{"a":0,"k":100,"ix":4},"w":{"a":0,"k":1,"ix":5},"lc":1,"lj":1,"ml":4,"bm":0,"nm":"Stroke 1","mn":"ADBE Vector Graphic - Stroke","hd":false},{"ty":"tr","p":{"a":0,"k":[0,0],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[300,300],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Rectangle 168","np":2,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false},{"ty":"tm","s":{"a":1,"k":[{"i":{"x":[0.58],"y":[1]},"o":{"x":[0.42],"y":[0]},"t":0,"s":[0]},{"t":120,"s":[100]}],"ix":1},"e":{"a":0,"k":0,"ix":2},"o":{"a":0,"k":0,"ix":3},"m":1,"ix":2,"nm":"Trim Paths 1","mn":"ADBE Vector Filter - Trim","hd":false}],"ip":0,"op":121,"st":0,"bm":0},{"ddd":0,"ind":2,"ty":4,"nm":"Ellipse 39","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":90,"ix":10},"p":{"a":0,"k":[95.3,61.25,0],"ix":2},"a":{"a":0,"k":[0,0,0],"ix":1},"s":{"a":0,"k":[99,99,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"d":1,"ty":"el","s":{"a":0,"k":[6,6],"ix":2},"p":{"a":0,"k":[0,0],"ix":3},"nm":"Ellipse Path 1","mn":"ADBE Vector Shape - Ellipse","hd":false},{"ty":"st","c":{"a":0,"k":[0,0,0,1],"ix":3},"o":{"a":0,"k":100,"ix":4},"w":{"a":0,"k":1,"ix":5},"lc":1,"lj":1,"ml":4,"bm":0,"nm":"Stroke 1","mn":"ADBE Vector Graphic - Stroke","hd":false},{"ty":"tr","p":{"a":0,"k":[0,0],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[300,300],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Ellipse 39","np":2,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false},{"ty":"tm","s":{"a":1,"k":[{"i":{"x":[0.58],"y":[1]},"o":{"x":[0.42],"y":[0]},"t":30,"s":[0]},{"t":120,"s":[100]}],"ix":1},"e":{"a":0,"k":0,"ix":2},"o":{"a":0,"k":0,"ix":3},"m":1,"ix":2,"nm":"Trim Paths 1","mn":"ADBE Vector Filter - Trim","hd":false}],"ip":0,"op":121,"st":0,"bm":0},{"ddd":0,"ind":3,"ty":4,"nm":"Ellipse 38","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":0,"k":[95.3,61.25,0],"ix":2},"a":{"a":0,"k":[0,0,0],"ix":1},"s":{"a":0,"k":[99,99,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"d":1,"ty":"el","s":{"a":0,"k":[24,24],"ix":2},"p":{"a":0,"k":[0,0],"ix":3},"nm":"Ellipse Path 1","mn":"ADBE Vector Shape - Ellipse","hd":false},{"ty":"st","c":{"a":0,"k":[0,0,0,1],"ix":3},"o":{"a":0,"k":100,"ix":4},"w":{"a":0,"k":1,"ix":5},"lc":1,"lj":1,"ml":4,"bm":0,"nm":"Stroke 1","mn":"ADBE Vector Graphic - Stroke","hd":false},{"ty":"tr","p":{"a":0,"k":[0,0],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[300,300],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Ellipse 38","np":2,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false},{"ty":"tm","s":{"a":1,"k":[{"i":{"x":[0.58],"y":[1]},"o":{"x":[0.42],"y":[0]},"t":0,"s":[0]},{"t":120,"s":[100]}],"ix":1},"e":{"a":0,"k":0,"ix":2},"o":{"a":0,"k":0,"ix":3},"m":1,"ix":2,"nm":"Trim Paths 1","mn":"ADBE Vector Filter - Trim","hd":false}],"ip":0,"op":121,"st":0,"bm":0},{"ddd":0,"ind":4,"ty":4,"nm":"Frame 1309","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":90,"ix":10},"p":{"a":0,"k":[95.3,61.25,0],"ix":2},"a":{"a":0,"k":[0,0,0],"ix":1},"s":{"a":0,"k":[99,99,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ty":"rc","d":1,"s":{"a":0,"k":[40,40],"ix":2},"p":{"a":0,"k":[0,0],"ix":3},"r":{"a":0,"k":0,"ix":4},"nm":"Rectangle Path 1","mn":"ADBE Vector Shape - Rect","hd":false},{"ty":"tr","p":{"a":0,"k":[0,0],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[300,300],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Frame 1309","np":1,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false},{"ty":"tm","s":{"a":1,"k":[{"i":{"x":[0.58],"y":[1]},"o":{"x":[0.42],"y":[0]},"t":0,"s":[0]},{"t":120,"s":[100]}],"ix":1},"e":{"a":0,"k":0,"ix":2},"o":{"a":0,"k":0,"ix":3},"m":1,"ix":2,"nm":"Trim Paths 1","mn":"ADBE Vector Filter - Trim","hd":false}],"ip":0,"op":121,"st":0,"bm":0}],"markers":[]}
+						var params_Higher_Accuracy = {
+							container: document.getElementById('anim-Higher_Accuracy'),
+							renderer: 'svg',
+							loop: true,
+							autoplay: true,
+							animationData: Higher_Accuracy
+						};
+						var anim_Higher_Accuracy;
+						anim_Higher_Accuracy = lottie.loadAnimation(params_Higher_Accuracy);
+					
+				</script>
+				
+												<li>
+										<div class="text-center">
+						<div class="animation-element fade-in-up">
+							<div id="anim-Higher_Product_Safety" class="lottie-anim-svg"></div>
+						</div>
+						<div class="animation-element fade-in-up anim-delay-100ms">
+							Higher Product Safety
+						</div>
+					</div>
+				</li>
+				
+				<script>
+						var Higher_Product_Safety = {"v":"4.8.0","meta":{"g":"LottieFiles AE 3.1.1","a":"","k":"","d":"","tc":""},"fr":60,"ip":0,"op":121,"w":200,"h":122,"nm":"Higher Product Safety","ddd":0,"assets":[],"layers":[{"ddd":0,"ind":1,"ty":4,"nm":"Vector 3","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":0,"k":[100,56,0],"ix":2},"a":{"a":0,"k":[0,0,0],"ix":1},"s":{"a":0,"k":[100,100,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,0],[0,0],[0,0]],"o":[[0,0],[0,0],[0,0]],"v":[[4,-3.5],[-0.5,3.5],[-4,0.269]],"c":false},"ix":2},"nm":"Path 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"st","c":{"a":0,"k":[0,0,0,1],"ix":3},"o":{"a":0,"k":100,"ix":4},"w":{"a":0,"k":1,"ix":5},"lc":1,"lj":1,"ml":4,"bm":0,"nm":"Stroke 1","mn":"ADBE Vector Graphic - Stroke","hd":false},{"ty":"tr","p":{"a":0,"k":[0,0],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[300,300],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Vector 3","np":2,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false},{"ty":"tm","s":{"a":1,"k":[{"i":{"x":[0.58],"y":[1]},"o":{"x":[0.42],"y":[0]},"t":77,"s":[100]},{"t":120,"s":[0]}],"ix":1},"e":{"a":1,"k":[{"i":{"x":[0.58],"y":[1]},"o":{"x":[0.42],"y":[0]},"t":77,"s":[100]},{"t":120,"s":[100]}],"ix":2},"o":{"a":0,"k":0,"ix":3},"m":1,"ix":2,"nm":"Trim Paths 1","mn":"ADBE Vector Filter - Trim","hd":false}],"ip":0,"op":121,"st":0,"bm":0},{"ddd":0,"ind":2,"ty":4,"nm":"Rectangle 187","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":0,"k":[99.632,60.5,0],"ix":2},"a":{"a":0,"k":[0,0,0],"ix":1},"s":{"a":0,"k":[100,100,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,0],[0,0],[0,0],[-6.539,-6.898],[0,0],[-4.732,5.213],[0,0]],"o":[[0,0],[0,0],[0,0],[6.697,7.065],[0,0],[5.128,-5.648],[0,0]],"v":[[0,-19.667],[-17,-14.783],[-17,-14.677],[-10.417,12.471],[0,19.583],[10.917,11.971],[17,-14.783]],"c":true},"ix":2},"nm":"Path 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"st","c":{"a":0,"k":[0,0,0,1],"ix":3},"o":{"a":0,"k":100,"ix":4},"w":{"a":0,"k":1,"ix":5},"lc":1,"lj":1,"ml":4,"bm":0,"nm":"Stroke 1","mn":"ADBE Vector Graphic - Stroke","hd":false},{"ty":"tr","p":{"a":0,"k":[0.368,0.032],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[300,300],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Rectangle 187","np":2,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false},{"ty":"tm","s":{"a":1,"k":[{"i":{"x":[0.58],"y":[1]},"o":{"x":[0.42],"y":[0]},"t":0,"s":[0]},{"t":120,"s":[100]}],"ix":1},"e":{"a":0,"k":0,"ix":2},"o":{"a":0,"k":0,"ix":3},"m":1,"ix":2,"nm":"Trim Paths 1","mn":"ADBE Vector Filter - Trim","hd":false}],"ip":0,"op":121,"st":0,"bm":0}],"markers":[]}
+						var params_Higher_Product_Safety = {
+							container: document.getElementById('anim-Higher_Product_Safety'),
+							renderer: 'svg',
+							loop: true,
+							autoplay: true,
+							animationData: Higher_Product_Safety
+						};
+						var anim_Higher_Product_Safety;
+						anim_Higher_Product_Safety = lottie.loadAnimation(params_Higher_Product_Safety);
+					
+				</script>
+				
+												<li>
+										<div class="text-center">
+						<div class="animation-element fade-in-up">
+							<div id="anim-Increased_Productivity" class="lottie-anim-svg"></div>
+						</div>
+						<div class="animation-element fade-in-up anim-delay-100ms">
+							Increased Productivity
+						</div>
+					</div>
+				</li>
+				
+				<script>
+						var Increased_Productivity = {"v":"4.8.0","meta":{"g":"LottieFiles AE 3.1.1","a":"","k":"","d":"","tc":""},"fr":60,"ip":0,"op":121,"w":200,"h":122,"nm":"Increased Productivity","ddd":0,"assets":[],"layers":[{"ddd":0,"ind":1,"ty":4,"nm":"Rectangle 192","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":180,"ix":10},"p":{"a":0,"k":[140,61,0],"ix":2},"a":{"a":0,"k":[0,0,0],"ix":1},"s":{"a":0,"k":[100,99,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ty":"rc","d":1,"s":{"a":0,"k":[10,40],"ix":2},"p":{"a":0,"k":[0,0],"ix":3},"r":{"a":0,"k":0,"ix":4},"nm":"Rectangle Path 1","mn":"ADBE Vector Shape - Rect","hd":false},{"ty":"st","c":{"a":0,"k":[0,0,0,1],"ix":3},"o":{"a":0,"k":100,"ix":4},"w":{"a":0,"k":1,"ix":5},"lc":1,"lj":1,"ml":4,"bm":0,"nm":"Stroke 1","mn":"ADBE Vector Graphic - Stroke","hd":false},{"ty":"tr","p":{"a":0,"k":[0,0],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[300,300],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Rectangle 192","np":2,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false},{"ty":"tm","s":{"a":1,"k":[{"i":{"x":[0.58],"y":[1]},"o":{"x":[0.42],"y":[0]},"t":0,"s":[0]},{"t":120,"s":[100]}],"ix":1},"e":{"a":0,"k":0,"ix":2},"o":{"a":0,"k":0,"ix":3},"m":1,"ix":2,"nm":"Trim Paths 1","mn":"ADBE Vector Filter - Trim","hd":false}],"ip":0,"op":121,"st":0,"bm":0},{"ddd":0,"ind":2,"ty":4,"nm":"Rectangle 193","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":180,"ix":10},"p":{"a":0,"k":[50,105.5,0],"ix":2},"a":{"a":0,"k":[0,0,0],"ix":1},"s":{"a":0,"k":[100,100,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ty":"rc","d":1,"s":{"a":0,"k":[10,10],"ix":2},"p":{"a":0,"k":[0,0],"ix":3},"r":{"a":0,"k":0,"ix":4},"nm":"Rectangle Path 1","mn":"ADBE Vector Shape - Rect","hd":false},{"ty":"st","c":{"a":0,"k":[0,0,0,1],"ix":3},"o":{"a":0,"k":100,"ix":4},"w":{"a":0,"k":1,"ix":5},"lc":1,"lj":1,"ml":4,"bm":0,"nm":"Stroke 1","mn":"ADBE Vector Graphic - Stroke","hd":false},{"ty":"tr","p":{"a":0,"k":[0,0],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[300,300],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Rectangle 193","np":2,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false},{"ty":"tm","s":{"a":1,"k":[{"i":{"x":[0.58],"y":[1]},"o":{"x":[0.42],"y":[0]},"t":0,"s":[0]},{"t":120,"s":[100]}],"ix":1},"e":{"a":0,"k":0,"ix":2},"o":{"a":0,"k":0,"ix":3},"m":1,"ix":2,"nm":"Trim Paths 1","mn":"ADBE Vector Filter - Trim","hd":false}],"ip":0,"op":121,"st":0,"bm":0},{"ddd":0,"ind":3,"ty":4,"nm":"Rectangle 168","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":0,"k":[95,90.5,0],"ix":2},"a":{"a":0,"k":[0,0,0],"ix":1},"s":{"a":0,"k":[100,100,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ty":"rc","d":1,"s":{"a":0,"k":[10,20],"ix":2},"p":{"a":0,"k":[0,0],"ix":3},"r":{"a":0,"k":0,"ix":4},"nm":"Rectangle Path 1","mn":"ADBE Vector Shape - Rect","hd":false},{"ty":"st","c":{"a":0,"k":[0,0,0,1],"ix":3},"o":{"a":0,"k":100,"ix":4},"w":{"a":0,"k":1,"ix":5},"lc":1,"lj":1,"ml":4,"bm":0,"nm":"Stroke 1","mn":"ADBE Vector Graphic - Stroke","hd":false},{"ty":"tr","p":{"a":0,"k":[0,0],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[300,300],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Rectangle 168","np":2,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false},{"ty":"tm","s":{"a":1,"k":[{"i":{"x":[0.58],"y":[1]},"o":{"x":[0.42],"y":[0]},"t":0,"s":[0]},{"t":120,"s":[100]}],"ix":1},"e":{"a":0,"k":0,"ix":2},"o":{"a":0,"k":0,"ix":3},"m":1,"ix":2,"nm":"Trim Paths 1","mn":"ADBE Vector Filter - Trim","hd":false}],"ip":0,"op":121,"st":0,"bm":0}],"markers":[]}
+						var params_Increased_Productivity = {
+							container: document.getElementById('anim-Increased_Productivity'),
+							renderer: 'svg',
+							loop: true,
+							autoplay: true,
+							animationData: Increased_Productivity
+						};
+						var anim_Increased_Productivity;
+						anim_Increased_Productivity = lottie.loadAnimation(params_Increased_Productivity);
+					
+				</script>
+				
+												<li>
+										<div class="text-center">
+						<div class="animation-element fade-in-up">
+							<div id="anim-Increased_Savings" class="lottie-anim-svg"></div>
+						</div>
+						<div class="animation-element fade-in-up anim-delay-100ms">
+							Increased Savings
+						</div>
+					</div>
+				</li>
+				
+				<script>
+						var Increased_Savings = {"v":"4.8.0","meta":{"g":"LottieFiles AE 3.1.1","a":"","k":"","d":"","tc":""},"fr":60,"ip":0,"op":121,"w":200,"h":122,"nm":"Increased Savings","ddd":0,"assets":[],"layers":[{"ddd":0,"ind":1,"ty":4,"nm":"Rectangle 196","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":0,"k":[86.5,74,0],"ix":2},"a":{"a":0,"k":[0,0,0],"ix":1},"s":{"a":0,"k":[100,100,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,0],[0,0],[0,0],[0,0],[0,0]],"o":[[0,0],[0,0],[0,0],[0,0],[0,0]],"v":[[-16.5,-12],[-19.5,-12],[-19.5,12],[19.5,12],[19.5,8.5]],"c":false},"ix":2},"nm":"Path 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"st","c":{"a":0,"k":[0,0,0,1],"ix":3},"o":{"a":0,"k":100,"ix":4},"w":{"a":0,"k":1,"ix":5},"lc":1,"lj":1,"ml":4,"bm":0,"nm":"Stroke 1","mn":"ADBE Vector Graphic - Stroke","hd":false},{"ty":"tr","p":{"a":0,"k":[0,0],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[300,300],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Rectangle 195","np":2,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false},{"ty":"tm","s":{"a":1,"k":[{"i":{"x":[0.58],"y":[1]},"o":{"x":[0.42],"y":[0]},"t":0,"s":[0]},{"t":120,"s":[100]}],"ix":1},"e":{"a":0,"k":0,"ix":2},"o":{"a":0,"k":0,"ix":3},"m":1,"ix":2,"nm":"Trim Paths 1","mn":"ADBE Vector Filter - Trim","hd":false}],"ip":0,"op":121,"st":0,"bm":0},{"ddd":0,"ind":2,"ty":4,"nm":"Rectangle 195","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":0,"k":[94.5,65,0],"ix":2},"a":{"a":0,"k":[0,0,0],"ix":1},"s":{"a":0,"k":[100,100,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,0],[0,0],[0,0],[0,0],[0,0]],"o":[[0,0],[0,0],[0,0],[0,0],[0,0]],"v":[[-15.5,-12],[-19.5,-12],[-19.5,12],[19.5,12],[19.5,8.68]],"c":false},"ix":2},"nm":"Path 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"st","c":{"a":0,"k":[0,0,0,1],"ix":3},"o":{"a":0,"k":100,"ix":4},"w":{"a":0,"k":1,"ix":5},"lc":1,"lj":1,"ml":4,"bm":0,"nm":"Stroke 1","mn":"ADBE Vector Graphic - Stroke","hd":false},{"ty":"tr","p":{"a":0,"k":[0,0],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[300,300],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Rectangle 194","np":2,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false},{"ty":"tm","s":{"a":1,"k":[{"i":{"x":[0.58],"y":[1]},"o":{"x":[0.42],"y":[0]},"t":29,"s":[0]},{"t":120,"s":[100]}],"ix":1},"e":{"a":0,"k":0,"ix":2},"o":{"a":0,"k":0,"ix":3},"m":1,"ix":2,"nm":"Trim Paths 1","mn":"ADBE Vector Filter - Trim","hd":false}],"ip":0,"op":121,"st":0,"bm":0},{"ddd":0,"ind":3,"ty":4,"nm":"Ellipse 39","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":0,"k":[106,53,0],"ix":2},"a":{"a":0,"k":[0,0,0],"ix":1},"s":{"a":0,"k":[100,100,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"d":1,"ty":"el","s":{"a":0,"k":[8,8],"ix":2},"p":{"a":0,"k":[0,0],"ix":3},"nm":"Ellipse Path 1","mn":"ADBE Vector Shape - Ellipse","hd":false},{"ty":"st","c":{"a":0,"k":[0,0,0,1],"ix":3},"o":{"a":0,"k":100,"ix":4},"w":{"a":0,"k":1,"ix":5},"lc":1,"lj":1,"ml":4,"bm":0,"nm":"Stroke 1","mn":"ADBE Vector Graphic - Stroke","hd":false},{"ty":"tr","p":{"a":0,"k":[0,0],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[300,300],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Ellipse 39","np":2,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false},{"ty":"tm","s":{"a":1,"k":[{"i":{"x":[0.58],"y":[1]},"o":{"x":[0.42],"y":[0]},"t":0,"s":[0]},{"t":120,"s":[100]}],"ix":1},"e":{"a":0,"k":0,"ix":2},"o":{"a":0,"k":0,"ix":3},"m":1,"ix":2,"nm":"Trim Paths 1","mn":"ADBE Vector Filter - Trim","hd":false}],"ip":0,"op":121,"st":0,"bm":0},{"ddd":0,"ind":4,"ty":4,"nm":"Rectangle 194","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":0,"k":[106,54.5,0],"ix":2},"a":{"a":0,"k":[0,0,0],"ix":1},"s":{"a":0,"k":[100,100,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ty":"rc","d":1,"s":{"a":0,"k":[40,25],"ix":2},"p":{"a":0,"k":[0,0],"ix":3},"r":{"a":0,"k":0,"ix":4},"nm":"Rectangle Path 1","mn":"ADBE Vector Shape - Rect","hd":false},{"ty":"st","c":{"a":0,"k":[0,0,0,1],"ix":3},"o":{"a":0,"k":100,"ix":4},"w":{"a":0,"k":1,"ix":5},"lc":1,"lj":1,"ml":4,"bm":0,"nm":"Stroke 1","mn":"ADBE Vector Graphic - Stroke","hd":false},{"ty":"tr","p":{"a":0,"k":[0,0],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[300,300],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Rectangle 194","np":2,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false},{"ty":"tm","s":{"a":1,"k":[{"i":{"x":[0.58],"y":[1]},"o":{"x":[0.42],"y":[0]},"t":0,"s":[0]},{"t":120,"s":[100]}],"ix":1},"e":{"a":0,"k":0,"ix":2},"o":{"a":0,"k":0,"ix":3},"m":1,"ix":2,"nm":"Trim Paths 1","mn":"ADBE Vector Filter - Trim","hd":false}],"ip":0,"op":121,"st":0,"bm":0},{"ddd":0,"ind":5,"ty":4,"nm":"Frame 1308","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":0,"k":[97,63.5,0],"ix":2},"a":{"a":0,"k":[0,0,0],"ix":1},"s":{"a":0,"k":[100,100,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ty":"rc","d":1,"s":{"a":0,"k":[46,31],"ix":2},"p":{"a":0,"k":[0,0],"ix":3},"r":{"a":0,"k":0,"ix":4},"nm":"Rectangle Path 1","mn":"ADBE Vector Shape - Rect","hd":false},{"ty":"tr","p":{"a":0,"k":[0,0],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[300,300],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Frame 1308","np":1,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false},{"ty":"tm","s":{"a":0,"k":0,"ix":1},"e":{"a":0,"k":0,"ix":2},"o":{"a":0,"k":0,"ix":3},"m":1,"ix":2,"nm":"Trim Paths 1","mn":"ADBE Vector Filter - Trim","hd":false}],"ip":0,"op":121,"st":0,"bm":0}],"markers":[]}
+						var params_Increased_Savings = {
+							container: document.getElementById('anim-Increased_Savings'),
+							renderer: 'svg',
+							loop: true,
+							autoplay: true,
+							animationData: Increased_Savings
+						};
+						var anim_Increased_Savings;
+						anim_Increased_Savings = lottie.loadAnimation(params_Increased_Savings);
+					
+				</script>
+				
+							</ul>
+	</div>
+
+
+
+		 </div>
+	</div>
+</section>            
+                           <div class="section-full-video-image">
+                   <div class="row row-full">
+                       <div class="small-12 columns nopad section-full-video-image-hold animation-element fade-in-up">
+                           <!-- image -->
+                           <div class="section-full-video-image-box img-object-fit">
+                               <img src="https://acme.creoweb.tech/app/default/assets/images/037867442342f3ef2ebad662259601c6.jpg?v=1682072157">
+                           </div>
+                       </div>
+                   </div>
+               </div>
+                        
+                        <section class="section-30-150 solutions-inner-accordion-section">
+	 <div class="row">
+		  <div class="small-12 large-7 columns nopad section-title-60 animation-element">
+				<span>Challenges</span>
+				<h2>
+					 Facing and solving your challenges
+				</h2>
+		  </div>
+		  <div class="small-12 cplumns nopad service-custom-accordion-hold">
+				<div class="small-12 large-6 large-offset-6 columns nopad service-custom-accordion-subtitles animation-element fade-in-up">
+					 <div class="small-6 columns nopad service-custom-accordion-subtitle">
+						  Common solution
+					 </div>
+					 <div class="small-6 columns nopad service-custom-accordion-subtitle">
+						  Acme Solution
+					 </div>
+				</div>
+				<div class="small-12 columns nopad service-custom-accordion-items animation-div-js">
+					 					 <div class="small-12 columns nopad service-custom-accordion-item scai-ellipse animation-element fade-in-up">
+						  <div class="small-12 large-6 columns nopadleft service-custom-accordion-item-title">
+								<h3>
+									 Throughput limitations at the end of line
+								</h3>
+								<p>
+									 ::psi::solutions.challenges.common_acme_solution
+								</p>
+						  </div>
+						  <div class="small-12 large-6 columns nopad service-custom-accordion-item-content">
+								<div class="small-12 large-6 columns nopad service-custom-accordion-item-content-first">
+									 <div class="small-12 columns nopad service-custom-accordion-subtitle">
+										  Common solution
+									 </div>
+									 <div class="small-12 columns nopad service-custom-accordion-item-text-hold">
+										  <div class="small-12 columns nopad service-custom-accordion-item-text">
+												<p>Manual palletisation and order picking can often become a bottleneck as productivity and handling speed increase across other operational processes.</p>
+										  </div>
+									 </div>
+								</div>
+								<div class="small-12 large-6 columns nopad service-custom-accordion-item-content-second">
+									 <div class="small-12 columns nopad service-custom-accordion-subtitle">
+										  Acme Solution
+									 </div>
+									 <div class="small-12 columns nopad service-custom-accordion-item-text-hold">
+										  <div class="small-12 columns nopad service-custom-accordion-item-text">
+											  <p>Deploying robots to palletise or depalletise as well as pick goods can increase handling speed and therewith throughput drastically, while also enhancing product safety. Robots can handle any type of goods with the right gripper - from heavy or non-standard sized products to delicate or hygienic items.</p>
+										  </div>
+									 </div>
+								</div>
+						  </div>
+					 </div>
+					 					 <div class="small-12 columns nopad service-custom-accordion-item scai-ellipse animation-element fade-in-up">
+						  <div class="small-12 large-6 columns nopadleft service-custom-accordion-item-title">
+								<h3>
+									 Precision &amp; Accuracy
+								</h3>
+								<p>
+									 ::psi::solutions.challenges.common_acme_solution
+								</p>
+						  </div>
+						  <div class="small-12 large-6 columns nopad service-custom-accordion-item-content">
+								<div class="small-12 large-6 columns nopad service-custom-accordion-item-content-first">
+									 <div class="small-12 columns nopad service-custom-accordion-subtitle">
+										  Common solution
+									 </div>
+									 <div class="small-12 columns nopad service-custom-accordion-item-text-hold">
+										  <div class="small-12 columns nopad service-custom-accordion-item-text">
+												<p>Quality can be compromised under pressure or harsh working conditions for a variety of tasks such as machine tending, polishing, dispensing, assembling, etc. when done manually.</p>
+										  </div>
+									 </div>
+								</div>
+								<div class="small-12 large-6 columns nopad service-custom-accordion-item-content-second">
+									 <div class="small-12 columns nopad service-custom-accordion-subtitle">
+										  Acme Solution
+									 </div>
+									 <div class="small-12 columns nopad service-custom-accordion-item-text-hold">
+										  <div class="small-12 columns nopad service-custom-accordion-item-text">
+											  <p>Robotics increase efficiency without sacrificing quality. Robots can handle a wide range of high precision tasks, which will speed up tedious and repetitive procedures and enhance the overall productivity.</p>
+										  </div>
+									 </div>
+								</div>
+						  </div>
+					 </div>
+					 					 <div class="small-12 columns nopad service-custom-accordion-item scai-ellipse animation-element fade-in-up">
+						  <div class="small-12 large-6 columns nopadleft service-custom-accordion-item-title">
+								<h3>
+									 Product &amp; Worker Safety
+								</h3>
+								<p>
+									 ::psi::solutions.challenges.common_acme_solution
+								</p>
+						  </div>
+						  <div class="small-12 large-6 columns nopad service-custom-accordion-item-content">
+								<div class="small-12 large-6 columns nopad service-custom-accordion-item-content-first">
+									 <div class="small-12 columns nopad service-custom-accordion-subtitle">
+										  Common solution
+									 </div>
+									 <div class="small-12 columns nopad service-custom-accordion-item-text-hold">
+										  <div class="small-12 columns nopad service-custom-accordion-item-text">
+												<p>Accidents happen despite all safety measures and trainings. When handling heavy or non-standard products, the risk increases.&nbsp;</p>
+<p>In hygiene environments, any leakage disrupts the product line and reduces profitability.</p>
+										  </div>
+									 </div>
+								</div>
+								<div class="small-12 large-6 columns nopad service-custom-accordion-item-content-second">
+									 <div class="small-12 columns nopad service-custom-accordion-subtitle">
+										  Acme Solution
+									 </div>
+									 <div class="small-12 columns nopad service-custom-accordion-item-text-hold">
+										  <div class="small-12 columns nopad service-custom-accordion-item-text">
+											  <p>Robotics can take over hazardous tasks and do any type of heavy lifting efficiently and safely.&nbsp;</p>
+<p>Smaller robots and cobots are designed to effectively operate alongside humans and can easily be deployed within existing operational structures.</p>
+										  </div>
+									 </div>
+								</div>
+						  </div>
+					 </div>
+					 				</div>
+		  </div>
+	 </div>
+</section>
+            
+                         <section class="section-30-150">
+	 <div class="row">
+		  <div class="small-12 large-7 columns nopad section-title-60 animation-element">
+				<span>Components</span>
+				<h2>
+					 Find relevant products for your needs
+				</h2>
+		  </div>
+		  
+		  <div class="small-12 columns nopad solutions-inner-solutions">
+				<div class="small-12 large-4 columns nopad solutions-inner-solutions-steps solutions-inner-solutions-step-1" data-ajax="https://acme.creoweb.tech/ajax/get/components">
+					 <div class="small-12 columns nopad solutions-inner-solutions-step-title">
+						Pallet handling solution
+					 </div>
+					 <div class="small-12 columns nopad solutions-inner-solutions-step-subtitle">
+						  Select needs:
+					 </div>
+					<div class="small-12 columns nopad solutions-inner-solutions-step-selects">
+													<div class="solutions-inner-solutions-step-select">
+								<input id="step-1-1" name="needs" type="radio" value="3"><label for="step-1-1">I need to palletise goods</label>
+							</div>
+													<div class="solutions-inner-solutions-step-select">
+								<input id="step-1-2" name="needs" type="radio" value="12"><label for="step-1-2">I need tend machines</label>
+							</div>
+													<div class="solutions-inner-solutions-step-select">
+								<input id="step-1-3" name="needs" type="radio" value="13"><label for="step-1-3">I need to pick &amp; place goods</label>
+							</div>
+													<div class="solutions-inner-solutions-step-select">
+								<input id="step-1-4" name="needs" type="radio" value="14"><label for="step-1-4">I need to assemble items</label>
+							</div>
+													<div class="solutions-inner-solutions-step-select">
+								<input id="step-1-5" name="needs" type="radio" value="15"><label for="step-1-5">I need to package goods</label>
+							</div>
+													<div class="solutions-inner-solutions-step-select">
+								<input id="step-1-6" name="needs" type="radio" value="16"><label for="step-1-6">I need to polish products</label>
+							</div>
+											</div>
+				</div>
+				<div class="small-12 large-4 columns nopad solutions-inner-solutions-steps solutions-inner-solutions-step-2" data-ajax="https://acme.creoweb.tech/ajax/get/products" data-view-btn="View">
+					 <span>Step 2</span>
+					 <div class="small-12 columns nopad solutions-inner-solutions-step-2-hold">
+						  <div class="small-12 columns nopad solutions-inner-solutions-step-title">
+								Component group
+						  </div>
+						  <div class="small-12 columns nopad solutions-inner-solutions-step-subtitle">
+								Select component group:
+						  </div>
+						  <div class="small-12 columns nopad solutions-inner-solutions-step-selects step-2-list" >
+							  						  </div>
+					 </div>
+				</div>
+				<div class="small-12 large-4 columns nopad solutions-inner-solutions-steps solutions-inner-solutions-step-rez">
+					 <span>Result</span>
+					 <div class="small-12 columns nopad solutions-inner-solutions-step-rez-hold">
+						  <div class="small-12 columns nopad solutions-inner-solutions-step-title">
+								Suggested components
+						  </div>
+						  <div class="small-12 columns nopad solutions-inner-solutions-step-text">
+														  </div>
+						  <div class="small-12 columns nopad solutions-inner-solutions-step-prod step-rez-list">
+													  </div>
+						  <div class="small-12 columns nopad solutions-inner-solutions-step-btns">
+								<ul>
+									 <li>
+										  <span class="btn-black" data-open="enquire-reveal">
+												Enquire
+										  </span>
+									 </li>
+									 <li>
+										  <a href="" class="btn-border-dashed comp-learn-more">
+												::learn_more
+										  </a>
+									 </li>
+								</ul>
+						  </div>
+					 </div>
+				</div>
+		  </div>
+	 </div>
+</section>
+ <div class="reveal" id="enquire-reveal" data-reveal data-animation-in="fadeIn">
+	<button class="product-page-sticky-content-close" data-close aria-label="Close modal" type="button"></button>
+	<div class="product-page-sticky-title text-center">
+		For more info
+	</div>
+	
+	
+<div id="contact-form" data-ajax="https://acme.creoweb.tech/ajax/enquire/submit"  class="small-12 columns nopad form-style">
+	<input type="hidden" name="subject" value="::form::subject.enquire_form">
+	  <div class="small-12 columns nopad form-element">
+			<input required="true" type="text" name="name" data-validation="Name is required for this form">
+			<label for="name">Full name</label>
+	  </div>
+	  <div class="small-12 columns nopad form-element">
+			<input required="true" type="text" name="company" data-validation="::form::validate.company">
+			<label for="company">Company</label>
+	  </div>
+	  <div class="small-12 columns nopad form-element">
+			<input required="true" type="text" name="email" data-validation="Wrong email address format">
+			<label for="email">Email</label>
+	  </div>
+	  <div class="small-12 columns nopad form-element">
+			<textarea required="true" type="text" name="message" data-validation="Message is required for this form"></textarea>
+			<label for="message">Message</label>
+	  </div>
+	<div class="small-12 columns nopad text-center">
+		<button type="submit" class="btn-black">
+			 Contact us
+		</button>
+	</div>
+	 
+	 <div style="display:none;" class="form-element-success-text">
+		 ::form::message.success
+	 </div>
+</div>	
+</div>            
+                        <section class="section-30-150">
+	<div class="row">
+		<div class="small-12 large-8 columns nopad section-title-60 animation-element">
+			<span>Learn more</span>
+			<h2>
+				Explore how our solutions improve operations
+			</h2>
+		</div>
+		<div class="small-12 columns nopad about-us-page-section-list animation-list-js">
+			<ul>
+				<li class="animation-element fade-in-up" >
+										<div class="about-us-page-section-list-item">
+	<div class="solutions-inner-explore-subtitle">
+		Brochures 
+	</div>
+	<div class="solutions-inner-explore-links">
+									 <div class="solutions-inner-explore-link">
+				  <a href="https://acme.creoweb.tech/knowledge/brochures-5/acme_automation_solutions_brochure-2">
+										Acme Automation Solutions
+				  </a>
+			</div>
+					 <div class="solutions-inner-explore-link">
+				  <a href="https://acme.creoweb.tech/knowledge/brochures-5/acme_automation_solutions_retail_and_e_commerce-8">
+										Acme automation solutions for Retail &amp; E-commerce
+				  </a>
+			</div>
+					 <div class="solutions-inner-explore-link">
+				  <a href="https://acme.creoweb.tech/knowledge/brochures-5/acme_automation_solutions_food_and_beverage-7">
+										Acme Automation Solutions for the Food &amp; Beverage Industry
+				  </a>
+			</div>
+			</div>
+</div>					
+										<div class="about-us-page-section-list-item">
+	<div class="solutions-inner-explore-subtitle">
+		Whitepapers
+	</div>
+	<div class="solutions-inner-explore-links">
+							</div>
+</div>				</li>
+				<li class="animation-element fade-in-up" >
+										<div class="solutions-inner-explore-subtitle">
+	Buyer’s guide
+</div>
+<div class="solutions-inner-explore-links">
+			</div>				</li>
+				 <li class="animation-element fade-in-up" >
+					 					 <div class="solutions-inner-explore-subtitle">
+	Case studies
+</div>
+<div class="solutions-inner-explore-links">
+			</div>				 </li>
+				<li class="animation-element fade-in-up">
+										<div class="solutions-inner-explore-subtitle">
+	::psi::industries.footer.videos
+</div>
+<div class="solutions-inner-explore-links">
+			
+			<div class="solutions-inner-explore-link">
+			<a data-fancybox="" href="https://www.youtube.com/watch?v=oW5kmF60K1Q">
+				<span class="link-watch">Acme Box Handling Solutions</span>
+			</a>
+		</div>
+			<div class="solutions-inner-explore-link">
+			<a data-fancybox="" href="https://www.youtube.com/watch?v=oCVFo20VEks">
+				<span class="link-watch">Acme Cobot in action</span>
+			</a>
+		</div>
+			<div class="solutions-inner-explore-link">
+			<a data-fancybox="" href="https://www.youtube.com/watch?v=sab0WyprJXI">
+				<span class="link-watch">Acme Corporate Video: The Power To Amaze</span>
+			</a>
+		</div>
+	</div>
+<div class="about-us-page-section-list--btn animation-element fade-in-up anim-delay-300ms in-view">
+	<a class="btn-contact-white btn-contact-white-dark" href="https://acme.creoweb.tech/knowledge">
+		<span></span>
+		View all
+	</a>
+</div>				</li>
+			</ul>
+		</div>
+	</div>
+</section>
+<div class="product-page-sticky animation-element fade-in anim-delay-1s text-center in-view">
+	 <div class="product-page-sticky-title">
+		  For more info
+	 </div>
+	 <div class="product-page-sticky-btns">
+		  <ul>
+				<li>
+					 <span class="product-page-stick-contact-trigger">
+						  Contact us
+					 </span>
+				</li>
+				<li>
+					 <span class="product-page-stick-docs-trigger">
+						  View docs
+					 </span>
+				</li>
+		  </ul>
+	 </div>
+</div>
+
+<div id="contact-form" data-ajax="https://acme.creoweb.tech/ajax/enquire/submit" class="product-page-sticky-content product-page-sticky-contact">
+	 <span class="product-page-sticky-content-close product-page-sticky-contact-close"></span>
+	 <div class="product-page-sticky-title text-center">
+		  For more info
+	 </div>
+	 <div class="small-12 columns nopad form-style">
+		 <input type="hidden" name="subject" value="::form::subject.for_more_info">
+		  <div class="small-12 columns nopad form-element">
+				<input required="true" type="text" name="name" data-validation="Name is required for this form">
+				<label for="name">Full name</label>
+		  </div>
+		  <div class="small-12 columns nopad form-element">
+				<input required="true" type="text" name="company" data-validation="::form::validate.company">
+				<label for="company">Company</label>
+		  </div>
+		  <div class="small-12 columns nopad form-element">
+				<input required="true" type="text" name="email" data-validation="Wrong email address format">
+				<label for="email">Email</label>
+		  </div>
+		  <div class="small-12 columns nopad form-element">
+				<textarea required="true" type="text" name="message" data-validation="Message is required for this form"></textarea>
+				<label for="message">Message</label>
+		  </div>
+		  <div class="small-12 columns nopad text-center">
+				<button type="submit" class="btn-black">
+					 Contact us
+				</button>
+		  </div>
+	 </div>
+	 
+	 <div style="display:none;" class="form-element-success-text">
+		 ::form::message.success
+	 </div>
+</div>
+            
+            
+</main>
+
+<footer>
+   <div class="row">
+      
+      
+	<div class="small-12 columns nopad footer-top">
+		  <div class="small-12 medium-3 large-2 columns nopadleft footer-subtitle">
+			Contact
+		  </div>
+		  <div class="small-12 medium-8 large-9 columns nopad">
+				<div class="small-12 columns nopad footer-title">
+					 <h2>
+					 	How to reach us
+					 </h2>
+				</div>
+				<div class="small-12 columns nopad footer-email-social">
+					 <div class="footer-email-social-left">
+						  <div class="footer-email-social-email">
+								<a href="mailto:info@acme-world.com">
+									 Email: info@acme-world.com
+								</a>
+						  </div>
+						  <div class="footer-email-social-social">
+								<ul>
+									 <li>
+										  <a href="https://www.linkedin.com/company/acme-world/" target="_blank" rel="noreferrer noopener">
+												<img src="https://acme.creoweb.tech/app/default/assets/addons/default/np/site-theme/resources/img/footer-linkedin.svg?v=1682072157">
+										  </a>
+									 </li>
+									 <li>
+										  <a href="https://www.youtube.com/@acmegroup2810" target="_blank" rel="noreferrer noopener">
+												<img src="https://acme.creoweb.tech/app/default/assets/addons/default/np/site-theme/resources/img/footer-youtube.svg?v=1682072157">
+										  </a>
+									 </li>
+									 <li>
+										  <a href="https://vimeo.com/user110163978" target="_blank" rel="noreferrer noopener">
+												<img src="https://acme.creoweb.tech/app/default/assets/addons/default/np/site-theme/resources/img/footer-vimeo.svg?v=1682072157">
+										  </a>
+									 </li>
+								</ul>
+						  </div>
+					 </div>
+					 
+ <div id="newsletter-form" data-ajax="https://acme.creoweb.tech/ajax/newsletter/submit"  class="footer-email-social-right">
+	  <div class="footer-email-social-form">
+		  <input type="hidden" name="subject" value="::form::subject.newsletter_form">
+			<label for="footer-subscribe">Subscribe to our newsletter</label>
+			<div class="footer-email-social-form-element">
+				 <input required="true" name="email" id="footer-subscribe" type="text" placeholder="E-mail" data-validation="Wrong email address format">
+				 <button type="submit"></button>
+			</div>
+			
+			 <div style="display:none;" class="form-element-success-text">
+				 ::form::message.success
+			 </div>
+	  </div>
+ </div>				</div>
+		  </div>
+	 </div>      
+      <div class="small-12 medium-3 large-1 columns nopad footer-empty"></div>
+      
+                      <div class="small-12 columns nopad footer-mid">
+                    <div class="small-12 large-2 columns nopadleft footer-nav-title">
+                        <span>Products & Services</span>
+                    </div>
+                    <div class="small-12 medium-4 large-3 columns nopadleft footer-nav">
+                        <div class="footer-nav-title-media">Products & Services</div>
+                        <span>Solutions:</span>
+                        <ul>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/solutions">All solutions</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/solutions/pallet-handling-1">Pallet Handling</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/solutions/case-and-tote-handling-2">Case &amp; Tote Handling</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/solutions/picking-and-sortation-3">Picking &amp; Sortation</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/solutions/robotics-4">Robotics</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/solutions/software-and-controls-5">Software &amp; Controls</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/solutions/shelving-and-racking-6">Shelving &amp; Racking</a>
+                                </li>
+                                                    </ul>
+
+                        <span>Components:</span>
+                        <ul>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/components">All components</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/components/belting-24">Belting</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/components/case-asrs-13">Case AS/RS</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/components/pallet-asrs-6">Pallet AS/RS</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/components/racking-7">Racking</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/components/robotics-8">Robotics</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/components/sensors-27">Sensors</a>
+                                </li>
+                                                    </ul>
+                        
+                        <span>Services:</span>
+                        <ul>
+                            
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/services">Services</a>
+                                </li>
+                                                    </ul>
+                    </div>
+
+                    <div class="small-12 large-1 columns nopadleft footer-nav-title">
+                        <span>Industries</span>
+                    </div>
+                    <div class="small-12 medium-4 large-3 columns nopadleft footer-nav">
+                        <div class="footer-nav-title-media">Industries</div>
+                        <span>Distributor:</span>
+                        <ul>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/industries/manufacturing-construction-material-2">Construction Material</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/industries/manufacturing-consumer-goods-3">Consumer Goods</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/industries/manufacturing-electronics-4">E-Commerce</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/industries/manufacturing-food-beverage-5">Food &amp; Beverage</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/industries/manufacturing-chemicals-1">Oil &amp; Gas</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/industries/manufacturing-pharmaceuticals-6">Pharmaceuticals</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/industries/manufacturing-printing-packaging-7">Retail</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/industries/manufacturing-tires-9">Spare Parts</a>
+                                </li>
+                                                     
+                        </ul>
+                        <span>Manufacturer:</span>
+                        <ul>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/industries/manufacturing-chemicals-1">Chemicals</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/industries/manufacturing-construction-material-2">Construction Material</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/industries/manufacturing-consumer-goods-3">Consumer Goods</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/industries/manufacturing-electronics-4">Electronics</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/industries/manufacturing-food-beverage-5">Food &amp; Beverage</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/industries/manufacturing-pharmaceuticals-6">Pharmaceuticals</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/industries/manufacturing-printing-packaging-7">Printing &amp; Packaging</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/industries/manufacturing-tires-9">Tires</a>
+                                </li>
+                                                      
+                        </ul>
+                        <span>Service provider:</span>
+                        <ul>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/industries/service-provider-material-handling-airports-10">Material Handling &amp; Airports</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/industries/service-provider-third-party-logistics-11">Third-Party Logistics</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://acme.creoweb.tech/industries/service-provider-utilities-12">Utilities</a>
+                                </li>
+                                                     
+                        </ul>
+                    </div>
+
+                    <div class="small-12 large-1 columns nopadleft footer-nav-title footer-empty"></div>
+                    <div class="small-12 medium-4 large-2 columns nopad footer-nav">
+                        <ul>
+                                                  </ul>
+                    </div>
+                </div>
+      
+      
+	<div class="small-12 columns nopad footer-bottom">
+		  <div class="small-12 medium-4 medium-offset-8 large-2 large-offset-10 columns nopadleft footer-copyright">
+				ACME©2023
+		  </div>
+	 
+		  <div class="footer-bottom-whatsapp">
+				<a href="#">
+					  <img src="https://acme.creoweb.tech/app/default/assets/addons/default/np/site-theme/resources/img/icon-whatsapp.svg?v=1682072157">
+				</a>
+		  </div>
+	 </div>
+
+      
+   </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/app/default/assets/public/app.js?v=1682363206"></script>
+
+</body>
+</html>

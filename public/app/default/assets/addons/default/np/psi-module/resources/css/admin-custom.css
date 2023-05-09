@@ -1,0 +1,19 @@
+
+/* .product_variations_0_specifications-field.repeater-field_type {
+  transform: scale(0.7);
+} */
+#product_variations_0_specifications .card .card-body {
+  display:grid;
+  column-gap: 20px;
+  grid-template-columns: 40% 40%;
+  background-color:antiquewhite;
+}
+
+#product_variations_0_specifications .card .card-body .field-group {
+  margin-bottom: 0rem;
+  padding-bottom: 0rem;
+  border-bottom: 1px solid #eceeef;
+}
+.custom-css-works {
+  font-style: italic;
+}
