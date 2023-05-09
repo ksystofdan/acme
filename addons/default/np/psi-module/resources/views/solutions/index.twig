@@ -1,0 +1,74 @@
+{% extends "theme::layouts/default" %}
+
+
+{% block content %}
+
+            <div class="breadcrumbs-media-hold">
+                <div class="row">
+                    <div class="small-12 columns nopad breadcrumbs-media">
+                        <a href="#">
+                            {{t('theme::products-services')}}
+                        </a>
+                        /
+                        {{t('psi::solutions')}}
+                    </div>
+                </div>
+            </div>
+
+            <section class="solutions-page-intro animation-element fade-in-up">
+                <div class="row">
+                    <div class="small-12 columns nopad solutions-page-intro-sliders">
+                        <div class="small-12 columns nopad solutions-page-intro-slider is-active">
+                            <div class="owl-carousel owl-theme solutions-page-intro-owl">
+                                {% for solution in items %}
+                                <div class="item">
+                                    <div class="solutions-page-intro-owl-imagebox">
+                                        <img src="{{ solution.solution_image_hover.cropped().fit(650, 650).url() }}"/>
+                                    </div>
+                                    <div class="solutions-page-intro-owl-textbox">
+                                        <div class="small-12 columns nopad solutions-page-intro-owl-textbox-box">
+                                            <div class="small-12 columns nopad section-title-60 section-title-normal">
+                                                <h2>
+                                                    {{ solution.title }}
+                                                </h2>
+                                            </div>
+                                            <div class="small-12 columns nopad section-text-18">
+                                                {{ solution.description|raw }}
+                                            </div>
+                                            <div class="small-12 columns nopad solutions-page-intro-owl-textbox-bnts">
+                                                <ul>
+                                                    <li>
+                                                        <span class="btn-black" data-open="enquire-reveal">
+                                                            {{t('enquire')}}
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <a href="{{ solution.publicUrl }}" class="btn-border-dashed">
+                                                            {{t('view')}}
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                            <div class="small-12 columns nopad">
+                                <div class="solutions-page-intro-owl-progress">
+                                    <span><span></span></span>
+                                </div>
+
+
+                                <div class="solutions-page-intro-owl-count">
+                                    <span class="solutions-page-intro-owl-count-current">1</span> / <span class="solutions-page-intro-owl-count-total">1</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+           {% include "np.module.psi::partials.enquire-reveal"|raw %}
+
+{% endblock %}

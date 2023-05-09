@@ -1,0 +1,21 @@
+{{ asset_add("app.js", "theme::js/vendor/jquery.min.js") }}
+{{ asset_add("app.js", "theme::js/vendor/jquery.validate.min.js") }}
+{{ asset_add("app.js", "theme::js/vendor/what-input.min.js") }}
+{{ asset_add("app.js", "theme::js/foundation.min.js") }}
+{{ asset_add("app.js", "theme::js/motion-ui.min.js") }}
+{{ asset_add("app.js", "theme::js/jquery.fancybox.min.js") }}
+{{ asset_add("app.js", "theme::js/owl.carousel.min.js") }}
+{{ asset_add("app.js", "theme::js/select2.full.min.js") }}
+{{ asset_add("app.js", "theme::js/anime.min.js") }}
+{{ asset_add("app.js", "theme::js/main.js") }}
+{{ asset_add("app.js", "theme::js/custom/custom.js") }}
+{# {{ asset_add("app.js", "theme::js/animations.js") }}  #}
+
+
+{# <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script> #}
+
+{# Theme Scripts #}
+{# {{ asset_add("theme.js", "theme::js/plugins/*") }}
+{{ asset_add("theme.js", "theme::js/theme/initialize.js") }} #}
+
+{{ asset_script("app.js",  ["min"]) }}

@@ -1,0 +1,191 @@
+{% extends "theme::layouts/default" %}
+
+{% block content %}
+            <div class="breadcrumbs-media-hold">
+                <div class="row">
+                    <div class="small-12 columns nopad breadcrumbs-media">
+                        {% if breadcrums %}
+                           <a href="{{ breadcrums.url }}">
+                                {{t(breadcrums.parent)}}
+                            </a>
+                            /
+                            {{ breadcrums.current }}
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+
+            <section class="title-intro-section">
+                <div class="row">
+                    <div class="small-12 columns nopad section-title-82 animation-element fade-in-up">
+                        <h1>
+                            {{ item.title }}
+                        </h1>
+                    </div>
+                </div>
+            </section>
+            {% if item.image %}
+               <div class="section-full-video-image">
+                   <div class="row row-full">
+                       <div class="small-12 columns nopad section-full-video-image-hold animation-element fade-in-up">
+                           <!-- image -->
+                           <div class="section-full-video-image-box img-object-fit">
+                              <img src="{{ item.image.cropped().url() }}">
+                           </div>
+                       </div>
+                   </div>
+               </div>
+            {% endif %}
+            
+
+            <section class="components-page-list-section">
+                <div class="row">
+
+                    {% if benefits.title %}
+                    <div class="small-12 columns nopad section-title-60 animation-element">
+                        <span></span>
+                        <h2>
+                            {{ benefits.title }}
+                        </h2>
+                    </div>
+                    {% endif %}
+                    
+                    {% include "np.module.psi::partials.benefits"|raw with {
+                        benefits: benefits.benefits
+                        } %}
+
+                </div>
+            </section>
+
+            <section class="components-page-list-section">
+                <div class="row">
+                    <div class="small-12 columns nopad section-title-60 animation-element">
+                        <span>
+                           {{t('producs')}}
+                        </span>
+                        <h2>
+                            {{t('how_these')}} <br/>
+                            {{t('comp_are_helping')}}
+                        </h2>
+                    </div>
+                    <div id="product-filter" class="small-12 columns nopad products-page-content" data-ajax="{{url_route('np.module.psi::components.filter')}}" data-view-btn="{{t('view')}}" data-id="{{item.id}}">
+                        <div class="small-12 columns nopad products-filter-content">
+                            <div class="products-filter-content-left animation-element fade-in-up">
+                              <div class="product-filter-search">
+                                    <input type="search" placeholder="{{t('search')}}" />
+                                    <button type="submit"></button>
+                              </div>
+                              {% include "np.module.psi::components.partials.filter-category"|raw %}
+                               
+                              {% include "np.module.psi::components.partials.filter-brand"|raw %}
+                            </div>
+                            <div class="products-filter-content-right">
+                                <div class="small-12 columns nopad products-filter-content-right-top ">
+                                    <div class="products-filter-content-right-filter-trigger animation-element fade-in-up">
+                                        {{t('filter')}} <span></span>
+                                    </div>
+                                    <div class="products-filter-content-right-filter-content">
+                                        <div class="products-filter-content-right-filter-content-top">
+                                            {{t('filter')}}
+                                            <span></span>
+                                        </div>
+                                        <div class="products-filter-content-right-filter-content-filters">
+                                            {% include "np.module.psi::components.partials.filter-category-mob"|raw %}
+                                            
+                                             {% include "np.module.psi::components.partials.filter-brand-mob"|raw %}
+                                            
+                                        </div>
+                                        <div class="products-filter-content-right-filter-content-btn">
+                                            <ul>
+                                                <li>
+                                                    <span class="btn-border-dashed pfcrfcb-clear-js">
+                                                        {{t('clear_all')}}
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="btn-black pfcrfcb-count-js">
+                                                        {{t('apply')}} <span></span>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    
+                                     {% set count_prod = entries('products', 'products').where('enabled', 1).where('component_group_id', item.id).count() %}
+                                    <div class="products-filter-content-right-count animation-element fade-in-up">
+                                        <span class="product-count">{{count_prod}}</span> {{t('items')}}
+                                    </div>
+
+                                </div>
+                                <div class="small-12 columns nopad products-filter-content-list animation-element animation-list-js">
+                                    <ul id="product-list">
+                                        {% for product in item.products().live().get.call('toArray') %}
+                                        <li>
+                                            <a href="{{ product.public_url }}">
+                                                <div class="products-filter-content-list-brand">
+                                                    {{ product.brand.title }} 
+                                                </div>
+                                                <div class="products-filter-content-list-image-hold">
+                                                    <div class="products-filter-content-list-image img-object-fit">
+                                                        <img src="{{ product.image_url }}">
+                                                    </div>
+                                                </div>
+                                                <div class="products-filter-content-list-title-hold">
+                                                    <div class="products-filter-content-list-title">
+                                                        {{ product.title }}
+                                                    </div>
+                                                    <span>{{t('view')}}</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                                
+                                {# {{ items.links|raw }} #}
+                                
+                                {% if false %}
+                                <div class="small-12 columns nopad pagination-list">
+                                    <ul>
+                                        <li class="pagination--prev">
+                                            <a></a>
+                                        </li>
+                                        <li class="current">
+                                            <span>1</span>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                2
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                3
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                4
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <span>...</span>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                10
+                                            </a>
+                                        </li>
+                                        <li class="pagination--next">
+                                            <a></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+{% endblock %}

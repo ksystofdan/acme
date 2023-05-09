@@ -1,0 +1,155 @@
+{% extends "theme::layouts/default" %}
+
+{% block content %}
+            <div class="breadcrumbs-media-hold">
+                <div class="row">
+                    <div class="small-12 columns nopad breadcrumbs-media">
+                        {% if breadcrums %}
+                           <a href="{{ breadcrums.url }}">
+                                {{t(breadcrums.parent)}}
+                            </a>
+                            /
+                            {{ breadcrums.current }}
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            <section class="industry-inner-intro-section animation-element in-view">
+                <div class="row">
+                    <div class="small-12 medium-10 large-8 columns nopad section-title-84 animation-element fade-in-up in-view">
+                        <h1>
+                            {{item.title}}
+                        </h1>
+                    </div>
+                    {% if item.main_image %}
+                       <div class="small-12 columns nopad text-center animation-element fade-in-up fade-in-up-later in-view">
+                           <img src="{{ item.main_image.cropped().widen(900).url() }}" alt="">
+                       </div>
+                    {% endif %}
+                </div>
+            </section>
+            
+
+            {% if item.challenges|length > 0 %}
+            <section class="section-30-150 solutions-inner-accordion-section" id="select-industrie">
+                <div class="row">
+                    <div class="small-12 large-7 columns nopad section-title-60 animation-element">
+                        <span>{{t('psi::challenges.before_title')}}</span>
+                        <h2>
+                            {{t('psi::challenges.industries.title')}}
+                        </h2>
+                    </div>
+                    <div class="small-12 cplumns nopad service-custom-accordion-hold">
+                        <div class="small-12 columns nopad service-custom-accordion-subtitles animation-element fade-in-up">
+                            <div class="small-6 columns nopad service-custom-accordion-subtitle">
+                                {{t('psi::challenges.header_col1')}} 
+                            </div>
+                            <div class="small-3 columns nopad service-custom-accordion-subtitle">
+                                {{t('psi::challenges.header_col2')}} 
+                            </div>
+                            <div class="small-3 columns nopad service-custom-accordion-subtitle">
+                                {{t('psi::challenges.header_col3')}} 
+                            </div>
+                        </div>
+                        <div class="small-12 columns nopad service-custom-accordion-items animation-div-js">
+
+                            {% for challenge in item.challenges %}
+                            <div class="small-12 columns nopad service-custom-accordion-item scai-ellipse animation-element fade-in-up">
+                                <div class="small-12 large-6 columns nopadleft service-custom-accordion-item-title">
+                                    <h3>
+                                        {{ challenge.title }}
+                                    </h3>
+                                    <p>
+                                        {{t('psi::challenges.mobile.header_col1')}}
+                                    </p>
+                                </div>
+                                <div class="small-12 large-6 columns nopad service-custom-accordion-item-content">
+                                    <div class="small-12 large-6 columns nopad service-custom-accordion-item-content-first">
+                                        <div class="small-12 columns nopad service-custom-accordion-subtitle">
+                                            {{t('psi::challenges.mobile.header_col2')}}
+                                        </div>
+                                        <div class="small-12 columns nopad service-custom-accordion-item-text-hold">
+                                            <div class="small-12 columns nopad service-custom-accordion-item-text">
+                                                {{ challenge.text_1|raw }}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="small-12 large-6 columns nopad service-custom-accordion-item-content-second">
+                                        <div class="small-12 columns nopad service-custom-accordion-subtitle">
+                                            {{t('psi::challenges.mobile.header_col3')}}
+                                        </div>
+                                        <div class="small-12 columns nopad service-custom-accordion-item-text-hold">
+                                            <div class="small-12 columns nopad service-custom-accordion-item-text">
+                                               {{ challenge.text_2|raw }}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </section>
+            {% endif %}
+
+            {% if item.solutions|length %}
+            <section class="section-30-150">
+                <div class="row">
+                    <div class="small-12 columns nopad section-title-60 animation-element">
+                        <span>{{t('psi::solutions.before_title')}}</span>
+                        <h2>
+                            {{ item.titleFull }} /  {{t('psi::solutions.title')}}
+                        </h2>
+                    </div>
+                    <div class="small-12 columns nopad industry-page-list animation-list-js animation-element">
+                        <ul>
+                            {% for solution in item.solutions %}
+                            <li class="animation-element fade-in-up">
+                                <div class="small-12 columns nopad industry-page-list-box">
+                                    <span>0{{ loop.index }}</span>
+                                    <div class="small-12 large-6 columns nopad industry-page-list-imgbox">
+                                        <div class="industry-page-list-imgbox-imghold industry-page-list-imgbox-img-1">
+                                            <img src="{{ solution.solutionImageUrl }}"/>
+                                        </div>
+                                        <div class="industry-page-list-imgbox-imghold industry-page-list-imgbox-img-2">
+                                            <img src="{{ solution.solution_image_hover.image().fit(600, 600).url() }}"/>
+                                        </div>
+                                    </div>
+                                    <div class="small-12 large-6 columns nopad industry-page-list-textbox">
+                                        <div class="small-12 columns nopad">
+                                            <div class="small-12 columns nopad industry-page-list-title">
+                                                {{ solution.title }}
+                                            </div>
+                                            <div class="small-12 columns nopad industry-page-list-text">
+                                                {{ solution.description|raw }}
+                                            </div>
+                                        </div>
+                                        <div class="small-12 columns nopad industry-page-list-btn">
+                                            <ul>
+                                                <li>
+                                                    <span class="btn-border-dashed-toblack btn-w-120" data-open="enquire-reveal">
+                                                       {{t('enquire')}}
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <a href="{{ solution.publicUrl }}" class="link-underline">
+                                                        {{t('view')}}
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            {% include "np.module.psi::partials.enquire-reveal"|raw %}
+            {% endif %}
+       
+            {% include "np.module.psi::industries.partials.footer"|raw %}
+       
+{% endblock %}

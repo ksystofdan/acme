@@ -1,0 +1,31 @@
+
+ <div  id="buyers-guide-form" data-ajax="{{url_route('np.module.psi::form.buyers_guide')}}"   class="small-12 columns nopad form-style">
+		<input type="hidden" name="subject" value="{{t('form::subject.knowledge_base')}}">
+	  <div class="small-12 columns nopad form-element">
+			  <input required="true" type="text" name="name" data-validation="{{t('form::validate.name')}}">
+			  <label for="name">{{t('full_name')}}</label>
+		 </div>
+		 <div class="small-12 columns nopad form-element">
+			  <input required="true" type="text" name="company" data-validation="{{t('form::validate.company')}}">
+			  <label for="company">{{t('company')}}</label>
+		 </div>
+		 <div class="small-12 columns nopad form-element">
+			  <input required="true" type="text" name="email" data-validation="{{t('form::validate.email')}}">
+			  <label for="email">{{t('email')}}</label>
+		 </div>
+	  <div class="small-12 columns nopad news-inner-page-block-form-bottom">
+			<div class="form-element-checkbox">
+				 <input id="agree" name="agree" type="checkbox" data-validation="{{t('form::validate.privacy_policy')}}">
+				 <label for="agree">{{t('read_agree')}} <a href="{{url_route('pages::4.en')}}">{{t('privacy_policy')}}</a></label>
+			</div>
+			<div class="news-inner-page-block-form-btn agree readonly-form">
+				 <button type="submit" class="btn-black" >
+					  {{t('request_guide')}}
+				 </button>
+			</div>
+	  </div>
+	  <input type="hidden" name="artical_id" value="{{id}}">
+		<div style="display:none;" class="form-element-success-text">
+			{{t('form::message.success')}}
+		</div>
+ </div>

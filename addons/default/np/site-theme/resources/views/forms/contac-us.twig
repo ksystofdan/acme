@@ -1,0 +1,80 @@
+<section id="contact-form" data-ajax="{{url_route('np.module.psi::form.contacts')}}" class="section-30-150 {{class}}-page-contact-section">
+	 <div class="row">
+		 {% set offset = 'large-offset-6' %}
+		 {% if side_text %}
+		 	{% set offset = '' %}
+			  <div class="small-12 large-6 columns nopad {{class}}-page-contact-texthold">
+					<div class="small-12 medium-6  large-4 columns nopad contact-page-contact-text animation-element fade-in-up anim-delay-250ms in-view">
+						 {{t('contact_form::our_team_text')}}
+					</div>
+			  </div>
+		 {% endif %}
+		  <div class="small-12 large-6 {{ offset }} columns nopad {{class}}-page-contact-form">
+				{% if attr %}
+					<div class="small-12 columns nopad section-title-60 section-title-normal animation-element in-view">
+						<{{attr}}>
+							{{ above_form_text }}
+						</{{attr}}>
+					</div>
+				{% else %}
+					<div class="small-12 columns nopad contact-page-contact-form-text animation-element fade-in-up anim-delay-500ms in-view">
+						{{above_form_text}}
+					</div>
+				{% endif %}
+				<div class="small-12 columns nopad form-style animation-element fade-in-up in-view">
+					 <div class="small-12 medium-6 columns nopadleft form-element-left">
+						  <div class="small-12 columns nopad form-element">
+								<input required="true" type="text" name="name" data-validation="{{t('form::validate.name')}}">
+								<label for="name">{{t('name')}}</label>
+						  </div>
+					 </div>
+					 <div class="small-12 medium-6 columns nopadright form-element-right">
+						  <div class="small-12 columns nopad form-element">
+								<input required="true" type="text" name="surname" data-validation="{{t('form::validate.surname')}}">
+								<label for="surname">{{t('surname')}}</label>
+						  </div>
+					 </div>
+					 <div class="small-12 columns nopad form-element">
+						  <input required="true" type="email" name="email" data-validation="{{t('form::validate.email')}}">
+						  <label for="email">{{t('email')}}</label>
+					 </div>
+					 <div class="small-12 medium-6 columns nopadleft form-element-left">
+						  <div class="small-12 columns nopad form-element">
+							  <input required="true" type="phone" name="phone" class="js-select2-phone" data-validation="{{t('form::validate.phone')}}">
+							  <label for="email">{{t('phone')}}</label>
+						  </div>
+					 </div>
+					 <div class="small-12 medium-6 columns nopadright form-element-right">
+						  <div class="small-12 columns nopad form-element">
+								<input type="text" name="company" data-validation="{{t('form::validate.company')}}">
+								<label for="company">{{t('company_name')}} <span>({{t('optional')}})</span></label>
+						  </div>
+					 </div>
+					 {% set subjects = variable_group('forms_settings').subject_names %}
+					 <div class="small-12 columns nopad form-element">
+						  <select name="subject" required="true" class="js-select2-subject select2-hidden-accessible" tabindex="-1" aria-hidden="true" data-validation="{{t('form::validate.subject')}}">
+								<option></option>
+								{% for subject in subjects %} 
+									<option>{{subject.title}}</option>
+								{% endfor %}
+						  </select>
+						  <label for="subject">{{t('subject')}}</label>
+					 </div>
+					 <div class="small-12 columns nopad form-element">
+						  <textarea required="true" name="message" data-validation="{{t('form::validate.message')}}"></textarea>
+						  <label for="message">{{t('message')}}</label>
+					 </div>
+					 <div class="small-12 columns nopad form-element-btn">
+						  <button type="submit" class="btn-border-dashed">
+								{{t('contact_us')}}
+						  </button>
+					 </div>
+					 
+				</div>
+				
+				<div style="display:none;" class="form-element-success-text">
+					{{t('form::message.success')}}
+				</div>
+		  </div>
+	 </div>
+</section>

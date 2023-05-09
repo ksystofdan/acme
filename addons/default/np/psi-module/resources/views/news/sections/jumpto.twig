@@ -1,0 +1,14 @@
+{% if jumpToLinks|length > 1 %}
+<div class="small-12 columns nopad news-inner-page-block news-inner-page-jump-block">
+    <span>Jump to section:</span>
+    <ul>
+        {% for link in jumpToLinks %}
+        <li>
+            <a href="#custom-block-id-{{ link.blockNum }}" class="scroll-to">
+                {{ link.title }}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endif %}

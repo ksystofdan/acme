@@ -1,0 +1,12 @@
+{{ asset_add('styles.css', "np.extension.dashboard_links_widget::css/style.css" ) }}
+<div class="dashboard-links-wrap"> 
+{% for dashboard_link in dashboard_links %}
+    <a class="btn dashboard-link-widget" href="{{ dashboard_link.url }}">
+        <span class="icon">
+             <i class="fa fa-3x fa-{{ dashboard_link.icon }}"></i>
+        </span>
+
+        <span style="display: block;" class="dashboard-link-widget__title">{{ dashboard_link.title }}</span>
+    </a>
+{% endfor %}
+  </div>

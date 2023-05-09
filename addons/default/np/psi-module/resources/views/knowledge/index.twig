@@ -1,0 +1,81 @@
+{% extends "theme::layouts/default" %}
+
+{% block content %}
+
+    <section class="title-intro-section title-intro-section-mlarger title-intro-section-no-bread">
+        <div class="row">
+            <div class="small-12 columns nopad section-title-82 animation-element fade-in-up">
+                <h1>
+                    {{t('knowledge')}}
+                </h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-30-150 know-center-content-section">
+        <div class="row">
+            <div class="small-12 columns nopad ncenter-news-filter-counter ncenter-news-filter-counter-m">
+                <span class="ncenter-news-filter-counter-shown">{{ items.total }}</span>/<span class="ncenter-news-filter-counter-total">{{ totalItems }}</span> {{t('articles')}}
+            </div>
+            <div class="small-12 columns nopad ncenter-news-filter animation-element fade-in-up in-view">
+                <ul>
+                    <li {% if currentCategory == 'all' %} class="current" {% endif %} >
+                        <a href="{{ url("knowledge") }}" >{{t('all_knowledge')}}</a>
+                    </li>
+
+                    {% for category in categories %}
+                    <li {% if category.id == currentCategory %} class="current" {% endif %}>
+                        <a href="{{ category.public_url }}" >{{ category.title }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+                <div class="ncenter-news-filter-counter">
+                    <span class="ncenter-news-filter-counter-shown">{{ items.total }}</span>/<span class="ncenter-news-filter-counter-total">{{ totalItems }}</span> {{t('articles')}}
+                </div>
+            </div>
+            <div class="small-12 columns nopad ncenter-news-list animation-list-js animation-element">
+              <ul>
+                {% for item in items %}
+                    {% if item.category.slug == 'videos' %}
+                        <li>
+                            <a data-fancybox="" href="{{ item.youtube_url }}">
+                                <div class="latest-updates-owl-image img-object-fit latest-updates-video">
+                                    <img src="{{ item.thumbnail_image_url }}">
+                                </div>
+                                <div class="latest-updates-owl-cat-date">
+                                    {{ item.category.title }} / {{ item.publishAtFull.format('F d, Y') }}
+                                </div>
+                                <div class="latest-updates-owl-title">
+                                    {{ item.title }}
+                                </div>
+                                <div class="latest-updates-owl-btn">
+                                    <span class="link-watch">{{t('watch')}}</span>
+                                </div>
+                            </a>
+                        </li>
+                    {% else %}
+                        <li>
+                          <a href="{{ item.public_url }}">
+                              <div class="latest-updates-owl-image img-object-fit">
+                                  <img src="{{ item.thumbnail_image_url }}">
+                              </div>
+                              <div class="latest-updates-owl-cat-date">
+                                  {{ item.category.title }} / {{ item.publishAtFull.format('F d, Y') }}
+                              </div>
+                              <div class="latest-updates-owl-title">
+                                  {{ item.title }}
+                              </div>
+                              <div class="latest-updates-owl-btn">
+                                  <span>{{t('view')}}</span>
+                              </div>
+                          </a>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+              </ul>
+            </div>
+            {{ items.links|raw }}
+        </div>
+    </section>
+
+{% endblock %}

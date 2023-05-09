@@ -1,0 +1,14 @@
+<footer>
+   <div class="row">
+      
+      {% include "theme::partials/footer-top" %}
+      
+      <div class="small-12 medium-3 large-1 columns nopad footer-empty"></div>
+      
+      {{ renderTopNavigationLinks('navigation_footer') }}
+      
+      {% include "theme::partials/footer-bottom" %}
+      
+   </div>
+</footer>
+{{ variable_value('cookiebot_settings', 'declaration_script')|raw }}

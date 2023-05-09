@@ -1,0 +1,9 @@
+{
+    "name": "np/site-theme",
+    "type": "streams-addon",
+    "autoload": {
+        "psr-4": {
+            "Np\\SiteTheme\\": "src/"
+        }
+    }
+}

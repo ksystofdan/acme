@@ -1,0 +1,234 @@
+
+<section class="title-intro-section title-intro-section-no-bread">
+	 <div class="row">
+		  <div class="small-12 columns nopad section-title-82 animation-element fade-in-up in-view">
+				<h1>
+					{{ page.title }}
+				</h1>
+		  </div>
+	 </div>
+</section>
+
+<div class="section-full-video-image">
+	 <div class="row row-full">
+		  <div class="small-12 columns nopad section-full-video-image-hold animation-element fade-in-up in-view">
+				<!-- image -->
+				<div class="section-full-video-image-box img-object-fit">
+					 <img src="{{ page.header_image.cropped().url() }}">
+				</div>
+		  </div>
+	 </div>
+</div>
+
+<section class="section-30-150 about-us-page-section">
+	 <div class="row">
+		  <div class="small-12 columns nopad section-title-60 animation-element in-view">
+				<span>{{ page.title }}</span>
+				<h2>
+					{{ page.additional_text }}
+				</h2>
+		  </div>
+		  <div class="small-12 columns nopad about-us-page-section-list animation-list-js">
+				<ul>
+					{% if page.about_us_section_1 %}
+					 	<li class="animation-element fade-in-up in-view">
+						  	<div class="about-us-page-section-list-subtitle">
+									{{t('purpose')}}
+						  	</div>
+						  	<div class="about-us-page-section-list-text">
+									{{ page.about_us_section_1 }}
+						  	</div>
+					 	</li>
+					 {% endif %}
+					 {% if page.about_us_section_2 %}
+					 	<li class="animation-element fade-in-up in-view">
+						  	<div class="about-us-page-section-list-subtitle">
+									{{t('vision')}}
+						  	</div>
+						  	<div class="about-us-page-section-list-text">
+									{{ page.about_us_section_2 }}
+						  	</div>
+					 	</li>
+					  {% endif %}
+					 {% if page.about_us_section_3 %}
+					 	<li class="animation-element fade-in-up in-view">
+						  	<div class="about-us-page-section-list-subtitle">
+									{{t('mission')}}
+						  	</div>
+						  	<div class="about-us-page-section-list-text">
+									{{ page.about_us_section_3 }}
+						  	</div>
+					 	</li>
+					  {% endif %}
+					{% if page.youtube_url and page.youtube_thumbnail and page.youtube_title %}
+					 	<li class="animation-element fade-in-up in-view">
+						  	<div class="about-us-page-section-list-video-hold">
+									<div class="about-us-page-section-list-video img-object-fit">
+									 	<a data-fancybox="" href="{{ page.youtube_url }}">
+										  	<img src="{{ page.youtube_thumbnail.image().fit(205,125).url() }}">
+									 	</a>
+									</div>
+									<div class="about-us-page-section-list-subtitle">
+									 	{{ page.youtube_title }}
+									</div>
+						  	</div>
+					 	</li>
+					{% endif %}
+				</ul>
+		  </div>
+	 </div>
+</section>
+
+<section class="section-30-150 about-us-achievments-page-section">
+	 <div class="row">
+		  <div class="small-12 columns nopad section-title-60 animation-element in-view">
+				<span>{{t('achievements')}}</span>
+				<h2>
+					 {{ page.achievements_text }}
+				</h2>
+		  </div>
+		  <div class="small-12 columns nopad text-and-number-list">
+				<ul>
+					{% if page.projects_count %}
+						<li class="animation-element fade-in-up in-view">
+						  	<div class="text-and-number-list-text animation-element fade-in-up anim-delay-100ms in-view">
+									{{t('projects')}}
+						  	</div>
+						  	<div class="text-and-number-list-number animation-element fade-in-up anim-delay-300ms in-view">
+									{{ page.projects_count }}
+						  	</div>
+					 	</li>
+					{% endif %}
+					{% if page.countries_count %}
+					 	<li class="animation-element fade-in-up in-view">
+						  	<div class="text-and-number-list-text animation-element fade-in-up anim-delay-100ms in-view">
+									{{t('countries')}}
+						  	</div>
+						  	<div class="text-and-number-list-number animation-element fade-in-up anim-delay-300ms in-view">
+									{{ page.countries_count }}
+						  	</div>
+					 	</li>
+					 {% endif %}
+					 {% if page.team_count %}
+					 	<li class="animation-element fade-in-up in-view">
+						  	<div class="text-and-number-list-text animation-element fade-in-up anim-delay-100ms in-view">
+									{{t('team')}}
+						  	</div>
+						  	<div class="text-and-number-list-number animation-element fade-in-up anim-delay-300ms in-view">
+									{{ page.team_count }}
+						  	</div>
+						  	<div class="text-and-number-list-text animation-element fade-in-up anim-delay-500ms in-view">
+									{{t('and_grow')}}
+						  	</div>
+					 	</li>
+					  {% endif %}
+					  {% if page.partners_count %}
+					 	<li class="animation-element fade-in-up in-view">
+						  	<div class="text-and-number-list-text animation-element fade-in-up anim-delay-100ms in-view">
+									{{t('partners')}}
+						  	</div>
+						  	<div class="text-and-number-list-number animation-element fade-in-up anim-delay-300ms in-view">
+									{{ page.partners_count }}
+						  	</div>
+					 	</li>
+					  {% endif %}
+				</ul>
+		  </div>
+		  <div class="small-12 medium-6 medium-offset-6 columns nopad">
+				<div class="small-12 columns nopad about-us-achievments-page-section-textbox">
+					 <div class="small-12 columns nopad about-us-achievments-page-section-subtitle animation-element fade-in-up in-view">
+						  {{t('qlty_commit')}}
+					 </div>
+					 <div class="small-12 columns nopad about-us-achievments-page-section-subtext animation-element fade-in-up anim-delay-100ms in-view">
+						  {{ page.quality_commitment_text }}
+					 </div>
+						<div class="small-12 columns nopad about-us-achievments-page-section-subimage animation-element fade-in-up anim-delay-300ms in-view">
+							{% for comm_logo in page.quality_commitment_logos %}
+								<img src="{{ comm_logo.image().url() }}">
+							{% endfor %}
+						</div>
+				</div>
+				<div class="small-12 columns nopad animation-element fade-in-up anim-delay-500ms in-view">
+					 <a href="{{url_route('pages::11.en')}}" class="btn-view-more-black">
+						  <span><span></span></span>
+						 {{t('view_services')}} 
+					 </a>
+				</div>
+		  </div>
+	 </div>
+</section>
+
+<section class="about-page-partners-section">
+	 <div class="row">
+		  <div class="small-12 columns nopad section-title-60 animation-element in-view">
+				<span>{{t('partners')}}</span>
+				<h2>
+					 {{ page.partners_text }}
+				</h2>
+		  </div>
+		  <div class="small-12 columns nopad about-page-partners-section-list animation-list-js">
+				<ul>
+					{% if page.partners %}
+						{% for partner in page.partners %}
+					 		<li class="animation-element fade-in-up in-view" >
+						  		<div class="about-page-partners-section-list-tooltip-hold">
+										<div class="about-page-partners-section-list-tooltip-trigger hide-for-small-only">
+									 		{{t('info')}}
+										</div>
+										<div class="about-page-partners-section-list-tooltip-content hide-for-small-only">
+									 		<div class="about-page-partners-section-list-tooltip-text">
+										  	{{ partner.description }}
+									 		</div>
+									 		<div class="about-page-partners-section-list-tooltip-link">
+										  		<a href="{{ partner.url }}" target="_blank" rel="noreferrer noopener">
+													{{t('visit_website')}}
+										  		</a>
+									 		</div>
+										</div>
+										<div class="about-page-partners-section-list-tooltip-trigger-mb show-for-small-only" data-open="companies-{{ loop.index }}" aria-controls="companies-{{ loop.index }}" aria-haspopup="true" tabindex="0">
+									 		{{t('info')}}
+										</div>
+										<div class="reveal about-page-partners-section-list-modal" id="companies-{{ loop.index }}" data-reveal data-animation-in="fadeIn" >
+											 <div class="about-page-partners-section-list-modal-title">
+												  {{t('info')}}
+												  <button class="close-button" data-close="" aria-label="Close modal" type="button"></button>
+											 </div>
+											 <div class="about-page-partners-section-list-modal-image">
+												  <img src="{{ partner.image.cropped().fit(330,200).url() }}">
+											 </div>
+											 <div class="about-page-partners-section-list-modal-text">
+												  <div class="about-page-partners-section-list-tooltip-text">
+														{{ partner.description }}
+												  </div>
+												  <div class="about-page-partners-section-list-tooltip-link">
+														<a href="{{ partner.url }}" target="_blank" rel="noreferrer noopener">
+															{{t('visit_website')}}
+														</a>
+												  </div>
+											 </div>
+										</div>
+								</div>
+								<div class="about-page-partners-section-list-logo">
+										<img src="{{ partner.image.cropped().fit(205,120).url() }}">
+								</div>
+							</li>
+						{% endfor %}
+					{% endif %}
+				</ul>
+		  </div>
+	 </div>
+</section>
+
+{% include "theme::partials.other.latest-updates"|raw %}
+
+{% include "theme::partials.other.opportunities"|raw %}
+
+
+{% include "theme::forms.contac-us"|raw with {
+	 class: 'contact',
+	 side_text: '',
+	 above_form_text: t('contact'),
+	attr: 'h2'
+ } %}
+
+{% include "theme::partials.other.map"|raw %}

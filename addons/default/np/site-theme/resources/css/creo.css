@@ -1,0 +1,27 @@
+.readonly-form {
+	pointer-events: none;
+	opacity: 0.5;
+}
+#messages .alert-success{
+	position: absolute;
+	padding: 15px 90px;
+	background: #dfb;
+	left: 50%;
+	margin-left: -90px;
+	margin-top: 15px;
+}
+
+#messages .alert-danger{
+	position: absolute;
+	padding: 15px 90px;
+	background: #fbb;
+	left: 50%;
+	margin-left: -90px;
+	margin-top: 15px;
+}
+#messages .close{
+	position: absolute;
+	right: 5px;
+	top: 3px;
+	font-size: 20px;
+}

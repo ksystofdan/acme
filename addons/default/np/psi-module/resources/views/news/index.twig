@@ -1,0 +1,66 @@
+{% extends "theme::layouts/default" %}
+
+{% block content %}
+
+    <section class="title-intro-section title-intro-section-mlarger title-intro-section-no-bread">
+        <div class="row">
+            <div class="small-12 columns nopad section-title-82 animation-element fade-in-up">
+                <h1>
+                    {{t('news')}}
+                </h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-30-150 know-center-content-section">
+        <div class="row">
+            <div class="small-12 columns nopad ncenter-news-filter-counter ncenter-news-filter-counter-m">
+                <span class="ncenter-news-filter-counter-shown">{{ items.total }}</span>/<span class="ncenter-news-filter-counter-total">{{ totalItems }}</span> {{t('articles')}}
+            </div>
+            <div class="small-12 columns nopad ncenter-news-filter animation-element fade-in-up">
+                <ul>
+                    <li {% if currentCategory == 'all' %} class="current" {% endif %} >
+                        <a href="{{ url("news") }}" >{{t('all_news')}}</a>
+                    </li>
+
+                    {% for category in categories %}
+                    <li {% if category.id == currentCategory %} class="current" {% endif %}>
+                        <a href="{{ category.public_url }}" >{{ category.title }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+                <div class="ncenter-news-filter-counter">
+                    <span class="ncenter-news-filter-counter-shown">{{ items.total }}</span>/<span class="ncenter-news-filter-counter-total">{{ totalItems }}</span> {{t('articles')}}
+                </div>
+            </div>
+            <div class="small-12 columns nopad ncenter-news-list animation-list-js animation-element">
+              <ul>
+                {% for item in items %}
+                <li>
+                  <a href="{{ item.publicUrl }}">
+                      <div class="latest-updates-owl-image img-object-fit">
+                          <img src="{{ item.thumbnail_image_url }}">
+                      </div>
+                      {# <div class="latest-updates-owl-image img-object-fit latest-updates-video">
+                          <img src="img/img-2.png">
+                      </div> #}
+                      <div class="latest-updates-owl-cat-date">
+                          {{ item.category.title }} / {{ item.publishAtFull.format('F d, Y') }}
+                      </div>
+                      <div class="latest-updates-owl-title">
+                          {{ item.title }}
+                      </div>
+                      <div class="latest-updates-owl-btn">
+                          <span>{{t('view')}}</span>
+                          {# <span class="link-watch">Watch</span> #}
+                      </div>
+                  </a>
+                </li>
+                {% endfor %}
+              </ul>
+            </div>
+            {{ items.links|raw }}
+        </div>
+    </section>
+
+{% endblock %}

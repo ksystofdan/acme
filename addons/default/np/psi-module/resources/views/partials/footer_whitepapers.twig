@@ -1,0 +1,19 @@
+<div class="about-us-page-section-list-item">
+	<div class="solutions-inner-explore-subtitle">
+		{{t('psi::solutions.footer.whitepapers')}}
+	</div>
+	<div class="solutions-inner-explore-links">
+		{% set entries = entries('knowledge', 'knowledge').where('k_hidden', 0).where('enabled', 1).where('category_id', 4).limit(3).get() %}
+		{% if knowledges['whitepapers'].count() %}
+			{% set entries = knowledges['whitepapers'] %}
+		{% endif %}
+		{% for pdfs in entries %}
+			<div class="solutions-inner-explore-link">
+				  <a href="{{ pdfs.public_url }}">
+					{# <img src="{{ img('theme::img/icon-pdf.png').url() }}"> #}
+					{{pdfs.title}}
+				  </a>
+			</div>
+		{% endfor %}
+	</div>
+</div>

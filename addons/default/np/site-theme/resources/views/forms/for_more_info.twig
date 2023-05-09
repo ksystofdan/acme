@@ -1,0 +1,34 @@
+<div id="contact-form" data-ajax="{{url_route('np.module.psi::form.contacts')}}" class="product-page-sticky-content product-page-sticky-contact">
+	 <span class="product-page-sticky-content-close product-page-sticky-contact-close"></span>
+	 <div class="product-page-sticky-title text-center">
+		  {{t('for_more_info')}}
+	 </div>
+	 <div class="small-12 columns nopad form-style">
+		 <input type="hidden" name="subject" value="{{t('form::subject.for_more_info')}}">
+		  <div class="small-12 columns nopad form-element">
+				<input required="true" type="text" name="name" data-validation="{{t('form::validate.name')}}">
+				<label for="name">{{t('full_name')}}</label>
+		  </div>
+		  <div class="small-12 columns nopad form-element">
+				<input required="true" type="text" name="company" data-validation="{{t('form::validate.company')}}">
+				<label for="company">{{t('company')}}</label>
+		  </div>
+		  <div class="small-12 columns nopad form-element">
+				<input required="true" type="text" name="email" data-validation="{{t('form::validate.email')}}">
+				<label for="email">{{t('email')}}</label>
+		  </div>
+		  <div class="small-12 columns nopad form-element">
+				<textarea required="true" type="text" name="message" data-validation="{{t('form::validate.message')}}"></textarea>
+				<label for="message">{{t('message')}}</label>
+		  </div>
+		  <div class="small-12 columns nopad text-center">
+				<button type="submit" class="btn-black">
+					 {{t('contact_us')}}
+				</button>
+		  </div>
+	 </div>
+	 
+	 <div style="display:none;" class="form-element-success-text">
+		 {{t('form::message.success')}}
+	 </div>
+</div>

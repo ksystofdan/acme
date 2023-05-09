@@ -1,0 +1,24 @@
+{
+    "name": "np/translations-module",
+    "type": "streams-addon",
+    "description": "PyroCMS 3 translations module.",
+    "keywords": [
+        "translations",
+        "module",
+        "streams"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mindaugas Simkus",
+            "email": "mindaugas.simkus@gmail.com",
+            "homepage": "http://tobuli.com/",
+            "role": "Owner"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Np\\TranslationsModule\\": "src/"
+        }
+    }
+}

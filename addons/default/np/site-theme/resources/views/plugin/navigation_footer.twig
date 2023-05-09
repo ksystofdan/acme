@@ -1,0 +1,77 @@
+                <div class="small-12 columns nopad footer-mid">
+                    <div class="small-12 large-2 columns nopadleft footer-nav-title">
+                        <span>{{ t('theme::products-services') }}</span>
+                    </div>
+                    <div class="small-12 medium-4 large-3 columns nopadleft footer-nav">
+                        <div class="footer-nav-title-media">{{ t('theme::products-services') }}</div>
+                        <span>{{ t('theme::solutions') }}:</span>
+                        <ul>
+                            {% for link in links('solutions_footer').get() %}
+                                <li>
+                                    <a href="{{ link.url }}">{{ link.title }}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+
+                        <span>{{ t('theme::components') }}:</span>
+                        <ul>
+                            {% for link in links('components_footer').get() %}
+                                <li>
+                                    <a href="{{ link.url }}">{{ link.title }}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                        
+                        <span>{{ t('theme::services') }}:</span>
+                        <ul>
+                            
+                            {% for link in links('services_footer').get() %}
+                                <li>
+                                    <a href="{{ link.url }}">{{ link.title }}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+
+                    <div class="small-12 large-1 columns nopadleft footer-nav-title">
+                        <span>{{ t('theme::industries') }}</span>
+                    </div>
+                    <div class="small-12 medium-4 large-3 columns nopadleft footer-nav">
+                        <div class="footer-nav-title-media">{{ t('theme::industries') }}</div>
+                        <span>{{ t('theme::industries.distributer') }}:</span>
+                        <ul>
+                            {% for link in links('distributor').get() %}
+                                <li>
+                                    <a href="{{ link.url }}">{{ link.title }}</a>
+                                </li>
+                            {% endfor %}                         
+                        </ul>
+                        <span>{{ t('theme::industries.manufacturer') }}:</span>
+                        <ul>
+                            {% for link in links('manufacturer').get() %}
+                                <li>
+                                    <a href="{{ link.url }}">{{ link.title }}</a>
+                                </li>
+                            {% endfor %}                          
+                        </ul>
+                        <span>{{ t('theme::industries.service_provider') }}:</span>
+                        <ul>
+                            {% for link in links('service_provider').get() %}
+                                <li>
+                                    <a href="{{ link.url }}">{{ link.title }}</a>
+                                </li>
+                            {% endfor %}                         
+                        </ul>
+                    </div>
+
+                    <div class="small-12 large-1 columns nopadleft footer-nav-title footer-empty"></div>
+                    <div class="small-12 medium-4 large-2 columns nopad footer-nav">
+                        <ul>
+                          {% for link in links('pages_meniu').get() %}
+                            <li>
+                              <a href="{{ link.url }}">{{ link.title }}</a>
+                            </li>
+                          {% endfor %}
+                        </ul>
+                    </div>
+                </div>

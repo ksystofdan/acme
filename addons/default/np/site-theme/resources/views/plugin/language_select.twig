@@ -1,0 +1,14 @@
+{% if items | length > 1 %}
+    <span>
+        {{ locale()|upper }}
+    </span>
+    <ul>
+        {% for lang in items %}
+            {% if locale() != lang.slug %}
+            <li>
+                <a href="/{{ lang.slug }}">{{ lang.slug|upper}}</a>
+            </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+{% endif %}

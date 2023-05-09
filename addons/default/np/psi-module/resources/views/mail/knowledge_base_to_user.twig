@@ -1,0 +1,7 @@
+Pdf List to download:
+
+<ul>
+{% for value in data %}
+		<li><a target="_blank" href="{{value.url}}" download>{{ value.title }}</a></li>
+{% endfor %}
+</ul>

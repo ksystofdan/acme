@@ -1,0 +1,15 @@
+
+ <div id="newsletter-form" data-ajax="{{url_route('np.module.psi::form.newsletter')}}"  class="footer-email-social-right">
+	  <div class="footer-email-social-form">
+		  <input type="hidden" name="subject" value="{{t('form::subject.newsletter_form')}}">
+			<label for="footer-subscribe">{{ t('subscribe-to-newsletter') }}</label>
+			<div class="footer-email-social-form-element">
+				 <input required="true" name="email" id="footer-subscribe" type="text" placeholder="E-mail" data-validation="{{t('form::validate.email')}}">
+				 <button type="submit"></button>
+			</div>
+			
+			 <div style="display:none;" class="form-element-success-text">
+				 {{t('form::message.success')}}
+			 </div>
+	  </div>
+ </div>

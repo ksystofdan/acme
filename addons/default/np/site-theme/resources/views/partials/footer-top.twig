@@ -1,0 +1,42 @@
+
+	<div class="small-12 columns nopad footer-top">
+		  <div class="small-12 medium-3 large-2 columns nopadleft footer-subtitle">
+			{{ t('contact') }}
+		  </div>
+		  <div class="small-12 medium-8 large-9 columns nopad">
+				<div class="small-12 columns nopad footer-title">
+					 <h2>
+					 	{{ t('theme::how_reach_us') }}
+					 </h2>
+				</div>
+				<div class="small-12 columns nopad footer-email-social">
+					 <div class="footer-email-social-left">
+						  <div class="footer-email-social-email">
+								<a href="mailto:{{t('theme::footer.email')}}">
+									 {{ t('email') }}: {{t('theme::footer.email')}}
+								</a>
+						  </div>
+						  <div class="footer-email-social-social">
+								<ul>
+									 <li>
+										  <a href="{{ t('theme::linkedin.link') }}" target="_blank" rel="noreferrer noopener">
+												<img src="{{ img('theme::img/footer-linkedin.svg').url() }}">
+										  </a>
+									 </li>
+									 <li>
+										  <a href="{{ t('theme::youtube.link') }}" target="_blank" rel="noreferrer noopener">
+												<img src="{{ img('theme::img/footer-youtube.svg').url() }}">
+										  </a>
+									 </li>
+									 <li>
+										  <a href="{{ t('theme::vimeo.link') }}" target="_blank" rel="noreferrer noopener">
+												<img src="{{ img('theme::img/footer-vimeo.svg').url() }}">
+										  </a>
+									 </li>
+								</ul>
+						  </div>
+					 </div>
+					 {% include "theme::forms/newsletter" %}
+				</div>
+		  </div>
+	 </div>

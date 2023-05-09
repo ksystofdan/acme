@@ -1,0 +1,9 @@
+{
+    "name": "np/psi-module",
+    "type": "streams-addon",
+    "autoload": {
+        "psr-4": {
+            "Np\\PsiModule\\": "src/"
+        }
+    }
+}

@@ -1,0 +1,94 @@
+{% extends "theme::layouts/default" %}
+
+{% block content %}
+
+            <div class="breadcrumbs-media-hold">
+                <div class="row">
+                    <div class="small-12 columns nopad breadcrumbs-media">
+                        <a href="{{ url("news") }}">
+                            {{t('news')}}
+                        </a>
+                        /
+                        {{ item.title }}
+                    </div>
+                </div>
+            </div>
+
+            <section class="title-intro-section">
+                <div class="row">
+                    <div class="small-12 large-8 large-offset-2 columns nopad">
+                        <div class="small-12 columns nopad news-inner-page-cat-date animation-element fade-in-up">
+                            {{ item.category.title }} / {{ item.publishAtFull.format('F d, Y') }}
+                        </div>
+                        <div class="small-12 columns nopad section-title-60 section-title-normal animation-element anim-delay-250ms">
+                            <h1>
+                                {{ item.title }}
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {% if item.image and item.hide_header.isFalse() %}
+            <div class="section-full-video-image">
+                <div class="row row-full">
+                    <div class="small-12 columns nopad section-full-video-image-hold animation-element fade-in-up">
+                        <!-- image -->
+                        <div class="section-full-video-image-box img-object-fit">
+                            <img src="{{ item.image.cropped().widen(1920).url() }}">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+            <section class="section-30-150 news-inner-page-content-section">
+                <div class="row">
+                    <div class="small-12 large-8 large-offset-2 columns nopad news-inner-page-content animation-element fade-in-up">
+                        <div class="news-inner-page-content-left">
+
+                        {{ sidebar|raw }}
+
+                        </div>
+                        <div class="news-inner-page-content-right">
+                            {{ jumpToBlock|raw }}
+                            {{ content| raw }}
+                            <div class="small-12 columns nopad news-inner-page-share">
+                                <div class="small-6 columns nopadleft news-inner-page-share-left">
+                                    <span>{{ t("posted") }}:</span> {{ item.publishAtFull.format('F d, Y') }}
+                                </div>
+                                <div class="small-6 columns nopadright news-inner-page-share-right">
+                                    <ul>
+                                        <li>
+                                            {{ t("share") }}:
+                                        </li>
+                                        <li>
+                                            <a target="_blank"  href="https://www.facebook.com/sharer/sharer.php?u={{ item.publicUrl|url_encode }}">
+                                                {{ img('theme::img/icon-share-fb.svg').alt('')|raw }}
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" href="https://twitter.com/intent/tweet?text=Check%20out%20this%20article%3A&url={{ item.publicUrl|url_encode }}">
+                                                {{ img('theme::img/icon-share-twitter.svg').alt('')|raw }}
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url={{ item.publicUrl|url_encode }}">
+                                                {{ img('theme::img/icon-share-linkedin.svg').alt('')|raw }}
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="row">
+                <div class="news-inner-page-content-section-divider"></div>
+            </div>
+
+            {% include "theme::partials.other.latest-updates"|raw %}
+
+
+{% endblock %}

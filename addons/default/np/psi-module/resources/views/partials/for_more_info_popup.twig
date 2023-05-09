@@ -1,0 +1,56 @@
+<div class="product-page-sticky animation-element fade-in anim-delay-1s text-center in-view">
+	 <div class="product-page-sticky-title">
+		  {{t('for_more_info')}}
+	 </div>
+	 <div class="product-page-sticky-btns">
+		  <ul>
+				<li>
+					 <span class="product-page-stick-contact-trigger">
+						  {{t('contact_us')}}
+					 </span>
+				</li>
+				<li>
+					 <span class="product-page-stick-docs-trigger">
+						  {{t('view_docs')}}
+					 </span>
+				</li>
+		  </ul>
+	 </div>
+</div>
+
+{% include "theme::forms.for_more_info"|raw %}
+
+{% if docs_disable.isFalse() %}
+	<div class="product-page-sticky-docs">
+	 	<div class="product-page-sticky-docs-box">
+		  	<span class="product-page-sticky-content-close product-page-sticky-docs-close"></span>
+		  	<div class="product-page-sticky-title text-center">
+					{{t('for_more_info')}}
+		  	</div>
+		  	<div class="product-page-sticky-contact-docs-list">
+					<ul>
+						{% for pdf in entries('theme_settings', 'pdf_download_list').get() %}
+							<li>
+								<a href="{{ url_to(pdf.pdf.viewPath()) }}" class="download_pdf" download>
+									<img src="{{ img('theme::img/img-acrobat.png').url() }}">
+									<div class="document-download-list-textbox">
+										<div class="document-download-list-title">
+											{{pdf.title}}.pdf
+										</div>
+										<div class="document-download-list-filesize">
+											PDF ( {{ pdf.pdf.size() }} )
+										</div>
+									</div>
+								</a>
+							</li>
+						{% endfor %}
+					</ul>
+		  	</div>
+	 	</div>
+	 	<div class="product-page-sticky-contact-docs-all text-center">
+		  	<a href="#" class="btn-black download_all_pdf">
+					{{t('download_all')}}
+		  	</a>
+	 	</div>
+	</div>
+{% endif %}

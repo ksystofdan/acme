@@ -1,0 +1,258 @@
+{% extends "theme::layouts/default" %}
+
+{% block content %}
+
+	<!-- for change on global-search-hold-section add/remove: is-active -->
+	<div class="global-search-hold-section is-active"> 
+		
+		<div class="global-search-hold-section-top animation-element fade-in-up">
+			<div class="row">
+				<div class="small-12 columns nopad global-search-hold-section-search">
+					<div class="small-12 columns nopad global-search-hold-section-search-input">
+						<span class="clearInput"></span>
+						<form action="{{url_route('np.module.psi::search.result')}}" method="GET">
+							<input class="inputTerm" type="search" name="term" value="{{term}}" placeholder="{{t('search')}}"/>
+						</form>
+					</div>
+					{% if emptyState == 0 %}
+						<div class="small-12 columns nopad global-search-hold-section-search-nav search-filter">
+							<ul>
+								<li class="current" data-select="all">
+									{{t('all_results')}}
+								</li>
+								{% if count(pages) %}
+									<li data-select="pages">
+										<a>
+											{{t('pages')}}
+										</a>
+									</li>
+								{% endif %}
+								{% if count(news) %}
+									<li data-select="news">
+										<a>
+											{{t('info_news')}}
+										</a>
+									</li>
+								{% endif %}
+								{% if count(products) %}
+									<li data-select="products">
+										<a>
+											{{t('products')}}
+										</a>
+									</li>
+								{% endif %}
+								{% if count(knowledge) %}
+									<li data-select="documents">
+										<a>
+											{{t('documents')}}
+										</a>
+									</li>
+								{% endif %}
+							</ul>
+						</div>
+					{% else %}
+						<div class="small-12 columns nopad">
+							<div class="small-12 columns nopad">
+								{{t('no_search_found')}}: <i>{{term}}</i>
+							</div>
+						</div>
+					{% endif %}
+					<div class="small-12 columns nopad global-search-hold-section-search-text">
+						<div class="small-12 columns nopad global-search-hold-section-search-text-before">
+							{{t('type_press_enter')}}
+						</div>
+						{# <div class="small-12 columns nopad global-search-hold-section-search-text-after">
+							<span>
+								Maybe you mean:
+							</span>
+							<ul>
+								<li>
+									“<div>D1</div>” (<div>12,335</div>)
+								</li>
+								<li>
+									<div>D1</div>2-140300 (<div>12</div>)
+								</li>
+								<li>
+									<div>D1</div>0-194500 (<div>11</div>)
+								</li>
+								<li>
+									<div>D1</div>2-198500 (<div>1</div>)
+								</li>
+								<li>
+									<div>D1</div>0-000000 (<div>1</div>)
+								</li>
+								<li>
+									<div>D1</div>2-140300 (<div>1</div>)
+								</li>
+								<li>
+									<div>D1</div>0-194500 (<div>1</div>)
+								</li>
+								<li>
+									<div>D1</div>2-198500 (<div>1</div>)
+								</li>
+								<li>
+									<div>D1</div>0-000000 (<div>1</div>)
+								</li>
+								<li>
+									<div>D1</div>2-140300 (<div>1</div>)
+								</li>
+							</ul>
+						</div> #}
+					</div>
+				</div>
+			</div>
+		</div>
+		{% if count(pages) %}
+			<section class="section-30-150 search-results-section search-results-section-pages" data-type="pages">
+				<div class="row">
+					<div class="small-12 columns nopad section-title-60 section-title-normal animation-element fade-in-up">
+						<h2>
+							{{count(pages)}} {{t('pages')}}
+						</h2>
+					</div>
+					<div class="small-12 columns nopad search-results-page-list animation-list-js">
+						<ul>
+							{% for page in pages %}
+								<li class="animation-element fade-in-up">
+									<a href="{{ url_to(page.slug) }}" rel="noopener">
+										<div class="search-results-page-list-title">
+											{{ page.title }}
+										</div>
+									</a>
+								</li>
+							{% endfor %}
+						</ul>
+					</div>
+				</div>
+			</section>
+		{% endif %}
+		
+		
+		{# {% set news = search(term).in(['news.news']).get() %} #}
+		{% if count(news) %}
+			<section class="section-30-150 search-results-section search-results-section-news"  data-type="news">
+				<div class="row">
+					<div class="small-12 columns nopad section-title-60 section-title-normal animation-element fade-in-up">
+						<h2>
+							{{count(news)}} {{t('info_news')}}
+						</h2>
+					</div>
+					<div class="small-12 columns nopad latest-updates-slider">
+						<div class="owl-carousel owl-theme latest-updates-owl animation-owl-js">
+							{% for new in news %}
+								<div class="item animation-element fade-in-up">
+									<a href="{{ new.publicUrl }}">
+										<div class="latest-updates-owl-image img-object-fit">
+											<img src="{{ new.thumbnail_image_url }}"/>
+										</div>
+										<div class="latest-updates-owl-cat-date">
+											{{ new.category.title }} / {{ new.publishAtFull.format('F d, Y') }}
+										</div>
+										<div class="latest-updates-owl-title">
+											{{ new.title }}
+										</div>
+										<div class="latest-updates-owl-btn">
+											<span>{{t('view')}}</span>
+										</div>
+									</a>
+								</div>
+							{% endfor %}
+						</div>
+					</div>
+					<div class="small-12 columns nopad animation-element fade-in-up">
+						<a class="btn-view-more-black btn-mouse-js" href="{{url_route('pages::8.en')}}">
+							<span><span></span></span>
+							{{t('view_all')}}
+						</a>
+					</div>
+				</div>
+			</section>
+		{% endif %}	
+		
+		{% if count(knowledge) %}
+			<section class="section-30-150 search-results-section search-results-section-news"  data-type="documents">
+				<div class="row">
+					<div class="small-12 columns nopad section-title-60 section-title-normal animation-element fade-in-up">
+						<h2>
+							{{count(knowledge)}} {{t('documents')}}
+						</h2>
+					</div>
+					<div class="small-12 columns nopad latest-updates-slider">
+						<div class="owl-carousel owl-theme latest-updates-owl animation-owl-js">
+							{% for document in knowledge %}
+								<div class="item animation-element fade-in-up">
+									<a {{ document.lightbox }} href="{{ document.publicUrl }}">
+										<div class="latest-updates-owl-image img-object-fit">
+											<img src="{{ document.thumbnail_image_url }}"/>
+										</div>
+										<div class="latest-updates-owl-cat-date">
+											{{ document.category.title }} / {{ document.publishAtFull.format('F d, Y') }}
+										</div>
+										<div class="latest-updates-owl-title">
+											{{ document.title }}
+										</div>
+										<div class="latest-updates-owl-btn">
+											<span>{{t('view')}}</span>
+										</div>
+									</a>
+								</div>
+							{% endfor %}
+						</div>
+					</div>
+					<div class="small-12 columns nopad animation-element fade-in-up">
+						<a class="btn-view-more-black btn-mouse-js" href="{{url_route('pages::7.en')}}">
+							<span><span></span></span>
+							{{t('view_all')}}
+						</a>
+					</div>
+				</div>
+			</section>
+		{% endif %}	
+		
+		{# {% set products = entries('products', 'products').search(term).get() %} #}
+		{% if count(products) %}
+			<section class="section-30-150 search-results-section search-results-section-products"  data-type="products">
+				<div class="row">
+					<div class="small-12 columns nopad section-title-60 section-title-normal animation-element fade-in-up">
+						<h2>
+							{{count(products)}} {{t('products')}}
+						</h2>
+					</div>
+					<div class="small-12 columns nopad products-list-x4 animation-list-js">
+						<ul>
+							{% for product in products %}
+								<li class="animation-element fade-in-up">
+									<a href="{{product.public_url}}">
+										<div class="products-filter-content-list-brand">
+											{{product.brand.title}}
+										</div>
+										<div class="products-filter-content-list-image-hold">
+											<div class="products-filter-content-list-image img-object-fit">
+												<img src="{{ product.image_url }}">
+											</div>
+										</div>
+										<div class="products-filter-content-list-title-hold">
+											<div class="products-filter-content-list-title">
+												{{product.title}}
+											</div>
+											<span>{{t('view')}}</span>
+										</div>
+									</a>
+								</li>
+							{% endfor %}
+						</ul>
+					</div>
+					<div class="small-12 columns nopad animation-element fade-in-up">
+						<a class="btn-view-more-black btn-mouse-js" href="{{url('components')}}">
+							<span><span></span></span>
+							{{t('view_all')}}
+						</a>
+					</div>
+				</div>
+			</section>
+		{% endif %}
+
+	</div>
+
+
+{% endblock %}

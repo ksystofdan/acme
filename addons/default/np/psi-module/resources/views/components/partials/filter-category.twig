@@ -1,0 +1,19 @@
+<div class="product-filter-dropdown">
+	<div class="filter-dropdown-trigger-hold">
+		 <div class="filter-dropdown-trigger"></div>
+		 <div class="filter-dropdown-trigger-text">{{t('categories')}} <span></span></div>
+		 <div class="filter-dropdown-trigger-clear">{{t('clear')}}</div>
+	</div>
+	<div class="filter-dropdown-content">
+		 <ul>
+			 {% for category in entries('products', 'products').where('enabled', 1).where('component_group_id', item.id).groupBy('category_id').get() %}
+				{% set count_cat = entries('products', 'products').where('enabled', 1).where('category_id', category.category.id).where('component_group_id', item.id).count() %}
+				 <li>
+						 <div class="filter-dropdown-checkbox">
+							  <input id="filter-dropdown-cat-{{ loop.index }}" name="category" type="checkbox" value="{{category.category.id}}"><label for="filter-dropdown-cat-{{ loop.index }}">{{category.category.title}} <span>({{count_cat}})</span></label>
+						 </div>
+					</li>
+			 {% endfor %}
+		 </ul>
+	</div>
+</div>

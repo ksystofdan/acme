@@ -1,0 +1,38 @@
+<div class="small-12 columns nopad news-inner-page-block news-inner-page-block-form-block">
+    
+     {# {% if session_get("kwnoledge_form") == 'submited'  %}
+        {% if pdf_list|length > 0 %}
+            <section class="product-page-whitepapers">
+                 <div class="row">
+                      <div class="small-12 large-12 columns nopad document-download-list animation-list-js">
+                            <ul>
+                                 {% for file in pdf_list %}
+                                 <li class="animation-element fade-in-up">
+                                      <a href="{{ file.viewPath() }}" download>
+                                            {{ img('theme::img/img-acrobat.png').alt('')|raw }}
+                                            <div class="document-download-list-textbox">
+                                                 <div class="document-download-list-title">
+                                                      {{ file.name }}
+                                                 </div>
+                                                 <div class="document-download-list-filesize">
+                                                      {{ file.extension|upper }} ( {{ file.readable_size|lower }} )
+                                                 </div>
+                                            </div>
+                                      </a>
+                                 </li>
+                                 {% endfor %}
+                            </ul>
+                      </div>
+                 </div>
+            </section>
+        {% endif %}
+    {% else %} #}
+        <div class="small-12 columns nopad news-inner-page-block-form-title">
+            <img src="{{ img('theme::img/img-acrobat.png').url() }}">
+            {{ t('forms::buyers_guide_top') }}
+        </div>
+        {% include "theme::forms.buyers_guide"|raw with{
+            'id' : article_id
+        } %}
+    {# {% endif %}  #}
+</div>

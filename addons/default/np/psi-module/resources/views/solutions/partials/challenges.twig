@@ -1,0 +1,58 @@
+{% if item.challenges|length > 0 %}
+<section class="section-30-150 solutions-inner-accordion-section">
+	 <div class="row">
+		  <div class="small-12 large-7 columns nopad section-title-60 animation-element">
+				<span>{{t('psi::challenges.before_title')}}</span>
+				<h2>
+					 {{t('psi::challenges.solutions.title')}}
+				</h2>
+		  </div>
+		  <div class="small-12 cplumns nopad service-custom-accordion-hold">
+				<div class="small-12 large-6 large-offset-6 columns nopad service-custom-accordion-subtitles animation-element fade-in-up">
+					 <div class="small-6 columns nopad service-custom-accordion-subtitle">
+						  {{t('psi::solutions.challenges.common_solution')}}
+					 </div>
+					 <div class="small-6 columns nopad service-custom-accordion-subtitle">
+						  {{t('psi::solutions.challenges.acme_solution')}}
+					 </div>
+				</div>
+				<div class="small-12 columns nopad service-custom-accordion-items animation-div-js">
+					 {% for challenge in item.challenges %}
+					 <div class="small-12 columns nopad service-custom-accordion-item scai-ellipse animation-element fade-in-up">
+						  <div class="small-12 large-6 columns nopadleft service-custom-accordion-item-title">
+								<h3>
+									 {{ challenge.title }}
+								</h3>
+								<p>
+									 {{t('psi::solutions.challenges.common_acme_solution')}}
+								</p>
+						  </div>
+						  <div class="small-12 large-6 columns nopad service-custom-accordion-item-content">
+								<div class="small-12 large-6 columns nopad service-custom-accordion-item-content-first">
+									 <div class="small-12 columns nopad service-custom-accordion-subtitle">
+										  {{t('psi::solutions.challenges.common_solution')}}
+									 </div>
+									 <div class="small-12 columns nopad service-custom-accordion-item-text-hold">
+										  <div class="small-12 columns nopad service-custom-accordion-item-text">
+												{{ challenge.text_1|raw }}
+										  </div>
+									 </div>
+								</div>
+								<div class="small-12 large-6 columns nopad service-custom-accordion-item-content-second">
+									 <div class="small-12 columns nopad service-custom-accordion-subtitle">
+										  {{t('psi::solutions.challenges.acme_solution')}}
+									 </div>
+									 <div class="small-12 columns nopad service-custom-accordion-item-text-hold">
+										  <div class="small-12 columns nopad service-custom-accordion-item-text">
+											  {{ challenge.text_2|raw }}
+										  </div>
+									 </div>
+								</div>
+						  </div>
+					 </div>
+					 {% endfor %}
+				</div>
+		  </div>
+	 </div>
+</section>
+{% endif %}

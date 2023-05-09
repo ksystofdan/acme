@@ -1,0 +1,7 @@
+<ul>
+	{% for input in data %}
+		{% if input.value %}
+			<li>{{input.name}}: {{ input.value }} </li>
+		{% endif %}
+	{% endfor %}
+</ul>

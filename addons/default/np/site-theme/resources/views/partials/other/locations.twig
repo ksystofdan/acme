@@ -1,0 +1,47 @@
+<section class="section-30-150 contact-page-info-section">
+	 <div class="row">
+		  <div class="small-12 columns nopad section-title-60 animation-element in-view">
+				<span>{{ t('location') }}</span>
+				<h2>
+					 {{ title_above }}
+				</h2>
+		  </div>
+		  <div class="small-12 columns nopad contact-page-info-list animation-list-js">
+				<ul>
+					{% for location in locations %}
+						<li class="animation-element fade-in-up in-view">
+						  	<div class="contact-page-info-list-title">
+									{{location.title}}
+						  	</div>
+						  	<div class="contact-page-info-list-text">
+									<a href="{{ location.url }}">
+									 	{{ location.address|raw }}
+									</a>
+						  	</div>
+						  	<div class="contact-page-info-list-links">
+									<ul>
+										{% for pef in location.email_phone_list %}
+											<li >
+												{% if pef.type == 'P' %}
+													<a href="tel:{{pef.email_phone}}" class="contact-page-info-list-phone">
+														T: {{pef.email_phone}}
+													</a>
+												{% elseif pef.type == 'E' %}
+													<a href="mailto:{{pef.email_phone}}" class="contact-page-info-list-email">
+														E: {{pef.email_phone}}
+													</a>
+												{% elseif pef.type == 'F' %}	
+													<a href="tel:{{pef.email_phone}}" class="contact-page-info-list-fax">
+														F: {{pef.email_phone}}
+													</a>
+												{% endif %}
+											</li>
+										{% endfor %}
+									</ul>
+						  	</div>
+					 	</li>
+					{% endfor %}
+				</ul>
+		  </div>
+	 </div>
+</section>

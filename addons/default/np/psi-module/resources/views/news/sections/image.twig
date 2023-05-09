@@ -1,0 +1,17 @@
+<div id="custom-block-id-{{ blockNum }}" class="small-12 columns nopad news-inner-page-block news-inner-page-img-block">
+    {% if entry.title is not empty  %}
+    <div class="small-12 columns nopad entry">
+        <h3>
+            {{ entry.title }}
+        </h3>
+    </div>
+    {% endif %}
+    <div class="small-12 columns nopad news-inner-page-block-img">
+        <img src="{{ entry.image.cropped().url() }}"/>
+        {% if entry.description is not empty %}
+        <span>
+            a{{ entry.description }}
+        </span>
+        {% endif %}
+    </div>
+</div>

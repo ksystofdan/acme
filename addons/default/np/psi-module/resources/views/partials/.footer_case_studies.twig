@@ -1,0 +1,12 @@
+<div class="solutions-inner-explore-subtitle">
+	{{t('psi::industries.footer.case_stud')}}
+</div>
+<div class="solutions-inner-explore-links">
+	{% for video in entries('knowledge', 'knowledge').where('category_id', 3).limit(3).get() %}
+		<div class="solutions-inner-explore-link">
+			<a data-fancybox="" href="{{ video.youtube_url }}">
+				{{ video.title }}
+			</a>
+		</div>
+	{% endfor %}
+</div>

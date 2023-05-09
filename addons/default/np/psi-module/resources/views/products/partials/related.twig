@@ -1,0 +1,40 @@
+<section class="section-30-150 product-page-list-section">
+	 <div class="row">
+		  <div class="small-12 large-7 columns nopad section-title-60 animation-element">
+				<span>{{t('products')}}</span>
+				<h2>
+					 {{t('product::some_relevant_products')}}
+				</h2>
+		  </div>
+		  <div class="small-12 columns nopad products-list-x4 animation-list-js">
+				<ul>
+					 {% for item in relatedItems %}
+					 <li class="animation-element fade-in-up">
+						  <a href="{{ item.public_url }}">
+								<div class="products-filter-content-list-brand">
+									 {{ item.brand.title }} 
+								</div>
+								<div class="products-filter-content-list-image-hold">
+									 <div class="products-filter-content-list-image img-object-fit">
+										  <img src="{{ item.image_url }}">
+									 </div>
+								</div>
+								<div class="products-filter-content-list-title-hold">
+									 <div class="products-filter-content-list-title">
+										  {{ item.title }}
+									 </div>
+									 <span>{{t('view')}}</span>
+								</div>
+						  </a>
+					 </li>
+					 {% endfor %}
+				</ul>
+		  </div>
+		  <div class="small-12 large-3 large-offset-9 columns nopad products-inner-products-list-x4-btn animation-element fade-in-up anim-delay-250ms">
+				<a class="btn-view-more-black" href="#">
+					 <span><span></span></span>
+					 {{t('view_all')}}
+				</a>
+		  </div>
+	 </div>
+</section>

@@ -1,0 +1,9 @@
+Opportunities form:
+
+<ul>
+	{% for key,value in data %}
+		{% if value  %}
+			<li>{{ key }} - {{ value }} </li>
+		{% endif %}
+	{% endfor %}
+</ul>

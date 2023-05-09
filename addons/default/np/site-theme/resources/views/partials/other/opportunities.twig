@@ -1,0 +1,131 @@
+<section class="section-30-150 about-us-page-opportunities-section">
+	 <div class="row">
+		  <div class="small-12 columns nopad section-title-60 section-title-normal animation-element in-view">
+				<h2>
+					 {{t('opportunities')}}
+				</h2>
+		  </div>
+		  <div class="small-12 columns nopad about-us-page-opportunities-filter text-right">
+				<div class="small-12 columns nopad components-page-content-filter">
+					 <div class="components-page-content-filter-trigger-hold animation-element fade-in-up in-view">
+						  <div class="components-page-content-filter-trigger">
+								{{t('all_departments')}}
+						  </div>
+						  <div class="components-page-content-filter-list-hold text-left" style="">
+								<ul>
+									 <li>
+										  <a class="current">
+												{{t('all_departments')}}
+										  </a>
+									 </li>
+									 <li>
+										{% for cat in entries('oppportunities', 'category').orderBy('sort_order', 'ASC').get() %}
+										  <a data-cat="{{cat.title}}">
+												{{cat.title}}
+										  </a>
+										{% endfor %}
+									 </li>
+								</ul>
+						  </div>
+					 </div>
+				</div>
+			  
+		  </div>
+		  <div class="small-12 columns nopad about-us-page-opportunities-list animation-div-js">
+			 {% for oppo in entries('oppportunities', 'opportunities').orderBy('sort_order', 'ASC').get() %} 
+				<div class="small-12 columns nopad about-us-page-opportunities-list-item animation-element fade-in-up in-view" data-cat="{{ oppo.category.title }}">
+					<span data-open="job-reveal-{{ loop.index }}" aria-controls="job-reveal-{{ loop.index }}" aria-haspopup="true" tabindex="0">
+						  <div class="small-12 large-6 columns nopad about-us-page-opportunities-list-title">
+								<h3>
+									{{oppo.title}}
+								</h3>
+								<p>
+									{{ oppo.category.title }} / {{ oppo.place.title }}
+								</p>
+						  </div>
+						  <div class="small-12 large-6 columns nopad about-us-page-opportunities-list-textbox">
+								<div class="small-12 large-6 columns nopad about-us-page-opportunities-list-text">
+									{{ oppo.category.title }}
+								</div>
+								<div class="small-12 large-6 columns nopad about-us-page-opportunities-list-text">
+									{{ oppo.place.title }}
+								</div>
+						  </div>
+					 </span>
+				</div>
+				
+				<div class="reveal full job-reveal-hold without-overlay" id="job-reveal-{{ loop.index }}" data-reveal="" data-animation-in="fade-in fast" data-animation-out="fade-out fast" role="dialog" aria-hidden="true" data-yeti-box="job-reveal-{{ loop.index }}" data-resize="job-reveal-{{ loop.index }}" tabindex="-1" style="display: none; top: 0px; left: 0px; margin: 0px;">
+					  <div class="job-reveal-header">
+							<div class="row">
+								 <div class="small-6 columns nopadleft job-reveal-header-logo">
+									  <img src="{{ img('theme::img/icon-main-logo.svg').url() }}" alt="acme logo">
+								 </div>
+								 <div class="small-6 columns nopadright text-right">
+									  <button class="close-button" data-close="" aria-label="Close modal" type="button"></button>
+								 </div>
+							</div>
+					  </div>
+					  <div class="row row-672">
+							<div class="small-12 column nopad job-reveal-hold-textbox">
+								 <div class="small-12 column nopad job-reveal-content-top text-center">
+									  <div class="small-12 column nopad job-reveal-subtitle">
+											{{ oppo.category.title }}
+									  </div>
+									  <div class="small-12 column nopad section-title-60">
+											<h2>
+												{{oppo.title}}
+											</h2>
+									  </div>
+								 </div>
+				
+								 <div class="small-12 columns nopad">
+									  <div class="small-12 columns nopad news-inner-page-block entry">
+											<h3>
+												{{t('description')}}
+											</h3>
+											<p>
+												{{oppo.description}}
+											</p>
+									  </div>
+									  <div class="small-12 columns nopad news-inner-page-block entry">
+										  {% for text_block in oppo.block %}
+										  	<h3>
+													{{text_block.title}}
+										  	</h3>
+											  {{text_block.text|raw}}
+										  {% endfor %}
+									  </div>
+								 </div>
+							</div>
+				
+							{% include "theme::forms.opportunity_form"|raw with{
+								index: loop.index,
+								oppo_name: oppo.title
+							}%}
+							
+							
+					  </div>
+					  <div class="job-reveal-form-apply-sticky-hold">
+							<div class="job-reveal-form-apply-sticky-pc">
+								 <span class="job-reveal-scroll-to btn-apply">
+									  {{t('apply')}} <span></span>
+								 </span>
+							</div>
+							<div class="job-reveal-form-apply-sticky-media">
+								 <span class="job-reveal-scroll-to btn-border-dashed">
+									  {{t('apply')}}
+								 </span>
+							</div>
+					  </div>
+				 </div>
+				 
+			 {% endfor %}
+		  </div>
+		  {# <div class="small-12 columns nopad animation-element fade-in-up anim-delay-250ms in-view">
+				<a href="#" class="btn-view-more-black">
+					 <span><span></span></span>
+					 {{t('view_all')}}
+				</a>
+		  </div> #}
+	 </div>
+</section>

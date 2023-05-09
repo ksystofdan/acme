@@ -1,0 +1,11 @@
+{% if items | length > 1 %}
+    <div class="select-language-wrap">
+        <span class="custom-select">
+            <select class="custom-select-el select-language">
+                {% for lang in items %}
+                    <option {% if locale() == lang.slug %} selected="selected" {% endif %} value="{{ url(lang.slug)}}">{{ lang.slug|upper}}</option>
+                {% endfor %}
+            </select>
+        </span>
+    </div>
+{% endif %}

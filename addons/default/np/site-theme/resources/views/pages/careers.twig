@@ -1,0 +1,87 @@
+<section class="title-intro-section title-intro-section-no-bread">
+	 <div class="row">
+		  <div class="small-12 columns nopad section-title-82 animation-element fade-in-up in-view">
+				<h1>{{ page.title }}</h1>
+		  </div>
+	 </div>
+</section>
+
+<div class="section-full-video-image">
+	 <div class="row row-full">
+		  <div class="small-12 columns nopad section-full-video-image-hold animation-element fade-in-up in-view">
+				<!-- image -->
+				{% if page.header_image %}
+					<div class="section-full-video-image-box img-object-fit">
+					 	<img src="{{ page.header_image.cropped().url() }}">
+					</div>
+				{% endif %}
+		  </div>
+	 </div>
+</div>
+
+<section class="section-30-150 about-us-achievments-page-section">
+	 <div class="row">
+		  <div class="small-12 columns nopad section-title-60 animation-element in-view">
+				<span>{{t('theme:about_us')}}</span>
+				<h2>
+					{{ page.page_description }}
+				</h2>
+		  </div>
+		  <div class="small-12 columns nopad text-and-number-list">
+				<ul>
+				  {% if page.team_count %}
+					  <li class="animation-element fade-in-up in-view">
+							<div class="text-and-number-list-text animation-element fade-in-up anim-delay-100ms in-view">
+								 {{t('team')}}
+							</div>
+							<div class="text-and-number-list-number animation-element fade-in-up anim-delay-300ms in-view">
+								 {{ page.team_count }}
+							</div>
+							<div class="text-and-number-list-text animation-element fade-in-up anim-delay-500ms in-view">
+								 {{t('and_grow')}}
+							</div>
+					  </li>
+					{% endif %}
+					 {% if page.nationalities_count %}
+						  <li class="animation-element fade-in-up in-view">
+								<div class="text-and-number-list-text animation-element fade-in-up anim-delay-100ms in-view">
+									 {{t('nationalities')}}
+								</div>
+								<div class="text-and-number-list-number animation-element fade-in-up anim-delay-300ms in-view">
+									 {{ page.nationalities_count }}
+								</div>
+						  </li>
+					  {% endif %}
+					 {% if page.office_locations_count %}
+							<li class="animation-element fade-in-up in-view">
+								 <div class="text-and-number-list-text animation-element fade-in-up anim-delay-100ms in-view">
+									  {{t('office_locations')}}
+								 </div>
+								 <div class="text-and-number-list-number animation-element fade-in-up anim-delay-300ms in-view">
+									  {{ page.office_locations_count }}
+								 </div>
+							</li>
+						{% endif %}
+					 {% if page.founded_in %}
+						 <li class="animation-element fade-in-up in-view">
+							  <div class="text-and-number-list-text animation-element fade-in-up anim-delay-100ms in-view">
+									{{t('founded_in')}}
+							  </div>
+							  <div class="text-and-number-list-number animation-element fade-in-up anim-delay-300ms in-view">
+									{{ page.founded_in }}
+							  </div>
+						 </li>
+					 {% endif %}
+				</ul>
+		  </div>
+		  <div class="small-12 medium-6 medium-offset-6 columns nopad jobs-page-text-lage">
+				<div class="small-12 columns nopad about-us-achievments-page-section-textbox">
+					 <div class="small-12 columns nopad about-us-achievments-page-section-subtext animation-element fade-in-up anim-delay-500ms in-view">
+						  {{ page.additional_text }}
+					 </div>
+				</div>
+		  </div>
+	 </div>
+</section>
+
+{% include "theme::partials.other.opportunities"|raw %}

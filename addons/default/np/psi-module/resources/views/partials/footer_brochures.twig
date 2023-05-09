@@ -1,0 +1,19 @@
+<div class="about-us-page-section-list-item">
+	<div class="solutions-inner-explore-subtitle">
+		{{t('psi::solutions.footer.brochures')}} 
+	</div>
+	<div class="solutions-inner-explore-links">
+		{% set entries = entries('knowledge', 'knowledge').where('k_hidden', 0).where('enabled', 1).where('category_id', 5).limit(3).get() %}
+		{% if knowledges['brochures'].count() %}
+			{% set entries = knowledges['brochures'] %}
+		{% endif %}
+		{% for brochure in entries %}
+			 <div class="solutions-inner-explore-link">
+				  <a href="{{ brochure.public_url }}">
+					{# <img src="{{ img('theme::img/icon-pdf.png').url() }}"> #}
+					{{brochure.title}}
+				  </a>
+			</div>
+		{% endfor %}
+	</div>
+</div>

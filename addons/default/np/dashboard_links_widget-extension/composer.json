@@ -1,0 +1,9 @@
+{
+    "name": "np/dashboard_links_widget-extension",
+    "type": "streams-addon",
+    "autoload": {
+        "psr-4": {
+            "Np\\DashboardLinksWidgetExtension\\": "src/"
+        }
+    }
+}

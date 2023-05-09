@@ -1,0 +1,31 @@
+{% if item.whitepapers|length > 0 %}
+<section class="section-30-150 product-page-whitepapers">
+	 <div class="row">
+		  <div class="small-12 columns large-7 nopad section-title-60 animation-element">
+				<span>{{t('whitepapers')}}</span>
+				<h2>
+					 {{t('product::useful_docs_text')}}
+				</h2>
+		  </div>
+		  <div class="small-12 large-6 large-offset-6 columns nopad document-download-list animation-list-js">
+				<ul>
+					 {% for file in item.whitepapers %}
+					 <li class="animation-element fade-in-up">
+						  <a href="{{ file.download_url }}">
+								{{ img('theme::img/img-acrobat.png').alt('')|raw }}
+								<div class="document-download-list-textbox">
+									 <div class="document-download-list-title">
+										  {{ file.name }}
+									 </div>
+									 <div class="document-download-list-filesize">
+										  {{ file.extension|upper }} ( {{ file.readable_size|lower }} )
+									 </div>
+								</div>
+						  </a>
+					 </li>
+					 {% endfor %}
+				</ul>
+		  </div>
+	 </div>
+</section>
+{% endif %}

@@ -1,0 +1,67 @@
+{% extends "theme::layouts/default" %}
+
+{% block content %}
+
+	<!-- for change on global-search-hold-section add/remove: is-active -->
+	<div class="global-search-hold-section"> 
+		
+		<div class="global-search-hold-section-top animation-element fade-in-up">
+			<div class="row">
+				<div class="small-12 columns nopad global-search-hold-section-search">
+					<div class="small-12 columns nopad global-search-hold-section-search-input">
+						<span></span>
+						<form action="{{url_route('np.module.psi::search.result')}}" method="GET">
+							<input type="search" name="term" placeholder="{{t('search')}}"/>
+						</form>
+					</div>
+
+					<div class="small-12 columns nopad global-search-hold-section-search-text">
+						<div class="small-12 columns nopad global-search-hold-section-search-text-before">
+							{{t('type_press_enter')}}
+						</div>
+						{# <div class="small-12 columns nopad global-search-hold-section-search-text-after"> 
+							<span>
+								Maybe you mean:
+							</span>
+							<ul>
+								<li>
+									“<div>D1</div>” (<div>12,335</div>)
+								</li>
+								<li>
+									<div>D1</div>2-140300 (<div>12</div>)
+								</li>
+								<li>
+									<div>D1</div>0-194500 (<div>11</div>)
+								</li>
+								<li>
+									<div>D1</div>2-198500 (<div>1</div>)
+								</li>
+								<li>
+									<div>D1</div>0-000000 (<div>1</div>)
+								</li>
+								<li>
+									<div>D1</div>2-140300 (<div>1</div>)
+								</li>
+								<li>
+									<div>D1</div>0-194500 (<div>1</div>)
+								</li>
+								<li>
+									<div>D1</div>2-198500 (<div>1</div>)
+								</li>
+								<li>
+									<div>D1</div>0-000000 (<div>1</div>)
+								</li>
+								<li>
+									<div>D1</div>2-140300 (<div>1</div>)
+								</li>
+							</ul>
+						</div> #}
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+
+{% endblock %}

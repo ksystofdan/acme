@@ -1,0 +1,19 @@
+<section class="solutions-inner-intro-section animation-element in-view">
+		 <div class="row">
+			  <div class="small-12 medium-6 large-5 columns nopad section-title-84 animation-element fade-in-up in-view">
+					<h1>
+						 {{ item.title }}
+					</h1>
+			  </div>
+			  <div class="small-12 columns nopad"></div>
+			  <div class="small-12 columns nopad solutions-inner-intro-section-img text-center">
+					<div class="solutions-inner-intro-section-img-box">
+						 <img class="solutions-inner-intro-section-img-hover" src="{{item.image_2.cropped().widen(900).url()}}" alt="">
+						 <img class="solutions-inner-intro-section-img-static" src="{{item.solution_image_hover.cropped().widen(900).url()}}" alt="">
+					</div>
+			  {% include "np.module.psi::partials.benefits"|raw with {
+			  		benefits: item.benefits
+			  	} %}
+		 </div>
+	</div>
+</section>

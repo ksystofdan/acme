@@ -1,0 +1,24 @@
+<section class="about-page-map-section">
+	 <div class="row row-full">
+		  <div class="small-12 columns nopad about-page-map animation-element fade-in-up">
+				<img src="{{ img('theme::img/img-world-map.jpg').url() }}"/>
+				{% for country in entries('theme_settings', 'footer_map_countries').get() %}
+					<div class="about-page-map-tooltip about-page-map-tooltip-1" style="top: {{country.position_x}}%; left: {{country.position_y}}%;">
+						 <div class="about-page-map-tooltip-dot"></div>
+						 <div class="about-page-map-tooltip-content">
+							 {% for company in country.companies %}
+								<p>
+									 <a href="{{company.url}}" title="{{company.title}}" target="_blank">
+										  {{company.title}}
+									 </a>
+								</p>
+							 {% endfor %}
+							  <p>
+									{{country.country}}
+							  </p>
+						 </div>
+					</div>
+				{% endfor %}
+		  </div>
+	 </div>
+</section>

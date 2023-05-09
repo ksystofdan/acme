@@ -1,0 +1,97 @@
+<ul>
+    <li class="has-children">
+        <span>
+            {{ t('theme::industries') }}
+        </span> 
+        <div class="menu-nav-subnav">
+            
+            <div class="menu-nav-subnav-item">
+                <span>{{ t('theme::industries.distributer') }}:</span>
+                <ul>
+                    {% for link in links('distributor').get() %}
+                        <li>
+                            <a href="{{ link.url }}">{{ link.title }}</a>
+                        </li>
+                    {% endfor %}                         
+                </ul>
+            </div>
+            <div class="menu-nav-subnav-item">
+                <span>{{ t('theme::industries.manufacturer') }}:</span>
+                <ul>
+                    {% for link in links('manufacturer').get() %}
+                        <li>
+                            <a href="{{ link.url }}">{{ link.title }}</a>
+                        </li>
+                    {% endfor %}                          
+                </ul>
+            </div>
+            <div class="menu-nav-subnav-item">
+                <span>{{ t('theme::industries.service_provider') }}:</span>
+                <ul>
+                    {% for link in links('service_provider').get() %}
+                        <li>
+                            <a href="{{ link.url }}">{{ link.title }}</a>
+                        </li>
+                    {% endfor %}                         
+                </ul>
+            </div>
+            
+        </div>
+    </li>
+    <li class="has-children">
+        <span>
+            {{ t('theme::products-services') }}
+        </span>
+        <div class="menu-nav-subnav">
+            <div class="menu-nav-subnav-item">
+                <span>
+                   {{ t('theme::solutions') }}:
+                </span>
+                <ul>
+                    {% for link in links('solutions_top').get() %}
+                        <li>
+                            <a href="{{ link.url }}">{{ link.title }}</a>
+                        </li>
+                    {% endfor %}                                          
+                </ul>
+            </div>
+            <div class="menu-nav-subnav-item">
+                <span>
+                    {{ t('theme::components') }}:
+                </span>
+                <ul>
+                    {% for link in links('components_top').get() %}
+                        <li>
+                            <a href="{{ link.url }}">{{ link.title }}</a>
+                        </li>
+                    {% endfor %}    
+                </ul>
+            </div>
+            <div class="menu-nav-subnav-item">
+                <ul>
+                    {% for link in links('services_top').get() %}
+                        <li>
+                            <a href="{{ link.url }}">{{ link.title }}</a>
+                        </li>
+                    {% endfor %}  
+                </ul>
+            </div>
+        </div>
+    </li>
+    <li class="has-children">
+        <span>
+            {{ t('theme::world-of-acme') }}
+        </span>
+        <div class="menu-nav-subnav">
+               <div class="menu-nav-subnav-item">
+               <ul>
+                 {% for link in links('pages_menu').get() %}
+                   <li>
+                        <a href="{{ link.url }}">{{ link.title }}</a>
+                   </li>
+                {% endfor %}
+              </ul>
+            </div>
+        </div>
+    </li>
+</ul>

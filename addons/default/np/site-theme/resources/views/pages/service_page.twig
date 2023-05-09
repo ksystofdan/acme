@@ -1,0 +1,121 @@
+		<section class="title-intro-section title-intro-section-no-bread">
+			 <div class="row">
+				  <div class="small-12 columns nopad section-title-82 animation-element fade-in-up in-view">
+						<h1>
+							{{ page.title }}
+						</h1>
+				  </div>
+			 </div>
+		</section>
+
+		<div class="section-full-video-image">
+			 <div class="row row-full">
+				  <div class="small-12 columns nopad section-full-video-image-hold animation-element fade-in-up in-view">
+						<!-- image -->
+						<div class="section-full-video-image-box img-object-fit">
+							 <img src="{{ page.decorated.header_image.cropped().url() }}">
+						</div>
+				  </div>
+			 </div>
+		</div>
+
+		<section class="service-page-list-section">
+			 <div class="row">
+				  <div class="small-12 columns nopad section-title-60 animation-element in-view">
+						<span></span>
+						<h2>
+							{{ page.additional_text }}
+						</h2>
+				  </div>
+				  <div class="small-12 large-6 large-offset-6 columns nopad text-and-number-list">
+						<ul>
+							 <li>
+								  <div class="text-and-number-list-text animation-element fade-in-up anim-delay-100m in-view">
+										{{t('team')}}
+								  </div>
+								  <div class="text-and-number-list-number animation-element fade-in-up anim-delay-300m in-view">
+										{{ page.team_count }}
+								  </div>
+								  <div class="text-and-number-list-text animation-element fade-in-up anim-delay-500m in-view">
+										{{t('and_grow')}}
+								  </div>
+							 </li>
+							 <li>
+								  <div class="text-and-number-list-text animation-element fade-in-up anim-delay-100m in-view">
+										{{t('countries')}}
+								  </div>
+								  <div class="text-and-number-list-number animation-element fade-in-up anim-delay-300m in-view">
+										{{ page.countries_count }}
+								  </div>
+							 </li>
+						</ul>
+				  </div>
+			 </div>
+		</section>
+		{% if count(page.services_list) %}
+			<section class="service-page-service-section">
+			 	<div class="row">
+				  	<div class="small-12 columns nopad section-title-60 section-title-normal animation-element in-view">
+							<h2>
+							 	{{t('service')}}
+							</h2>
+				  	</div>
+				  	<div class="small-12 cplumns nopad service-custom-accordion-hold">
+							<div class="small-12 large-6 large-offset-6 columns nopad service-custom-accordion-subtitles animation-element fade-in-up in-view">
+							 	<div class="small-6 columns nopad service-custom-accordion-subtitle">
+								  	{{t('team')}}
+							 	</div>
+							 	<div class="small-6 columns nopad service-custom-accordion-subtitle">
+								  	{{t('where_relevant')}}
+							 	</div>
+							</div>
+							<div class="small-12 columns nopad service-custom-accordion-items animation-div-js">
+								{% for list in page.services_list %}
+							 	<div class="small-12 columns nopad service-custom-accordion-item scai-ellipse animation-element fade-in-up in-view" >
+								  	<div class="small-12 large-6 columns nopadleft service-custom-accordion-item-title">
+											<h3>
+												{{ list.title }}
+											</h3>
+											<p>
+												{{t('team')}} / {{t('where_relevant')}}
+											</p>
+								  	</div>
+								  	<div class="small-12 large-6 columns nopad service-custom-accordion-item-content">
+											<div class="small-12 large-6 columns nopad service-custom-accordion-item-content-first">
+											 	<div class="small-12 columns nopad service-custom-accordion-subtitle">
+													{{t('team')}}
+											 	</div>
+											 	<div class="small-12 columns nopad service-custom-accordion-item-text-hold">
+												  	<div class="small-12 columns nopad service-custom-accordion-item-text">
+															<p>
+															 	{{ list.text_1|raw }}
+															</p>
+												  	</div>
+											 	</div>
+											</div>
+											<div class="small-12 large-6 columns nopad service-custom-accordion-item-content-second">
+											 	<div class="small-12 columns nopad service-custom-accordion-subtitle">
+													{{t('where_relevant')}}
+											 	</div>
+											 	<div class="small-12 columns nopad service-custom-accordion-item-text-hold">
+												  	<div class="small-12 columns nopad service-custom-accordion-item-text">
+															<p>
+															 	{{ list.text_2|raw }}
+															</p>
+												  	</div>
+											 	</div>
+											</div>
+								  	</div>
+							 	</div>
+								{% endfor %}
+							</div>
+				  	</div>
+			 	</div>
+			</section>
+		{% endif %}
+		
+		{% include "theme::partials.other.latest-updates"|raw %}
+		
+		{% include "np.module.psi::partials.for_more_info_popup"|raw  with{
+			docs_disable: true
+		}%}

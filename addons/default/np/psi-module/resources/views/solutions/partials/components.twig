@@ -1,0 +1,71 @@
+ <section class="section-30-150">
+	 <div class="row">
+		  <div class="small-12 large-7 columns nopad section-title-60 animation-element">
+				<span>{{t('psi::solutions.components')}}</span>
+				<h2>
+					 {{t('psi::solutions.components.find_product')}}
+				</h2>
+		  </div>
+		  
+		  <div class="small-12 columns nopad solutions-inner-solutions">
+				<div class="small-12 large-4 columns nopad solutions-inner-solutions-steps solutions-inner-solutions-step-1" data-ajax="{{url_route('np.module.psi::needs.ajax')}}">
+					 <div class="small-12 columns nopad solutions-inner-solutions-step-title">
+						{{t('psi::solutions.components.pallet_handling')}}
+					 </div>
+					 <div class="small-12 columns nopad solutions-inner-solutions-step-subtitle">
+						  {{t('psi::solutions.components.select_needs')}}:
+					 </div>
+					<div class="small-12 columns nopad solutions-inner-solutions-step-selects">
+						{% for need in needs %}
+							<div class="solutions-inner-solutions-step-select">
+								<input id="step-1-{{ loop.index }}" name="needs" type="radio" value="{{ need.id }}"><label for="step-1-{{ loop.index }}">{{ need.title }}</label>
+							</div>
+						{% endfor %}
+					</div>
+				</div>
+				<div class="small-12 large-4 columns nopad solutions-inner-solutions-steps solutions-inner-solutions-step-2" data-ajax="{{url_route('np.module.psi::components.ajax')}}" data-view-btn="{{t("view")}}">
+					 <span>{{t('psi::solutions.components.step2')}}</span>
+					 <div class="small-12 columns nopad solutions-inner-solutions-step-2-hold">
+						  <div class="small-12 columns nopad solutions-inner-solutions-step-title">
+								{{t('psi::solutions.component_group')}}
+						  </div>
+						  <div class="small-12 columns nopad solutions-inner-solutions-step-subtitle">
+								{{t('psi::solutions.component_group.select')}}:
+						  </div>
+						  <div class="small-12 columns nopad solutions-inner-solutions-step-selects step-2-list" >
+							  {# Ajax components #}
+						  </div>
+					 </div>
+				</div>
+				<div class="small-12 large-4 columns nopad solutions-inner-solutions-steps solutions-inner-solutions-step-rez">
+					 <span>{{t('psi::solutions.components.result')}}</span>
+					 <div class="small-12 columns nopad solutions-inner-solutions-step-rez-hold">
+						  <div class="small-12 columns nopad solutions-inner-solutions-step-title">
+								{{t('psi::solutions.components.suggested_comp')}}
+						  </div>
+						  <div class="small-12 columns nopad solutions-inner-solutions-step-text">
+								{# Ajax component description #}
+						  </div>
+						  <div class="small-12 columns nopad solutions-inner-solutions-step-prod step-rez-list">
+							{# Ajax products #}
+						  </div>
+						  <div class="small-12 columns nopad solutions-inner-solutions-step-btns">
+								<ul>
+									 <li>
+										  <span class="btn-black" data-open="enquire-reveal">
+												{{t('enquire')}}
+										  </span>
+									 </li>
+									 <li>
+										  <a href="" class="btn-border-dashed comp-learn-more">
+												{{t('learn_more')}}
+										  </a>
+									 </li>
+								</ul>
+						  </div>
+					 </div>
+				</div>
+		  </div>
+	 </div>
+</section>
+{% include "np.module.psi::partials.enquire-reveal"|raw %}

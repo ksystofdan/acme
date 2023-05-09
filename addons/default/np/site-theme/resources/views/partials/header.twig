@@ -1,0 +1,64 @@
+{% if(page.slug == 'en' ) %}
+   <div class="lang-select-hold-page">
+     <div class="row">
+          <div class="small-12 columns nopad lang-select-hold-page-word">
+              {{ img('theme::img/header-word-en.svg').alt('')|raw }}
+          </div>
+     </div>
+   </div>
+{% endif %}
+<header>
+   <div class="header-top-line-blue"></div>
+   <div class="row">
+      {% if(page.slug == 'en' ) %}
+         <div class="small-12 columns nopad header-word">
+            {{ img('theme::img/header-word-en.svg').alt('')|raw }}
+         </div>
+      {% endif %}
+       <div class="small-6 large-1 columns nopadleft header-logo">
+           <a href="/{% if locale() != 'en' %}{{ locale() }}{% endif %}">
+               {{ img('theme::img/icon-main-logo.svg').alt('Acme logo')|raw }}
+           </a>
+       </div>
+      
+           <div class="small-5 columns nopadleft breadcrumbs-pc-hold">
+              {% if breadcrums %}
+               <div class="small-12 columns nopad breadcrumbs-pc">
+                   <a href="{{ breadcrums.url }}">
+                       {{t(breadcrums.parent)}}
+                   </a>
+                   /
+                   {{ breadcrums.current }}
+               </div>
+                {% endif %}
+           </div>
+           
+       <div class="small-6 columns nopad header-nav-hold">
+           <div class="header-nav">
+               {{ renderTopNavigationLinks() }}
+           </div>
+           <div class="header-right">
+               <div class="header-search">
+                   <a href="{{url_route('np.module.psi::search.index') }}"></a>
+               </div>
+               <div class="header-lang">
+                   {{ language_select('theme::plugin/language_select') }}
+               </div>
+               <div class="hamburger"></div>
+           </div>
+       </div>
+   </div>
+
+   <div class="mobile-menu-hold">
+      <div class="mobile-menu-hold-box">
+         <div class="mobile-menu-nav">
+            {{ renderTopNavigationLinks() }}
+         </div>
+         <div class="mobile-menu-lang">
+            <div class="header-lang header-lang-mobile">
+               {{ language_select('theme::plugin/language_select') }}
+            </div>
+         </div>
+      </div>
+   </div>
+</header>

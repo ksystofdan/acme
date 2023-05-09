@@ -1,0 +1,72 @@
+
+
+<div id="opport-form" class="form-{{index}}" class="small-12 columns nopad job-reveal-form-hold animation-element in-view">
+	<form action="{{url_route('np.module.psi::form.oppo')}}" enctype="multipart/form-data" method="POST">
+		<input type="hidden" name="subject" value="{{t('form::subject.opportunitie_form')}}">
+		<input type="hidden" name="opportunities_name" value="{{oppo_name}}">
+		<input type="hidden" name="index" value="{{index}}">
+	 	<div class="small-12 columns nopad entry">
+		  	<h3>
+					{{t('application_form')}}
+		  	</h3>
+	 	</div>
+		{{ csrf_field()|raw }}
+	 	<div class="small-12 columns nopad form-style">
+		  	<div class="small-12 medium-6 columns nopadleft form-element-left">
+					<div class="small-12 columns nopad form-element">
+					 	<input required="true"  type="text" name="name-{{index}}" data-validation="{{t('form::validate.name')}}">
+					 	<label for="name-{{index}}">{{t('name')}}</label>
+					</div>
+		  	</div>
+		  	<div class="small-12 medium-6 columns nopadright form-element-right">
+					<div class="small-12 columns nopad form-element">
+					 	<input required="true"  type="text" name="surname-{{index}}" data-validation="{{t('form::validate.surname')}}">
+					 	<label for="surname-{{index}}">{{t('surname')}}</label>
+					</div>
+		  	</div>
+		  	<div class="small-12 medium-6 columns nopadleft form-element-left">
+					<div class="small-12 columns nopad form-element" >
+					 	<input  type="email" name="email-{{index}}" data-validation="{{t('form::validate.email')}}">
+					 	<label for="email-{{index}}">{{t('email')}}</label>
+					</div>
+		  	</div>
+		  	<div class="small-12 medium-6 columns nopadright form-element-right">
+					<div class="small-12 columns nopad form-element">
+						<input required="true"  type="phone" class="js-select2-phone" name="phone-{{index}}" data-validation="{{t('form::validate.phone')}}">
+						<label for="phone-{{index}}">{{t('phone')}}</label>
+					</div>
+		  	</div>
+		  	<div class="small-12 columns nopad form-element">
+				 	<select required="true"  name="country-{{index}}" required="true" class="js-select2-country-of-residence" tabindex="-1" aria-hidden="true" data-validation="{{t('form::validate.country')}}">
+						<option></option>
+						{% include "theme::forms.countries_options"|raw %}
+				 	</select>
+				 	<label for="country-{{index}}">{{t('country')}}</label>
+				</div>
+		  	<div class="small-12 columns nopad form-element">
+					<textarea  name="message-{{index}}" data-validation="{{t('form::validate.message')}}"></textarea>
+					<label for="message-{{index}}">{{t('message')}}</label>
+		  	</div>
+		  	<div class="small-12 columns nopad form-element-file">
+			  	<label for="file-upload-{{index}}">
+				 	<div>
+					  {{t('attach_cv')}} <span> ({{t('60mb_max')}})</span>
+				 	</div>
+			  	</label>
+			  	<input  id="file-upload-{{index}}" name="file-upload-{{index}}" type="file" data-validation="{{t('form::validate.file')}}" />
+			  	
+		  	</div>
+		  	<div class="small-12 columns nopad news-inner-page-block-form-bottom">
+					<div class="form-element-checkbox">
+					 	<input name="agree-{{index}}"  id="agree-{{index}}" type="checkbox" data-validation="{{t('form::validate.agree')}}">
+					 	<label for="agree-{{index}}">{{t('agree_text')}}</label>
+					</div>
+					<div class="news-inner-page-block-form-btn agree-{{index}} readonly-form">
+					 	<button readonly type="submit" class="btn-black" data-index="{{index}}">
+						  	{{t('send_application')}}
+					 	</button>
+					</div>
+		  	</div>
+	 	</div>
+	</form>
+</div>

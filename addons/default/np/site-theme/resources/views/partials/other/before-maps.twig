@@ -1,0 +1,31 @@
+<section class="section-30-150">
+	<div class="row">
+		<div class="small-12 large-8 columns nopad section-title-60 animation-element">
+			<span>{{t('psi::learn_more')}}</span>
+			<h2>
+				{{t('theme::homepage.footer.title')}}
+			</h2>
+		</div>
+		<div class="small-12 columns nopad about-us-page-section-list animation-list-js">
+			<ul>
+				<li class="animation-element fade-in-up" style="transition-delay: 150ms;">
+					{# Brochures block #}
+					{% include "np.module.psi::partials.footer_brochures"|raw %}
+					
+					{# Whitepapers block #}
+					{% include "np.module.psi::partials.footer_whitepapers"|raw %}
+				</li>
+				<li class="animation-element fade-in-up" style="transition-delay: 450ms;">
+					{# Articles block #}
+					{% include "np.module.psi::partials.footer_articles"|raw %}
+				</li>
+				 <li class="animation-element fade-in-up" style="transition-delay: 450ms;">
+					 {% include "np.module.psi::partials.footer_caselist"|raw %}
+				 </li>
+				<li class="animation-element fade-in-up">
+					{% include "np.module.psi::partials.footer_object_video"|raw %}
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>

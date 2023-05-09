@@ -1,0 +1,90 @@
+
+{% if(page.slug == 'en' ) %}
+<section class="latest-updates-section">
+	<div class="row">
+		<div class="small-12 columns nopad section-title-60 animation-element">
+			<span>{{t('news')}}</span>
+			<h2>{{t('latest-updates')}}</h2>
+		</div>
+		<div class="small-12 large-10 large-offset-2 columns nopad latest-updates-slider">
+			<div class="owl-carousel owl-theme latest-updates-owl-5 animation-owl-js">
+				{% for post in entries('news', 'news').where('enabled', 1).limit(5).orderBy('publish_at', 'desc').get() %}
+				<div class="item animation-element fade-in-up">
+					<a href="/news/{{post.category.slug}}-{{post.category.id}}/{{post.slug}}-{{post.id}}">
+						<div class="latest-updates-owl-image img-object-fit">
+							{% if post.image %}
+								{{post.image.cropped().widen('600')|raw}}
+							{% else %}
+								<img src="{{ img('theme::img/no-image.png').url() }}">
+							{% endif %}
+						</div>
+						<div class="latest-updates-owl-cat-date">
+							{{post.category.title}} / {{post.publishAtFull.format('F d, Y')}}
+						</div>
+						<div class="latest-updates-owl-title">
+							{{post.title}}
+						</div>
+						<div class="latest-updates-owl-btn">
+							<span>{{t('view')}}</span>
+						</div>
+					</a>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+		<div class="small-12 large-10 large-offset-2 columns nopad animation-element fade-in-up anim-delay-250ms">
+			<a href="{{ url_to("news") }}" class="btn-view-more-black">
+				<span><span></span></span>
+				{{t('view_all')}}
+			</a>
+		</div>
+	</div>
+</section>
+{% else %}
+<section class="latest-updates-section">
+	<div class="row">
+		<div class="small-12 columns nopad section-title-60 animation-element in-view">
+			<span>{{t('news')}}</span>
+			<h2>{{t('latest-updates')}}</h2>
+		</div>
+		<div class="small-12 columns nopad latest-updates-slider animation-element fade-in-up in-view">
+			<div class="owl-carousel owl-theme latest-updates-owl animation-owl-js owl-loaded owl-drag">
+				<div class="owl-stage-outer">
+					<div class="owl-stage">
+						{% for post in entries('news', 'news').where('enabled', 1).limit(6).orderBy('publish_at', 'desc').get() %}
+							<div class="owl-item active">
+								<div class="item animation-element fade-in-up in-view">
+									<a href="/news/{{post.category.slug}}-{{post.category.id}}/{{post.slug}}-{{post.id}}">
+										<div class="latest-updates-owl-image img-object-fit">
+											{% if post.image %}
+												{{post.image.cropped().widen('600')|raw}}
+											{% else %}
+												<img src="{{ img('theme::img/no-image.png').url() }}">
+											{% endif %}
+										</div>
+										<div class="latest-updates-owl-cat-date">
+											{{post.category.title}} / {{post.publishAtFull.format('F d, Y') }}
+										</div>
+										<div class="latest-updates-owl-title">
+											{{post.title}}
+										</div>
+										<div class="latest-updates-owl-btn">
+											<span>{{t('view')}}</span>
+										</div>
+									</a>
+								</div>
+							</div>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="small-12 large-6 large-offset-6 columns nopad animation-element fade-in-up anim-delay-250ms in-view">
+			<a href="{{ url_to("news") }}" class="btn-view-more-black">
+				<span><span></span></span>
+				{{t('view_all')}}
+			</a>
+		</div>
+	</div>
+</section>
+{% endif %}

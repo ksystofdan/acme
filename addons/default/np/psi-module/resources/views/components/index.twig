@@ -1,0 +1,161 @@
+
+
+{% extends "theme::layouts/default" %}
+
+{% block content %}
+
+            <div class="breadcrumbs-media-hold">
+                <div class="row">
+                    <div class="small-12 columns nopad breadcrumbs-media">
+                        <a href="#">
+                           {{t('theme::products-services')}}
+                        </a>
+                        /
+                        {{t('theme::components')}}   
+                    </div>
+                </div>
+            </div>
+
+            <section class="title-intro-section">
+                <div class="row">
+                    <div class="small-12 columns nopad section-title-82 animation-element fade-in-up">
+                        <h1>
+                           {{t('theme::components')}}   
+                        </h1>
+                    </div>
+                </div>
+            </section>
+            
+            <div class="row">
+                <div class="small-12 columns nopad components-page-content animation-element fade-in-up">
+
+                    <div class="small-12 columns nopad components-page-content-top">
+                        <div class="small-12 medium-6 columns nopad components-page-content-filter">
+                            {# <span>{{t('theme::industry')}}:</span>
+                            <div class="components-page-content-filter-trigger-hold">
+                                <div class="components-page-content-filter-trigger">
+                                    {{t('theme::all_industries')}}
+                                </div>
+                                <div class="components-page-content-filter-list-hold">
+                                    <ul>
+                                        <li>
+                                            <a class="current">
+                                                {{t('theme::all_industries')}}
+                                            </a>
+                                        </li>
+                                       {% for market_a in entries('industries', 'market_approach').orderBy('sort_order', 'ASC').get() %}
+                                           <li>
+                                               <span data-id="{{ market_a.title }}">{{ market_a.title }}:</span>
+                                               {% for industry in entries('industries', 'industries_combined').where('market_approach_id', market_a.id).groupBy('industry_id').get() %}
+                                                  <a>
+                                                      {{industry.industry.title}}
+                                                  </a>
+                                                {% endfor %}
+                                           </li>
+                                       {% endfor %}
+                                    </ul>
+                                </div>
+                            </div> #}
+                        </div>
+                        <div class="small-12 medium-6 columns nopad components-page-content-top-visual text-right">
+                            <ul>
+                                <li {%if isViewTypeCategories %}class="current"{% endif %}>
+                                    <a href="?layout=list">
+                                        A-Z
+                                    </a>
+                                </li>
+                                <li {%if not isViewTypeCategories %}class="current"{% endif %}>
+                                    <a href="?layout=block">
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6 0H0V6H6V0ZM14 0H8V6H14V0ZM0 8H6V14H0V8ZM14 8H8V14H14V8Z" fill="black"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="small-12 columns nopad components--view {%if not isViewTypeCategories %}current{% endif %}">
+                        <div class="small-12 columns nopad components-page-content-items">
+                           {% for component in comp_groups %}
+                               <div class="small-12 columns nopad components-page-content-item animation-element fade-in-up">
+                                   <div class="small-12 large-3 columns nopad components-page-content-item-left">
+                                       <div class="small-12 columns nopad">
+                                           <div class="small-12 columns nopad components-page-content-item-title animation-element fade-in-up">
+                                               <h3>
+                                                   {{ component.title }}
+                                               </h3>
+                                           </div>
+                                           <div class="small-12 columns nopad components-page-content-item-text animation-element fade-in-up anim-delay-250ms">
+                                               {{component.description}}
+                                           </div>
+                                       </div>
+                                       <div class="small-12 columns nopad components-page-content-item-btn animation-element fade-in-up anim-delay-300ms">
+                                           <a class="btn-view-more-black" href="{{component.public_url}}">
+                                               <span><span></span></span>
+                                               {{t('view_all')}}
+                                           </a>
+                                       </div>
+                                   </div>
+                                   <div class="small-12 large-9 columns nopad components-page-content-item-right products-filter-content-list animation-element animation-list-js">
+                                       <ul>
+                                          {% for product in entries('products', 'products').where('component_group_id', component.id).limit(3).get() %}
+                                              <li>
+                                                  <a href="{{ product.public_url }}">
+                                                      <div class="products-filter-content-list-brand">
+                                                         {{ product.brand.title }}
+                                                      </div>
+                                                      <div class="products-filter-content-list-image-hold">
+                                                          <div class="products-filter-content-list-image img-object-fit">
+                                                              <img src="{{ product.thumbnail_image_url  }}">
+                                                          </div>
+                                                      </div>
+                                                      <div class="products-filter-content-list-title-hold">
+                                                          <div class="products-filter-content-list-title">
+                                                              {{ product.title }}
+                                                          </div>
+                                                          <span>{{t('view')}}</span>
+                                                      </div>
+                                                  </a>
+                                              </li>
+                                          {% endfor %}
+                                       </ul>
+                                   </div>
+                                   <div class="small-12 columns nopad components-page-content-item-all-media animation-element fade-in-up anim-delay-100ms">
+                                       <a class="btn-view-more-black" href="{{component.public_url}}">
+                                           <span><span></span></span>
+                                           {{t('view_all')}}
+                                       </a>
+                                   </div>
+                               </div>
+                           {% endfor %}
+                        </div>
+                        
+                        {{ comp_groups.links | raw}}
+                        
+                    </div>
+
+                    <div class="small-12 columns nopad components--view {%if isViewTypeCategories %}current{% endif %}">
+                        {% for index, categoriesColumn in categoriesGroupedSorted %}
+                        <div class="small-12 medium-4 columns nopad components-page-content-item-list animation-element fade-in-up anim-delay-{{ index * 120 }}ms">
+                            
+                            {% for group in categoriesColumn %}
+                            <div class="small-12 columns nopad components-page-content-item-list-item">
+                                <ul>
+                                    {% for link in group %}
+                                    <li>
+                                        <a href="{{ link.public_url }}">
+                                            {{ link.title }} ({{ link.count }})
+                                        </a>
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                            {% endfor %}
+                        </div>
+                        {% endfor %}
+
+                    </div>
+                </div>
+ 
+{% endblock %}

@@ -1,0 +1,208 @@
+{% extends "theme::layouts/default" %}
+
+{% block content %}
+
+
+            {# <div class="breadcrumbs-media-hold">
+                <div class="row">
+                    <div class="small-12 columns nopad breadcrumbs-media">
+                        <a href="#">
+                            Industries
+                        </a>
+                        /
+                        <a href="#">
+                            Manufacturing & ...
+                        </a>
+                        /
+                        <a href="#">
+                            Specific Products
+                        </a>
+                        /
+                        {{ item.title }}
+                    </div>
+                </div>
+            </div> #}
+
+            <section class="products-inner-intro-section">
+                <div class="row">
+                    <div class="small-12 large-10 large-offset-1 columns nopad products-inner-intro-section-box">
+                        <div class="small-12 large-6 columns nopad products-inner-intro-section-img-hold animation-div-js">
+                            <div class="small-12 columns nopad section-subtitle animation-element fade-in-up">
+                                {{ item.brand.title }}
+                            </div>
+                            <div class="small-12 columns nopad section-title-60 section-title-normal animation-element fade-in-up">
+                                <h1>
+                                    {{ item.title }}
+                                </h1>
+                            </div>
+                            <div class="small-12 columns nopad products-inner-intro-section-imgbox animation-element fade-in-up">
+                                <div class="small-12 columns nopad products-inner-intro-section-imgbox-top">
+                                    <div id="products-inner-intro-top-owl" class="owl-carousel owl-theme">
+                                       {% for image in item.gallery %}
+                                        <div class="item">
+                                            <img src="{{ image.image_url }}"/>
+                                        </div>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                                <div class="small-12 columns nopad products-inner-intro-section-imgbox-thumbs">
+                                    <div id="products-inner-intro-thumb-owl" class="owl-carousel owl-theme">
+                                       {% for image in item.gallery %}
+                                        <div class="item">
+                                            <img src="{{ image.thumbnail_url }}"/>
+                                        </div>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="small-12 large-6 columns nopad products-inner-intro-section-textbox animation-div-js">
+                            <div class="small-12 columns nopad section-subtitle animation-element fade-in-up">
+                                {{ item.brand.title }}
+                            </div>
+                            <div class="small-12 columns nopad section-title-60 section-title-normal animation-element fade-in-up">
+                                <h1>
+                                    {{ item.title }}
+                                </h1>
+                            </div>
+                            <div class="small-12 columns nopad products-inner-intro-btn animation-element fade-in-up">
+                                <a href="{{ url_route('pages::9.en') }}" class="btn-border-dashed">
+                                    {{t('contact_us')}}
+                                </a>
+                            </div>
+
+                            {% if item.description|length > 0 %}
+                            <div class="small-12 columns nopad animation-element fade-in-up">
+                                <div class="small-12 columns nopad products-inner-intro-text-hold">
+                                    <div class="small-12 columns nopad products-inner-intro-text">
+                                       {{ item.description|raw }}
+                                    </div>
+                                </div>
+                                {% if item.description|length > 200 %}
+                                <div class="small-12 columns nopad products-inner-intro-text-more">
+                                    <span>{{t('read_more')}}</span>
+                                </div>
+                                {% endif %}
+                            </div>
+                            {% endif %}
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {% if item.variations|length > 0 %}
+            <section class="section-30-150 product-page-models-section">
+                <div class="row">
+                    <div class="small-12 large-7 columns nopad section-title-60 animation-element">
+                        <span>{{t('models')}}Models</span>
+                        <h2>
+                            {{t('product::useful_info')}}
+                        </h2>
+                    </div>
+                    <div class="small-12 columns nopad products-page-models-accord animation-div-js">
+                        {% for variation in item.variations %}
+                        <div class="small-12 columns nopad products-page-models-accord-item animation-element fade-in-up">
+                            <div class="small-12 large-6 columns nopadleft products-page-models-accord-item-title">
+                                {{ variation.title }}
+                                <div>
+                                    <span>{{ variation.specifications|length }}</span> Model parameters
+                                </div>
+                            </div>
+                            <div class="products-page-models-accord-item-trigger"></div>
+                            <div class="small-12 large-6 columns nopad products-page-models-accord-item-right">
+                                <div class="small-12 columns nopad products-page-models-accord-item-subtitle">
+                                    <span>{{ variation.specifications|length }}</span> Model parameters
+                                </div>
+                                <div class="small-12 columns nopad products-page-models-accord-item-content">
+                                    <div class="small-12 medium-9 columns nopad products-page-models-accord-item-content-text">
+                                        {{ variation.description|raw }}
+                                    </div>
+
+
+                                    {% if variation.specifications|length > 0 %}
+                                    <div class="small-12 columns nopad products-page-models-accord-item-content-info">
+                                        <div class="small-12 columns nopad products-page-models-accord-item-content-subtitle">
+                                            {{t('basic_info')}}
+                                        </div>
+                                        {% for specification in variation.specifications %}
+                                        <div class="small-12 columns nopad products-page-models-accord-item-content-info-item">
+                                            <div class="small-6 columns nopad">
+                                                <span>{{ specification.title|raw }}</span>
+                                            </div>
+                                            <div class="small-6 columns nopad text-right">
+                                                <span>{{ specification.value|raw }}</span>
+                                            </div>
+                                        </div>
+                                        {% endfor %}
+                                    </div>
+                                    {% endif %}
+
+
+                                    {% if variation.gallery|length > 0 %}
+                                    <div class="small-12 columns nopad products-page-models-accord-item-content-photo">
+                                        <div class="small-12 columns nopad products-page-models-accord-item-content-subtitle">
+                                            {{t('photos')}}
+                                        </div>
+                                        <div class="small-12 columns nopad products-page-models-accord-item-content-photo-list">
+                                            <ul>
+                                                {% for image in variation.gallery %}
+                                                <li>
+                                                    <img src="{{ image.image_url }}"/>
+                                                </li>
+                                                {% endfor %}
+                                            
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    {% endif %}
+
+                                    {% if variation.whitepapers|length > 0 %}
+                                    <div class="small-12 columns nopad products-page-models-accord-item-content-download">
+                                        <div class="small-12 columns nopad products-page-models-accord-item-content-subtitle">
+                                            {{t('whitepapers')}}
+                                        </div>
+
+                                        {% for file in variation.whitepapers %}
+                                        <div class="small-12 columns nopad products-page-models-accord-item-content-info-item">
+                                            <div class="small-6 columns nopad">
+                                                <span>{{ file.name }}</span>
+                                            </div>
+                                            <div class="small-6 columns nopad text-right">
+                                                <a href="{{ file.download_url }}" class="link-download-blue">
+                                                    {{t('download')}}
+                                                </a>
+                                            </div>
+                                        </div>
+                                        {% endfor %}
+                                 
+                                    </div>
+                                    {% endif %}
+
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    
+                    {% if false %}
+                    <div class="small-12 large-6 large-offset-6 columns nopad products-page-models-accord-btn animation-element fade-in-up anim-delay-250ms">
+                        <a class="btn-view-more-black" href="#">
+                            <span><span></span></span>
+                            {{t('view_all')}}
+                        </a>
+                    </div>
+                    {% endif %}
+
+                </div>
+            </section>
+            {% endif %}
+
+            {% include "np.module.psi::products.partials.related"|raw  %}
+
+            {% include "np.module.psi::products.partials.for_more_info"|raw  %}
+
+            {% include "np.module.psi::products.partials.whitepapers"|raw  %}
+
+
+{% endblock %}

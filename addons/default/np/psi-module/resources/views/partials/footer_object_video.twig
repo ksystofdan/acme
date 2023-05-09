@@ -1,0 +1,23 @@
+<div class="solutions-inner-explore-subtitle">
+	{{t('psi::industries.footer.videos')}}
+</div>
+<div class="solutions-inner-explore-links">
+	{% set entries = entries('knowledge', 'knowledge').where('k_hidden', 0).where('enabled', 1).where('category_id', 3).limit(3).get() %}
+	{% if knowledges['videos'].count() %}
+		{% set entries = knowledges['videos'] %}
+	{% endif %}
+	
+	{% for video in entries %}
+		<div class="solutions-inner-explore-link">
+			<a data-fancybox="" href="{{ video.youtube_url }}">
+				<span class="link-watch">{{ video.title }}</span>
+			</a>
+		</div>
+	{% endfor %}
+</div>
+<div class="about-us-page-section-list--btn animation-element fade-in-up anim-delay-300ms in-view">
+	<a class="btn-contact-white btn-contact-white-dark" href="{{url_route('pages::7.en')}}">
+		<span></span>
+		{{t('view_all')}}
+	</a>
+</div>

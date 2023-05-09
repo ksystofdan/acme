@@ -1,0 +1,53 @@
+
+{{ asset_script('theme::js/animations.js') }}
+
+{% if benefits|length > 0 %}
+	<div class="small-12 columns nopad components-page-list animation-element">
+		<ul>
+		{% for benefit in benefits %}
+			{% if benefit.lotte_code.content() %}
+				<li>
+					{% set lottie_class = benefit.title | replace({' ': '_' }) | replace({'&': '' }) %}
+					<div class="text-center">
+						<div class="animation-element fade-in-up">
+							<div id="anim-{{ lottie_class }}" class="lottie-anim-svg"></div>
+						</div>
+						<div class="animation-element fade-in-up anim-delay-100ms">
+							{{ benefit.title }}
+						</div>
+					</div>
+				</li>
+				
+				<script>
+						var {{ lottie_class }} = {{ benefit.lotte_code.content()|raw }}
+						var params_{{lottie_class}} = {
+							container: document.getElementById('anim-{{lottie_class}}'),
+							renderer: 'svg',
+							loop: true,
+							autoplay: true,
+							animationData: {{ lottie_class }}
+						};
+						var anim_{{lottie_class}};
+						anim_{{lottie_class}} = lottie.loadAnimation(params_{{lottie_class}});
+					
+				</script>
+				
+			{% else %}
+				<li>
+					<div class="text-center">
+				   		<div class="animation-element fade-in-up">
+					   		<img src="{{ benefit.icon.image().url() }}"/>
+				   		</div>
+						<div class="animation-element fade-in-up anim-delay-100ms">
+							{{ benefit.title }}
+						</div>
+					</div>
+				</li>
+			{% endif %}
+		{% endfor %}
+		</ul>
+	</div>
+{% endif %}
+
+
+

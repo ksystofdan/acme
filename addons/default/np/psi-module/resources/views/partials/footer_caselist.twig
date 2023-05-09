@@ -1,0 +1,17 @@
+<div class="solutions-inner-explore-subtitle">
+	{{t('psi::solutions.footer.case_studies_list')}}
+</div>
+<div class="solutions-inner-explore-links">
+	{% set entries = entries('knowledge', 'knowledge').where('k_hidden', 0).where('enabled', 1).where('category_id', 1).limit(3).get() %}
+	{% if knowledges['case_study'].count() %}
+		{% set entries = knowledges['case_study'] %}
+	{% endif %}
+	{% for caselist in entries %}
+		<div class="solutions-inner-explore-link">
+		 	<a href="{{caselist.public_url}}">
+				 {# <img src="{{ img('theme::img/icon-pdf.png').url() }}"> #}
+			  	{{caselist.title}}
+		 	</a>
+		</div>
+	{% endfor %}
+</div>

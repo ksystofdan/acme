@@ -1,0 +1,13 @@
+<div class="products-filter-content-right-filter-content-filter">
+	  <div class="products-filter-content-right-filter-content-filter-trigger">
+			{{t('brands')}} <span></span>
+	  </div>
+	  <div class="products-filter-content-right-filter-content-filter-content">
+		  {% for brand in entries('products', 'products').where('enabled', 1).where('component_group_id', item.id).groupBy('brand_id').get() %}
+				{% set count_bra = entries('products', 'products').where('enabled', 1).where('brand_id', brand.brand.id).where('component_group_id', item.id).count() %}
+					<div class="filter-dropdown-checkbox-mobile">
+						 <input id="filter-dropdown-brands-mobile-{{ loop.index }}" name="brand" type="checkbox" value="{{brand.brand.id}}"><label for="filter-dropdown-brands-mobile-{{ loop.index }}">{{brand.brand.title}}<span>({{count_bra}})</span></label>
+					</div>
+			 {% endfor %}
+	  </div>
+ </div>

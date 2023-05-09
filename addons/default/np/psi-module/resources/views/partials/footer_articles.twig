@@ -1,0 +1,16 @@
+<div class="solutions-inner-explore-subtitle">
+	{{t('psi::industries.footer.buyers_guide')}}
+</div>
+<div class="solutions-inner-explore-links">
+	{% set entries = entries('knowledge', 'knowledge').where('k_hidden', 0).where('enabled', 1).where('category_id', 2).limit(3).get() %}
+	{% if knowledges['buyers_guides'].count() %}
+		{% set entries = knowledges['buyers_guides'] %}
+	{% endif %}
+	{% for articles in entries %}
+		<div class="solutions-inner-explore-link">
+			<a href="{{ articles.public_url }}">
+				{{ articles.title }}
+			</a>
+		</div> 
+	{% endfor %}
+</div>
