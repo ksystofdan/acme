@@ -1,84 +1,76 @@
 
-<section class="homepage-intro-section animation-element in-view">
+<section class="homepage-intro-section animation-element">
    <div class="row">
-
-      {# <div class="homepage-intro-section-img">
-         {{ page.header_image.image().class('animation-element fade-in-up in-view')|raw }}
-      </div> #}
-      <div class="homepage-intro-section-imgs-hold animation-element fade-in-up in-view">
-        
-         <div class="homepage-intro-section-imgs-hold animation-element fade-in-up in-view">
-               <div class="homepage-intro-section-imgs">
-                   <svg width="1255" height="895" viewBox="0 0 1255 895" fill="none" xmlns="http://www.w3.org/2000/svg">
-                       <path class="home-intro-trigger" data-id="home-intro-3" d="M867.5 587.5V681.5V686.5L725.5 767.5L686.5 744L677 749.5C663.8 758.7 647.5 750.667 641 745.5V729.5C641 725.9 644.333 723 646 722L615 704.5V688.5L881 535V520L846.5 500.5L813.5 501.5L538.5 660L507 641L495 646.5C477.8 654.5 465.833 645.5 462 640V628C461.6 622.4 464.5 619 466 618L457.5 613V601L508 572L479 555.5V541.5L729 397.5L785 433.5L793.512 428.563C803.791 422.601 816.393 422.262 826.979 427.663L834.5 431.5L852.5 421.5L997 504.5V511.5L867.5 587.5Z" fill="#FFCB4A"></path>
-                       <path class="home-intro-trigger" data-id="home-intro-4" d="M1096.5 454L869.5 586L867 588V766.5L806 802.5V828L830 841.5L824.5 844.5V863L868.5 888L919.5 855L933 863L958 848V858L961.5 860L998.5 838.5V848L1023 862L1253.5 728V547.5L1096.5 454Z" fill="#2178C9"></path>
-                       <path class="home-intro-trigger" data-id="home-intro-2" d="M706.5 380.5L580.5 453.5L577 455L552 440L527 455V461.5L504 474.5L497.5 471L363.5 549L311 517.5L299 524.5L280.5 513V506.5L261 494L250 500.5L245 497L168.5 541.5L117 511V504L141 490V481.5L150 475L141 469.5V454L152 447L157.5 450.5L197.5 427V402V287L183.5 278.5V265.5L199 256V210L438 71L480 46L541 82V120L579 98L641.5 136V335L706.5 373.5V380.5Z" fill="#EF8D46"></path>
-                       <path class="home-intro-trigger" data-id="home-intro-2-1" d="M606 401.5L592.5 394.5L531 431V441.5L541 446.5L552 440L577 455L612 435.5V428.5L606 425.5V401.5Z" fill="#009C19"/>
-                       <path class="home-intro-trigger" data-id="home-intro-1" d="M433.5 67.5L438 71L199 210V256L183.5 265.5V278.5L197.5 287V400.5L144.5 431.5L107 410.5L94 417.5L85 412V407.5L94 402L5.5 350V344L70 306V167L337.5 11L357 23V43L375 32.5L415.5 57V78L433.5 67.5Z" fill="black"></path>
-                   </svg>
-                   <img id="home-intro-0" class="homepage-intro-section-imgs-img-default" src="{{ img('theme::img/home-intro-default.png').url()}}" alt="">
+      <div class="homepage-intro-section-imgs-hold animation-element fade-in-up">
+            <div class="homepage-intro-section-imgs">
+                <svg width="1255" height="895" viewBox="0 0 1255 895" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path class="home-intro-trigger" data-id="home-intro-3" d="M867.5 587.5V681.5V686.5L725.5 767.5L686.5 744L677 749.5C663.8 758.7 647.5 750.667 641 745.5V729.5C641 725.9 644.333 723 646 722L615 704.5V688.5L881 535V520L846.5 500.5L813.5 501.5L538.5 660L507 641L495 646.5C477.8 654.5 465.833 645.5 462 640V628C461.6 622.4 464.5 619 466 618L457.5 613V601L508 572L479 555.5V541.5L729 397.5L785 433.5L793.512 428.563C803.791 422.601 816.393 422.262 826.979 427.663L834.5 431.5L852.5 421.5L997 504.5V511.5L867.5 587.5Z" fill="#FFCB4A"/>
+                     <path class="home-intro-trigger" data-id="home-intro-4" d="M1096.5 454L869.5 586L867 588V766.5L806 802.5V828L830 841.5L824.5 844.5V863L868.5 888L919.5 855L933 863L958 848V858L961.5 860L998.5 838.5V848L1023 862L1253.5 728V547.5L1096.5 454Z" fill="#2178C9"/>
+                     <path class="home-intro-trigger" data-id="home-intro-2" d="M706.5 380.5L580.5 453.5L577 455L552 440L527 455V461.5L504 474.5L497.5 471L363.5 549L311 517.5L299 524.5L280.5 513V506.5L261 494L250 500.5L245 497L168.5 541.5L117 511V504L141 490V481.5L150 475L141 469.5V454L152 447L157.5 450.5L197.5 427V402V287L183.5 278.5V265.5L199 256V210L438 71L480 46L541 82V120L579 98L641.5 136V335L706.5 373.5V380.5Z" fill="#EF8D46"/>
+                     <path class="home-intro-trigger" data-id="home-intro-2-1" d="M606 401.5L592.5 394.5L531 431V441.5L541 446.5L552 440L577 455L612 435.5V428.5L606 425.5V401.5Z" fill="#009C19"/>
+                     <path class="home-intro-trigger" data-id="home-intro-1" d="M433.5 67.5L438 71L199 210V256L183.5 265.5V278.5L197.5 287V400.5L144.5 431.5L107 410.5L94 417.5L85 412V407.5L94 402L5.5 350V344L70 306V167L337.5 11L357 23V43L375 32.5L415.5 57V78L433.5 67.5Z" fill="black"/>
+                 </svg>
+                <img id="home-intro-0" class="homepage-intro-section-imgs-img-default" src="{{ img('theme::img/home-intro-default.png').url()}}" alt="">
+            
+                <img id="home-intro-1" class="homepage-intro-section-imgs-img" src="{{ img('theme::img/home-intro-first.png').url() }}" alt="">
+               <img id="home-intro-2" class="homepage-intro-section-imgs-img" src="{{ img('theme::img/home-intro-second.png').url() }}" alt="">
+               <img id="home-intro-2-1" class="homepage-intro-section-imgs-img" src="{{ img('theme::img/home-intro-second-sm.png').url() }}" alt="" />
+               <img id="home-intro-3" class="homepage-intro-section-imgs-img" src="{{ img('theme::img/home-intro-third.png').url() }}" alt="">
+               <img id="home-intro-4" class="homepage-intro-section-imgs-img" src="{{ img('theme::img/home-intro-fourth.png').url() }}" alt="">
                
-                   <img id="home-intro-1" class="homepage-intro-section-imgs-img" src="{{ img('theme::img/home-intro-first.png').url() }}" alt="">
-                  <img id="home-intro-2" class="homepage-intro-section-imgs-img" src="{{ img('theme::img/home-intro-second.png').url() }}" alt="">
-                  <img id="home-intro-2-1" class="homepage-intro-section-imgs-img" src="{{ img('theme::img/home-intro-second-sm.png').url() }}" alt="" />
-                  <img id="home-intro-3" class="homepage-intro-section-imgs-img" src="{{ img('theme::img/home-intro-third.png').url() }}" alt="">
-                  <img id="home-intro-4" class="homepage-intro-section-imgs-img" src="{{ img('theme::img/home-intro-fourth.png').url() }}" alt="">
-                  
-               
-                   <div data-id="home-intro-1" class="homepage-intro-section-imgs-tooltip homepage-intro-section-imgs-tooltip-1 hide-for-small-only">
-                       <div class="about-page-partners-section-list-tooltip-text">
-                           {{ page.top_image_1_text }}
-                       </div>
-                       <div class="about-page-partners-section-list-tooltip-link">
-                           <a href="{{ page.top_image_1_url }}">
-                              {{t('view_solution')}}
-                           </a>
-                       </div>
+            
+                <div data-id="home-intro-1" class="homepage-intro-section-imgs-tooltip homepage-intro-section-imgs-tooltip-1 hide-for-small-only">
+                    <div class="about-page-partners-section-list-tooltip-text">
+                        {{ page.top_image_1_text }}
+                    </div>
+                    <div class="about-page-partners-section-list-tooltip-link">
+                        <a href="{{ page.top_image_1_url }}">
+                           {{t('view_solution')}}
+                        </a>
+                    </div>
+                </div>
+                <div data-id="home-intro-2" class="homepage-intro-section-imgs-tooltip homepage-intro-section-imgs-tooltip-2 hide-for-small-only">
+                    <div class="about-page-partners-section-list-tooltip-text">
+                        {{ page.top_image_2_text }}
+                    </div>
+                    <div class="about-page-partners-section-list-tooltip-link">
+                        <a href="{{ page.top_image_2_url }}">
+                           {{t('view_solution')}}
+                        </a>
+                    </div>
+                </div>
+               <div data-id="home-intro-2-1" class="homepage-intro-section-imgs-tooltip homepage-intro-section-imgs-tooltip-2-1 hide-for-small-only">
+                   <div class="about-page-partners-section-list-tooltip-text">
+                       {{ page.top_image_2_text }}
                    </div>
-                   <div data-id="home-intro-2" class="homepage-intro-section-imgs-tooltip homepage-intro-section-imgs-tooltip-2 hide-for-small-only">
-                       <div class="about-page-partners-section-list-tooltip-text">
-                           {{ page.top_image_2_text }}
-                       </div>
-                       <div class="about-page-partners-section-list-tooltip-link">
-                           <a href="{{ page.top_image_2_url }}">
-                              {{t('view_solution')}}
-                           </a>
-                       </div>
-                   </div>
-                     <div data-id="home-intro-2-1" class="homepage-intro-section-imgs-tooltip homepage-intro-section-imgs-tooltip-2-1 hide-for-small-only">
-                         <div class="about-page-partners-section-list-tooltip-text">
-                             {{ page.top_image_2_text }}
-                         </div>
-                         <div class="about-page-partners-section-list-tooltip-link">
-                             <a href="{{ page.top_image_2_url }}">
-                                 {{t('view_solution')}}
-                             </a>
-                         </div>
-                     </div>
-                   <div data-id="home-intro-3" class="homepage-intro-section-imgs-tooltip homepage-intro-section-imgs-tooltip-3 hide-for-small-only">
-                       <div class="about-page-partners-section-list-tooltip-text">
-                           {{ page.top_image_3_text }}
-                       </div>
-                       <div class="about-page-partners-section-list-tooltip-link">
-                           <a href="{{ page.top_image_3_url }}">
-                              {{t('view_solution')}}
-                           </a>
-                       </div>
-                   </div>
-                   <div data-id="home-intro-4" class="homepage-intro-section-imgs-tooltip homepage-intro-section-imgs-tooltip-4 hide-for-small-only">
-                       <div class="about-page-partners-section-list-tooltip-text">
-                           {{ page.top_image_4_text }}
-                       </div>
-                       <div class="about-page-partners-section-list-tooltip-link">
-                           <a href="{{ page.top_image_4_url }}">
-                              {{t('view_solution')}}
-                           </a>
-                       </div>
+                   <div class="about-page-partners-section-list-tooltip-link">
+                       <a href="{{ page.top_image_2_url }}">
+                           {{t('view_solution')}}
+                       </a>
                    </div>
                </div>
-         </div>
+                <div data-id="home-intro-3" class="homepage-intro-section-imgs-tooltip homepage-intro-section-imgs-tooltip-3 hide-for-small-only">
+                    <div class="about-page-partners-section-list-tooltip-text">
+                        {{ page.top_image_3_text }}
+                    </div>
+                    <div class="about-page-partners-section-list-tooltip-link">
+                        <a href="{{ page.top_image_3_url }}">
+                           {{t('view_solution')}}
+                        </a>
+                    </div>
+                </div>
+                <div data-id="home-intro-4" class="homepage-intro-section-imgs-tooltip homepage-intro-section-imgs-tooltip-4 hide-for-small-only">
+                    <div class="about-page-partners-section-list-tooltip-text">
+                        {{ page.top_image_4_text }}
+                    </div>
+                    <div class="about-page-partners-section-list-tooltip-link">
+                        <a href="{{ page.top_image_4_url }}">
+                           {{t('view_solution')}}
+                        </a>
+                    </div>
+                </div>
+            </div>
       </div>
-
       <div class="small-12 medium-6 large-4 columns nopad homepage-intro-section-slider animation-element fade-in-up in-view">
          <div class="owl-carousel owl-theme homepage-intro-section-owl owl-loaded owl-drag">
             <div class="owl-stage-outer">

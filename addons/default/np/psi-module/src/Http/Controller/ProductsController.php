@@ -22,6 +22,9 @@ class ProductsController extends PublicController
         }
         $item = $item->toArray();
         $relatedItems = ProductsModel::where('component_group_id', $item['component_group_id'])->where('id', '!=' ,$productId)->limit(4)->inRandomOrder()->live()->get()->toArray();
+        if(count($relatedItems)<3){
+            $relatedItems = ProductsModel::where('id', '!=' ,$productId)->limit(4)->inRandomOrder()->live()->get()->toArray();
+        }
         
         return $this->view->make('module::products/view', compact('item', 'relatedItems'));
     }

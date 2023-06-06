@@ -29,7 +29,7 @@
                 </div>
             </section>
 
-            {% if item.image and item.hide_header.isFalse() %}
+            {# {% if item.image and item.hide_header.isFalse() %}
             <div class="section-full-video-image">
                 <div class="row row-full">
                     <div class="small-12 columns nopad section-full-video-image-hold animation-element fade-in-up">
@@ -40,7 +40,7 @@
                     </div>
                 </div>
             </div>
-            {% endif %}
+            {% endif %} #}
             <section class="section-30-150 news-inner-page-content-section">
                 <div class="row">
                     <div class="small-12 large-8 large-offset-2 columns nopad news-inner-page-content animation-element fade-in-up">
@@ -50,6 +50,14 @@
 
                         </div>
                         <div class="news-inner-page-content-right">
+                           {% if item.image %}
+                              <div class="small-12 columns nopad news-inner-page-content-right-top">
+                                   <!-- image -->
+                                   <div class="news-inner-page-content-image-box img-object-fit">
+                                       <img src="{{ item.image.cropped().widen(1200).url() }}">
+                                   </div>
+                               </div>
+                            {% endif %}
                             {{ jumpToBlock|raw }}
                             {{ content| raw }}
                             <div class="small-12 columns nopad news-inner-page-share">
